@@ -3,7 +3,15 @@
 
 This is a prototype 2D procedural map generation app.  It's built in Godot 4.5 gdscript.
 
-It has a UI to help test map details, and should be modular enough to work in both 2D and 3D projects.
+
+## Features
+* It creates 2x2 grid-based maps, populated procedurally from JSON data files.
+* It can support image assets, but generates color-coded shapes by default.
+* It has a UI to view and test map details.
+* It should be modular enough to easily integrate in both 2D and 3D projects.
+
+## Requirements
+* Godot 4.5
 
 ## To Do
 * A few biomes are still in dev: desert, swamp, beach
