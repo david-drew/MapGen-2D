@@ -1,5 +1,5 @@
 # MapGen-2D
-## Version 0.1
+### Version 0.1
 
 This is a prototype 2D procedural map generation app.  It's built in Godot 4.5 gdscript.
 
