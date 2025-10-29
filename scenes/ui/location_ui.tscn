@@ -1,0 +1,45 @@
+[gd_scene load_steps=2 format=3 uid="uid://4cgr3spy7low"]
+
+[ext_resource type="Script" uid="uid://dtjb5eyxmh4lt" path="res://scripts/ui/location_ui.gd" id="1_pkvor"]
+
+[node name="LocationUI" type="Control"]
+layout_mode = 3
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 40.0
+grow_horizontal = 2
+script = ExtResource("1_pkvor")
+
+[node name="HBox" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -84.5
+offset_top = -15.0
+offset_right = 84.5
+offset_bottom = 15.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 15
+
+[node name="PrevButton" type="Button" parent="HBox"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "◀"
+
+[node name="LocationLabel" type="Label" parent="HBox"]
+layout_mode = 2
+text = "Location Name"
+
+[node name="NextButton" type="Button" parent="HBox"]
+custom_minimum_size = Vector2(40, 40)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "▶"

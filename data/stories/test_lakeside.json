@@ -1,0 +1,86 @@
+{
+	"story_metadata": {
+		"title": "Tranquil Waters",
+		"author": "Test Story",
+		"description": "A peaceful lakeside retreat with fishing and boating"
+	},
+	
+	"world_config": {
+		"total_size_km2": 2.0,
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "crystal_lake",
+				"type": "lakeside",
+				"size_km2": 2.0,
+				"theme": "peaceful",
+				"description": "A serene lake surrounded by cabins and recreational areas.",
+				
+				"must_have": [
+					{
+						"type": "dock",
+						"count": 3,
+						"tags": ["boat_rental", "fishing"],
+						"description": "Wooden docks extending into the water"
+					},
+					{
+						"type": "beach",
+						"count": 1,
+						"tags": ["swimming", "safe_zone"],
+						"description": "A sandy beach area for swimming"
+					},
+					{
+						"type": "boathouse",
+						"count": 1,
+						"tags": ["quest_location", "storage"],
+						"description": "An old boathouse where boats are stored"
+					},
+					{
+						"type": "picnic_area",
+						"count": 2,
+						"tags": ["social"],
+						"description": "Shaded picnic spots with tables"
+					}
+				],
+				
+				"should_have": [
+					{
+						"type": "fishing_spot",
+						"count": 5,
+						"probability": 1.0,
+						"description": "Good spots for fishing along the shore"
+					},
+					{
+						"type": "swimming_area",
+						"count": 1,
+						"probability": 0.8,
+						"description": "Designated swimming area with buoys"
+					}
+				],
+				
+				"generation_params": {
+					"lake_size": 0.35,
+					"shoreline_curvature": 0.6,
+					"num_docks": 5,
+					"num_shore_paths": 2,
+					"path_follows_shore": true,
+					"water_depth_variation": 0.4,
+					"building_density": 0.3
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "The Missing Boat",
+				"description": "Help the boathouse owner find a missing rental boat"
+			}
+		]
+	}
+}

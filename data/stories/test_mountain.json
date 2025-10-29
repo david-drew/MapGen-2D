@@ -1,0 +1,52 @@
+{
+	"story_metadata": {
+		"title": "Peak Mystery",
+		"author": "Test Story",
+		"description": "A remote mountain with mysterious disappearances near the old observatory"
+	},
+	
+	"world_config": {
+		"total_size_km2": 3.0,
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "silver_peak",
+				"type": "mountain",
+				"size_km2": 3.0,
+				"theme": "isolated wilderness",
+				"description": "A rugged mountain peak with sparse human presence and breathtaking views. Hikers report strange lights near the abandoned fire lookout.",
+				
+				"must_have": [
+					{"type": "observatory", "count": 1, "tags": ["mystery_location", "abandoned"]},
+					{"type": "fire_lookout", "count": 2, "tags": ["vantage_point"]},
+					{"type": "cabin", "count": 3, "tags": ["isolated", "shelter"]},
+					{"type": "ranger_station", "count": 1, "tags": ["npc_location", "safe"]},
+					{"type": "cave_entrance", "count": 2, "tags": ["exploration", "clue_location"]},
+					{"type": "trailhead", "count": 3, "tags": ["access_point"]},
+					{"type": "scenic_overlook", "count": 4, "tags": ["discovery_point"]}
+				],
+				
+				"generation_params": {
+					"elevation_factor": 1.8,
+					"ruggedness": 0.8,
+					"num_peaks": 4,
+					"num_trails": 3,
+					"num_clearings": 6,
+					"building_density": 0.04
+				},
+				
+				"notes": {
+					"atmosphere": "Isolated and mysterious, with distant vistas and thin air",
+					"mystery_hooks": [
+						"Abandoned observatory with recent power usage",
+						"Missing hikers last seen near cave system",
+						"Strange weather patterns around the peak"
+					]
+				}
+			}
+		]
+	}
+}

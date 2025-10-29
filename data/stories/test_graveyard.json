@@ -1,0 +1,79 @@
+{
+	"story_metadata": {
+		"title": "The Old Cemetery",
+		"author": "Test Story",
+		"description": "A test story featuring a mysterious graveyard"
+	},
+	
+	"world_config": {
+		"total_size_km2": 1.5,
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "mourning_fields",
+				"type": "graveyard",
+				"size_km2": 1.5,
+				"theme": "somber",
+				"description": "An old cemetery with weathered headstones and ancient mausoleums.",
+				
+				"must_have": [
+					{
+						"type": "chapel",
+						"count": 1,
+						"tags": ["quest_start", "safe_zone"],
+						"description": "A small chapel where the groundskeeper resides"
+					},
+					{
+						"type": "mausoleum",
+						"count": 1,
+						"tags": ["quest_location", "boss_area"],
+						"description": "The mysterious Blackwood family mausoleum"
+					},
+					{
+						"type": "old_tree",
+						"count": 1,
+						"tags": ["landmark"],
+						"description": "An ancient willow tree in the northeast corner"
+					}
+				],
+				
+				"should_have": [
+					{
+						"type": "grave_cluster",
+						"count": 3,
+						"probability": 1.0,
+						"description": "Clusters of old graves from different eras"
+					},
+					{
+						"type": "angel_statue",
+						"count": 2,
+						"probability": 0.9,
+						"description": "Weathered angel statues marking prominent graves"
+					}
+				],
+				
+				"generation_params": {
+					"layout": "cross",
+					"path_width_m": 4,
+					"section_count": 6,
+					"has_fence": true,
+					"atmosphere": "somber",
+					"building_density": 0.4
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "The Groundskeeper's Request",
+				"description": "Investigate strange occurrences in the old cemetery"
+			}
+		]
+	}
+}

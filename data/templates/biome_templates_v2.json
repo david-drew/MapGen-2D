@@ -1,0 +1,974 @@
+{
+	"_comment": "Biome Template System - Default configurations for location types",
+	"_version": "1.0.0",
+	"_author": "Procedural Generation System",
+	"_last_updated": "2025-10-29",
+	
+	"templates": {
+		"small_town": {
+			"display_name": "Small Town",
+			"description": "A quiet rural town with residential and commercial areas",
+			
+			"default_buildings": [
+				{
+					"type": "house",
+					"weight": 40,
+					"density": 0.50,
+					"min_size": [4, 4],
+					"max_size": [6, 8]
+				},
+				{
+					"type": "apartment",
+					"weight": 8,
+					"density": 0.12,
+					"min_size": [8, 8],
+					"max_size": [12, 12]
+				},
+				{
+					"type": "store",
+					"weight": 15,
+					"density": 0.15,
+					"min_size": [6, 6],
+					"max_size": [10, 10]
+				},
+				{
+					"type": "restaurant",
+					"weight": 10,
+					"density": 0.08,
+					"min_size": [6, 6],
+					"max_size": [8, 10]
+				},
+				{
+					"type": "clinic",
+					"weight": 3,
+					"density": 0.04,
+					"min_size": [8, 8],
+					"max_size": [10, 10]
+				},
+				{
+					"type": "church",
+					"weight": 2,
+					"density": 0.02,
+					"min_size": [10, 12],
+					"max_size": [12, 16]
+				},
+				{
+					"type": "hotel",
+					"weight": 2,
+					"density": 0.03,
+					"min_size": [10, 10],
+					"max_size": [14, 14]
+				},
+				{
+					"type": "tavern",
+					"weight": 5,
+					"density": 0.06,
+					"min_size": [6, 6],
+					"max_size": [8, 8]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "fountain",
+					"weight": 8,
+					"density": 0.15,
+					"radius": 2
+				},
+				{
+					"type": "town_square",
+					"weight": 5,
+					"density": 0.10,
+					"radius": 8
+				},
+				{
+					"type": "park",
+					"weight": 10,
+					"density": 0.25,
+					"radius": 10
+				},
+				{
+					"type": "statue",
+					"weight": 6,
+					"density": 0.12,
+					"radius": 1
+				},
+				{
+					"type": "garden",
+					"weight": 12,
+					"density": 0.20,
+					"radius": 6
+				},
+				{
+					"type": "well",
+					"weight": 4,
+					"density": 0.08,
+					"radius": 1
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "bench",
+					"weight": 20,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "street_lamp",
+					"weight": 30,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "mailbox",
+					"weight": 15,
+					"context": "building",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "trash_can",
+					"weight": 10,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "flower_pot",
+					"weight": 12,
+					"context": "building",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "street_sign",
+					"weight": 8,
+					"context": "intersection",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"town_layout": "grid",
+				"block_size_m": 80,
+				"road_width_m": 6,
+				"sidewalk_width_m": 2,
+				"residential_density": "medium",
+				"building_density": 0.6
+			}
+		},
+		
+		"forest": {
+			"display_name": "Forest",
+			"description": "Dense woodland with natural features and occasional structures",
+			
+			"default_buildings": [
+				{
+					"type": "cabin",
+					"weight": 10,
+					"density": 0.35,
+					"min_size": [3, 3],
+					"max_size": [5, 5]
+				},
+				{
+					"type": "hunters_cabin",
+					"weight": 8,
+					"density": 0.25,
+					"min_size": [4, 4],
+					"max_size": [6, 6]
+				},
+				{
+					"type": "hermit_hut",
+					"weight": 5,
+					"density": 0.15,
+					"min_size": [2, 3],
+					"max_size": [3, 4]
+				},
+				{
+					"type": "ranger_station",
+					"weight": 3,
+					"density": 0.10,
+					"min_size": [6, 6],
+					"max_size": [8, 8]
+				},
+				{
+					"type": "shed",
+					"weight": 12,
+					"density": 0.15,
+					"min_size": [2, 2],
+					"max_size": [3, 3]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "ancient_tree",
+					"weight": 5,
+					"density": 0.08,
+					"radius": 3
+				},
+				{
+					"type": "spring",
+					"weight": 10,
+					"density": 0.15,
+					"radius": 4
+				},
+				{
+					"type": "shrine",
+					"weight": 6,
+					"density": 0.10,
+					"radius": 2
+				},
+				{
+					"type": "clearing",
+					"weight": 20,
+					"density": 0.30,
+					"radius": 8
+				},
+				{
+					"type": "pond",
+					"weight": 12,
+					"density": 0.18,
+					"radius": 5
+				},
+				{
+					"type": "ruins",
+					"weight": 5,
+					"density": 0.08,
+					"radius": 6
+				},
+				{
+					"type": "campsite",
+					"weight": 15,
+					"density": 0.20,
+					"radius": 3
+				},
+				{
+					"type": "rock_formation",
+					"weight": 8,
+					"density": 0.12,
+					"radius": 4
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "fallen_log",
+					"weight": 25,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "mushroom_cluster",
+					"weight": 20,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "rock_pile",
+					"weight": 15,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "flower_patch",
+					"weight": 12,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "berry_bush",
+					"weight": 10,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "animal_tracks",
+					"weight": 8,
+					"context": "path",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"tree_density": 0.7,
+				"num_clearings": 5,
+				"num_paths": 4,
+				"path_width_m": 2,
+				"undergrowth_density": 0.4,
+				"building_density": 0.2
+			}
+		},
+		
+		"city": {
+			"display_name": "City District",
+			"description": "Urban area with high-density buildings and infrastructure",
+			
+			"default_buildings": [
+				{
+					"type": "apartment",
+					"weight": 30,
+					"density": 0.35,
+					"min_size": [10, 10],
+					"max_size": [20, 20]
+				},
+				{
+					"type": "office",
+					"weight": 25,
+					"density": 0.25,
+					"min_size": [12, 12],
+					"max_size": [24, 24]
+				},
+				{
+					"type": "store",
+					"weight": 20,
+					"density": 0.20,
+					"min_size": [8, 8],
+					"max_size": [12, 12]
+				},
+				{
+					"type": "restaurant",
+					"weight": 15,
+					"density": 0.12,
+					"min_size": [8, 8],
+					"max_size": [12, 12]
+				},
+				{
+					"type": "hospital",
+					"weight": 2,
+					"density": 0.02,
+					"min_size": [20, 20],
+					"max_size": [30, 30]
+				},
+				{
+					"type": "hotel",
+					"weight": 5,
+					"density": 0.04,
+					"min_size": [12, 12],
+					"max_size": [16, 16]
+				},
+				{
+					"type": "parking_garage",
+					"weight": 8,
+					"density": 0.06,
+					"min_size": [15, 15],
+					"max_size": [25, 25]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "plaza",
+					"weight": 8,
+					"density": 0.15,
+					"radius": 12
+				},
+				{
+					"type": "subway_entrance",
+					"weight": 15,
+					"density": 0.25,
+					"radius": 2
+				},
+				{
+					"type": "park",
+					"weight": 6,
+					"density": 0.12,
+					"radius": 15
+				},
+				{
+					"type": "monument",
+					"weight": 5,
+					"density": 0.10,
+					"radius": 3
+				},
+				{
+					"type": "fountain",
+					"weight": 10,
+					"density": 0.18,
+					"radius": 2
+				},
+				{
+					"type": "parking_lot",
+					"weight": 12,
+					"density": 0.20,
+					"radius": 8
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "street_lamp",
+					"weight": 40,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "traffic_light",
+					"weight": 25,
+					"context": "intersection",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "bus_stop",
+					"weight": 15,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "fire_hydrant",
+					"weight": 12,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "newspaper_stand",
+					"weight": 10,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "bench",
+					"weight": 18,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "trash_can",
+					"weight": 20,
+					"context": "street",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"city_layout": "grid",
+				"block_size_m": 100,
+				"road_width_m": 10,
+				"sidewalk_width_m": 3,
+				"building_density": 0.85,
+				"building_height_floors": [3, 10]
+			}
+		},
+		
+		"graveyard": {
+			"display_name": "Graveyard",
+			"description": "Cemetery with graves, mausoleums, and memorial structures",
+			
+			"default_buildings": [
+				{
+					"type": "mausoleum",
+					"weight": 12,
+					"density": 0.30,
+					"min_size": [4, 4],
+					"max_size": [8, 8]
+				},
+				{
+					"type": "chapel",
+					"weight": 5,
+					"density": 0.15,
+					"min_size": [8, 10],
+					"max_size": [12, 14]
+				},
+				{
+					"type": "crypt",
+					"weight": 15,
+					"density": 0.35,
+					"min_size": [3, 3],
+					"max_size": [5, 5]
+				},
+				{
+					"type": "groundskeeper_shed",
+					"weight": 3,
+					"density": 0.10,
+					"min_size": [3, 3],
+					"max_size": [4, 4]
+				},
+				{
+					"type": "columbarium",
+					"weight": 8,
+					"density": 0.20,
+					"min_size": [6, 4],
+					"max_size": [10, 6]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "grave_cluster",
+					"weight": 50,
+					"density": 0.50,
+					"radius": 4
+				},
+				{
+					"type": "monument",
+					"weight": 12,
+					"density": 0.15,
+					"radius": 2
+				},
+				{
+					"type": "old_tree",
+					"weight": 10,
+					"density": 0.12,
+					"radius": 3
+				},
+				{
+					"type": "angel_statue",
+					"weight": 8,
+					"density": 0.10,
+					"radius": 1
+				},
+				{
+					"type": "memorial_wall",
+					"weight": 6,
+					"density": 0.08,
+					"radius": 6
+				},
+				{
+					"type": "garden_plot",
+					"weight": 4,
+					"density": 0.05,
+					"radius": 5
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "gravestone",
+					"weight": 100,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "iron_fence",
+					"weight": 25,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "lantern",
+					"weight": 20,
+					"context": "path",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "dead_flowers",
+					"weight": 15,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "bench",
+					"weight": 10,
+					"context": "path",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "cross",
+					"weight": 30,
+					"context": "area",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"layout": "organic",
+				"path_width_m": 3,
+				"grave_spacing_m": 2,
+				"section_count": 6,
+				"atmosphere": "somber",
+				"building_density": 0.4
+			}
+		},
+		
+		"suburban": {
+			"display_name": "Suburban Area",
+			"description": "Residential neighborhood with houses and minimal commercial",
+			
+			"default_buildings": [
+				{
+					"type": "house",
+					"weight": 70,
+					"density": 0.70,
+					"min_size": [5, 5],
+					"max_size": [8, 10]
+				},
+				{
+					"type": "apartment",
+					"weight": 5,
+					"density": 0.08,
+					"min_size": [10, 10],
+					"max_size": [14, 14]
+				},
+				{
+					"type": "store",
+					"weight": 4,
+					"density": 0.06,
+					"min_size": [6, 6],
+					"max_size": [8, 8]
+				},
+				{
+					"type": "school",
+					"weight": 2,
+					"density": 0.04,
+					"min_size": [20, 15],
+					"max_size": [30, 20]
+				},
+				{
+					"type": "community_center",
+					"weight": 2,
+					"density": 0.03,
+					"min_size": [12, 12],
+					"max_size": [16, 16]
+				},
+				{
+					"type": "gas_station",
+					"weight": 3,
+					"density": 0.04,
+					"min_size": [8, 8],
+					"max_size": [10, 10]
+				},
+				{
+					"type": "church",
+					"weight": 1,
+					"density": 0.01,
+					"min_size": [10, 12],
+					"max_size": [12, 14]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "playground",
+					"weight": 15,
+					"density": 0.20,
+					"radius": 6
+				},
+				{
+					"type": "park",
+					"weight": 20,
+					"density": 0.30,
+					"radius": 12
+				},
+				{
+					"type": "cul_de_sac",
+					"weight": 25,
+					"density": 0.35,
+					"radius": 4
+				},
+				{
+					"type": "basketball_court",
+					"weight": 8,
+					"density": 0.10,
+					"radius": 5
+				},
+				{
+					"type": "swimming_pool",
+					"weight": 5,
+					"density": 0.05,
+					"radius": 4
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "mailbox",
+					"weight": 35,
+					"context": "building",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "street_lamp",
+					"weight": 30,
+					"context": "street",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "tree",
+					"weight": 40,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "garden",
+					"weight": 25,
+					"context": "building",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "driveway",
+					"weight": 30,
+					"context": "building",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "fence",
+					"weight": 20,
+					"context": "building",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"layout": "curved_streets",
+				"block_size_m": 120,
+				"road_width_m": 8,
+				"lot_size_m": 20,
+				"building_density": 0.5
+			}
+		},
+		
+		"lakeside": {
+			"display_name": "Lakeside",
+			"description": "Area adjacent to a lake with docks and waterfront structures",
+			
+			"default_buildings": [
+				{
+					"type": "boathouse",
+					"weight": 20,
+					"density": 0.30,
+					"min_size": [6, 8],
+					"max_size": [8, 12]
+				},
+				{
+					"type": "cabin",
+					"weight": 25,
+					"density": 0.35,
+					"min_size": [4, 4],
+					"max_size": [6, 8]
+				},
+				{
+					"type": "lodge",
+					"weight": 8,
+					"density": 0.12,
+					"min_size": [12, 10],
+					"max_size": [16, 14]
+				},
+				{
+					"type": "bait_shop",
+					"weight": 12,
+					"density": 0.15,
+					"min_size": [4, 4],
+					"max_size": [6, 6]
+				},
+				{
+					"type": "restaurant",
+					"weight": 10,
+					"density": 0.12,
+					"min_size": [8, 8],
+					"max_size": [10, 10]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "dock",
+					"weight": 30,
+					"density": 0.35,
+					"radius": 4
+				},
+				{
+					"type": "beach",
+					"weight": 20,
+					"density": 0.20,
+					"radius": 10
+				},
+				{
+					"type": "fishing_spot",
+					"weight": 25,
+					"density": 0.25,
+					"radius": 2
+				},
+				{
+					"type": "picnic_area",
+					"weight": 15,
+					"density": 0.15,
+					"radius": 6
+				},
+				{
+					"type": "swimming_area",
+					"weight": 10,
+					"density": 0.10,
+					"radius": 8
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "pier_post",
+					"weight": 35,
+					"context": "shore",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "life_preserver",
+					"weight": 12,
+					"context": "shore",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "boat",
+					"weight": 20,
+					"context": "shore",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "fishing_rod",
+					"weight": 10,
+					"context": "shore",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "beach_chair",
+					"weight": 15,
+					"context": "beach",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "rope",
+					"weight": 8,
+					"context": "shore",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"shoreline_curvature": 0.6,
+				"water_depth_variation": 0.4,
+				"num_docks": 5,
+				"path_follows_shore": true,
+				"building_density": 0.3
+			}
+		},
+		
+		"mountain": {
+			"display_name": "Mountain Area",
+			"description": "Elevated terrain with rocky outcrops and sparse vegetation",
+			
+			"default_buildings": [
+				{
+					"type": "mountain_cabin",
+					"weight": 15,
+					"density": 0.40,
+					"min_size": [4, 4],
+					"max_size": [6, 6]
+				},
+				{
+					"type": "lookout_tower",
+					"weight": 5,
+					"density": 0.15,
+					"min_size": [3, 3],
+					"max_size": [4, 4]
+				},
+				{
+					"type": "mine_entrance",
+					"weight": 8,
+					"density": 0.20,
+					"min_size": [4, 3],
+					"max_size": [6, 4]
+				},
+				{
+					"type": "shelter",
+					"weight": 12,
+					"density": 0.25,
+					"min_size": [3, 3],
+					"max_size": [4, 4]
+				}
+			],
+			
+			"default_pois": [
+				{
+					"type": "summit",
+					"weight": 8,
+					"density": 0.10,
+					"radius": 4
+				},
+				{
+					"type": "cave",
+					"weight": 20,
+					"density": 0.25,
+					"radius": 3
+				},
+				{
+					"type": "cliff",
+					"weight": 15,
+					"density": 0.20,
+					"radius": 6
+				},
+				{
+					"type": "waterfall",
+					"weight": 10,
+					"density": 0.12,
+					"radius": 4
+				},
+				{
+					"type": "scenic_overlook",
+					"weight": 18,
+					"density": 0.18,
+					"radius": 3
+				},
+				{
+					"type": "mountain_pass",
+					"weight": 12,
+					"density": 0.15,
+					"radius": 5
+				}
+			],
+			
+			"decorations": [
+				{
+					"type": "boulder",
+					"weight": 45,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "rock_outcrop",
+					"weight": 35,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "alpine_flower",
+					"weight": 12,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "cairn",
+					"weight": 10,
+					"context": "path",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "scree",
+					"weight": 20,
+					"context": "area",
+					"occupancy": "decoration"
+				},
+				{
+					"type": "snow_patch",
+					"weight": 8,
+					"context": "area",
+					"occupancy": "decoration"
+				}
+			],
+			
+			"generation_defaults": {
+				"elevation_variation": 0.8,
+				"rock_density": 0.6,
+				"num_trails": 3,
+				"trail_difficulty": "hard",
+				"building_density": 0.15
+			}
+		}
+	},
+	
+	"_usage_notes": {
+		"weight": "Relative probability for weighted random selection",
+		"density": "Target percentage of total buildings/POIs (0.0 to 1.0)",
+		"radius": "Footprint size in grid cells for POIs",
+		"min_size": "Minimum building dimensions [width, height] in grid cells",
+		"max_size": "Maximum building dimensions [width, height] in grid cells",
+		"context": "Where decoration should be placed (street, building, area, etc.)",
+		"occupancy": "How decoration affects grid occupancy",
+		"story_override": "Story JSON can override any template value"
+	}
+}

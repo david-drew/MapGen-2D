@@ -1,0 +1,111 @@
+{
+	"story_metadata": {
+		"title": "Town and Forest - Multi-Region Test",
+		"version": "1.0.0",
+		"author": "Developer",
+		"description": "Test story with town and forest regions connected by old road"
+	},
+	
+	"world_config": {
+		"total_size_km2": 2.5,
+		"time_of_day": "afternoon",
+		"weather_default": "clear",
+		"global_theme": "mysterious"
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "willow_town",
+				"type": "small_town",
+				"size_km2": 1.0,
+				"theme": "rustic",
+				"population_density": "medium",
+				
+				"must_have": [
+					{"type": "chapel", "count": 1, "tags": ["quest_start"]},
+					{"type": "hotel", "count": 1, "tags": ["player_home"]},
+					{"type": "coffeehouse", "count": 1, "tags": []}
+				],
+				
+				"should_have": [
+					{"type": "fountain", "probability": 0.8, "max_count": 1},
+					{"type": "town_square", "probability": 0.9, "max_count": 1}
+				],
+				
+				"generation_params": {
+					"town_layout": "grid",
+					"road_width_m": 6,
+					"sidewalk_width_m": 2,
+					"block_size_m": 80,
+					"residential_density": "medium"
+				}
+			},
+			{
+				"id": "whispering_woods",
+				"type": "forest",
+				"size_km2": 1.5,
+				"theme": "mysterious",
+				"density": "dense",
+				
+				"must_have": [
+					{"type": "ancient_tree", "count": 1, "tags": ["quest_critical", "landmark"]},
+					{"type": "hermit_hut", "count": 1, "tags": ["npc_home"]}
+				],
+				
+				"should_have": [
+					{"type": "spring", "probability": 0.7, "max_count": 1},
+					{"type": "shrine", "probability": 0.6, "max_count": 1},
+					{"type": "hunters_cabin", "probability": 0.5, "max_count": 1}
+				],
+				
+				"generation_params": {
+					"tree_density": 0.7,
+					"num_clearings": 4,
+					"num_paths": 3,
+					"num_ruins": 1
+				}
+			}
+		]
+	},
+	
+	"connectors": [
+		{
+			"id": "main_road",
+			"type": "old_road",
+			"from": "willow_town",
+			"to": "whispering_woods",
+			"from_exit": "east",
+			"to_entrance": "west",
+			"travel_time_minutes": 10,
+			"difficulty": "easy",
+			"tags": ["main_path", "well_traveled"]
+		}
+	],
+	
+	"quest_anchors": {
+		"starting_location": "willow_town",
+		"starting_position": "hotel",
+		"key_locations": [
+			{
+				"region": "willow_town",
+				"poi": "chapel",
+				"quest_id": "main_quest_start",
+				"description": "Speak to the priest"
+			},
+			{
+				"region": "whispering_woods",
+				"poi": "ancient_tree",
+				"quest_id": "forest_mystery",
+				"description": "Investigate the ancient tree"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 50,
+		"ensure_all_regions_connected": true,
+		"require_player_home": true,
+		"max_generation_time_seconds": 120
+	}
+}

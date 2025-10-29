@@ -1,0 +1,91 @@
+{
+	"story_metadata": {
+		"title": "Downtown District",
+		"author": "Test Story",
+		"description": "A bustling urban area with high-rise buildings and city life"
+	},
+	
+	"world_config": {
+		"total_size_km2": 3.0,
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "metro_downtown",
+				"type": "city",
+				"size_km2": 3.0,
+				"theme": "urban",
+				"description": "A dense downtown district with skyscrapers, shops, and busy streets.",
+				
+				"must_have": [
+					{
+						"type": "plaza",
+						"count": 1,
+						"tags": ["central", "landmark", "quest_hub"],
+						"description": "Central Plaza - the heart of downtown"
+					},
+					{
+						"type": "subway_entrance",
+						"count": 3,
+						"tags": ["transport", "fast_travel"],
+						"description": "Metro station entrances for quick travel"
+					},
+					{
+						"type": "park",
+						"count": 1,
+						"tags": ["green_space", "safe_zone"],
+						"description": "City park offering respite from urban bustle"
+					},
+					{
+						"type": "parking_lot",
+						"count": 2,
+						"tags": ["vehicle_storage"],
+						"description": "Multi-story parking structures"
+					}
+				],
+				
+				"should_have": [
+					{
+						"type": "fountain",
+						"count": 3,
+						"probability": 0.9,
+						"description": "Decorative fountains in public spaces"
+					},
+					{
+						"type": "monument",
+						"count": 2,
+						"probability": 0.8,
+						"description": "Historical monuments and statues"
+					},
+					{
+						"type": "bus_stop",
+						"count": 8,
+						"probability": 1.0,
+						"description": "Bus stops along major streets"
+					}
+				],
+				
+				"generation_params": {
+					"city_layout": "grid",
+					"block_size_m": 100,
+					"road_width_m": 10,
+					"sidewalk_width_m": 3,
+					"building_density": 0.85,
+					"building_height_floors": [3, 10]
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "City Mysteries",
+				"description": "Navigate the urban landscape and uncover secrets"
+			}
+		]
+	}
+}

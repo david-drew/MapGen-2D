@@ -1,0 +1,91 @@
+{
+	"story_metadata": {
+		"title": "Maple Heights",
+		"author": "Test Story",
+		"description": "A peaceful suburban neighborhood with winding streets"
+	},
+	
+	"world_config": {
+		"total_size_km2": 2.0,
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "maple_heights",
+				"type": "suburban",
+				"size_km2": 2.0,
+				"theme": "residential",
+				"description": "A quiet suburb with cul-de-sacs, parks, and family homes.",
+				
+				"must_have": [
+					{
+						"type": "school",
+						"count": 1,
+						"tags": ["elementary", "quest_location"],
+						"description": "Maple Heights Elementary School"
+					},
+					{
+						"type": "park",
+						"count": 2,
+						"tags": ["recreation", "safe_zone"],
+						"description": "Neighborhood parks with playgrounds"
+					},
+					{
+						"type": "community_center",
+						"count": 1,
+						"tags": ["social_hub", "events"],
+						"description": "Community center for neighborhood events"
+					},
+					{
+						"type": "church",
+						"count": 1,
+						"tags": ["landmark", "weekly_event"],
+						"description": "Small neighborhood chapel"
+					}
+				],
+				
+				"should_have": [
+					{
+						"type": "playground",
+						"count": 4,
+						"probability": 1.0,
+						"description": "Playgrounds scattered throughout"
+					},
+					{
+						"type": "basketball_court",
+						"count": 2,
+						"probability": 0.9,
+						"description": "Courts for neighborhood games"
+					},
+					{
+						"type": "swimming_pool",
+						"count": 1,
+						"probability": 0.7,
+						"description": "Community swimming pool"
+					}
+				],
+				
+				"generation_params": {
+					"layout": "curved_streets",
+					"num_residential_loops": 6,
+					"num_cul_de_sacs": 8,
+					"main_road_width_m": 8,
+					"lot_size_m": 20,
+					"building_density": 0.5
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "New to the Neighborhood",
+				"description": "Explore your new suburban home and meet the neighbors"
+			}
+		]
+	}
+}
