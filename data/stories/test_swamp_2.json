@@ -1,0 +1,51 @@
+{
+	"story_metadata": {
+		"title": "Murky Marshlands Test",
+		"version": "1.0.0",
+		"author": "Test",
+		"description": "Test story for swamp biome with fog, witch huts, and supernatural elements"
+	},
+	
+	"world_config": {
+		"total_size_km2": 1.5,
+		"time_of_day": "dusk",
+		"weather_default": "foggy",
+		"global_theme": "horror",
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "murky_marshes",
+				"type": "swamp",
+				"size_km2": 1.5,
+				"theme": "eerie",
+				"description": "Foggy wetlands with stagnant water and mysterious lights",
+				
+				"generation_params": {
+					"water_coverage": 0.60,
+					"num_dry_islands": 6,
+					"num_vegetation_clusters": 8,
+					"fog_density": 0.75
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "Marsh Mystery",
+				"description": "Explore the eerie swamp and uncover its dark secrets"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 40,
+		"ensure_all_regions_connected": true,
+		"max_generation_time_seconds": 120
+	}
+}

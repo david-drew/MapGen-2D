@@ -1,0 +1,89 @@
+{
+	"story_metadata": {
+		"title": "Coastal Mystery",
+		"version": "1.0.0",
+		"author": "MapGen Test",
+		"description": "Test story for beach biome generation - mystery investigation theme"
+	},
+	
+	"world_config": {
+		"total_size_km2": 1.8,
+		"time_of_day": "afternoon",
+		"weather_default": "sunny",
+		"global_theme": "mystery"
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "crescent_cove",
+				"type": "beach",
+				"size_km2": 1.8,
+				"theme": "tropical",
+				"description": "A seemingly idyllic beach hiding dark secrets beneath the surface",
+				
+				"must_have": [
+					{"type": "lighthouse", "count": 1, "tags": ["landmark", "quest_hub"]},
+					{"type": "shipwreck", "count": 1, "tags": ["mystery", "exploration"]},
+					{"type": "beach_house", "count": 1, "tags": ["player_home", "investigation_base"]}
+				],
+				
+				"should_have": [
+					{"type": "sea_cave", "probability": 0.8, "max_count": 2},
+					{"type": "message_bottle", "probability": 0.9, "max_count": 3},
+					{"type": "tide_pool", "probability": 1.0, "max_count": 5},
+					{"type": "pier", "probability": 0.7, "max_count": 1},
+					{"type": "fire_pit", "probability": 0.8, "max_count": 2}
+				],
+				
+				"generation_params": {
+					"water_level": 0.35,
+					"beach_width": 0.30,
+					"num_tide_pools": 6,
+					"num_rock_formations": 4,
+					"num_palm_clusters": 8,
+					"water_side": "left",
+					"path_density": 0.10
+				}
+			}
+		]
+	},
+	
+	"quest_anchors": {
+		"starting_location": "crescent_cove",
+		"starting_position": "beach_house",
+		"key_locations": [
+			{
+				"region": "crescent_cove",
+				"poi": "shipwreck",
+				"quest_id": "lost_cargo",
+				"description": "Investigate the mysterious shipwreck"
+			},
+			{
+				"region": "crescent_cove",
+				"poi": "lighthouse",
+				"quest_id": "keeper_vanished",
+				"description": "Find out what happened to the lighthouse keeper"
+			},
+			{
+				"region": "crescent_cove",
+				"poi": "sea_cave",
+				"quest_id": "hidden_passage",
+				"description": "Explore the cave system beneath the cliffs"
+			},
+			{
+				"region": "crescent_cove",
+				"poi": "message_bottle",
+				"quest_id": "distress_call",
+				"description": "Decode the message in the bottle"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 50,
+		"ensure_all_regions_connected": true,
+		"require_player_home": true,
+		"max_generation_time_seconds": 120
+	}
+}

@@ -1,0 +1,53 @@
+{
+	"story_metadata": {
+		"title": "Paradise Shores Test",
+		"version": "1.0.0",
+		"author": "Test",
+		"description": "Test story for beach biome with tropical atmosphere and vacation vibes"
+	},
+	
+	"world_config": {
+		"total_size_km2": 1.0,
+		"time_of_day": "morning",
+		"weather_default": "sunny",
+		"global_theme": "adventure",
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "paradise_shores",
+				"type": "beach",
+				"size_km2": 1.0,
+				"theme": "tropical",
+				"description": "Tropical beach paradise with palm trees, surf spots, and tiki bars",
+				
+				"generation_params": {
+					"water_percentage": 0.40,
+					"beach_width_percentage": 0.25,
+					"num_tide_pools": 4,
+					"num_palm_clusters": 6,
+					"num_rock_formations": 3,
+					"water_side": "left"
+				}
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "Beach Vacation",
+				"description": "Enjoy the sun, sand, and surf at this tropical paradise"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 30,
+		"ensure_all_regions_connected": true,
+		"max_generation_time_seconds": 120
+	}
+}

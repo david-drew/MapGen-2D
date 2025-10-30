@@ -1,0 +1,81 @@
+{
+	"story_metadata": {
+		"title": "Murky Depths",
+		"version": "1.0.0",
+		"author": "MapGen Test",
+		"description": "Test story for swamp biome generation - supernatural horror theme"
+	},
+	
+	"world_config": {
+		"total_size_km2": 1.5,
+		"time_of_day": "dusk",
+		"weather_default": "foggy",
+		"global_theme": "horror"
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "blackwater_marsh",
+				"type": "swamp",
+				"size_km2": 1.5,
+				"theme": "mysterious",
+				"description": "A haunted swamp shrouded in fog and filled with strange lights",
+				
+				"must_have": [
+					{"type": "witch_hut", "count": 1, "tags": ["quest_critical", "supernatural"]},
+					{"type": "ritual_site", "count": 1, "tags": ["mystery", "ancient"]},
+					{"type": "dry_island", "count": 1, "tags": ["safe_zone", "camp_site"]}
+				],
+				
+				"should_have": [
+					{"type": "will_o_wisp", "probability": 0.9, "max_count": 3},
+					{"type": "sunken_boat", "probability": 0.7, "max_count": 2},
+					{"type": "dead_tree", "probability": 1.0, "max_count": 5},
+					{"type": "abandoned_dock", "probability": 0.6, "max_count": 1},
+					{"type": "grave_marker", "probability": 0.8, "max_count": 2}
+				],
+				
+				"generation_params": {
+					"water_coverage": 0.70,
+					"island_count": 8,
+					"num_vegetation_clusters": 10,
+					"path_density": 0.05,
+					"fog_density": 0.9
+				}
+			}
+		]
+	},
+	
+	"quest_anchors": {
+		"starting_location": "blackwater_marsh",
+		"starting_position": "dry_island",
+		"key_locations": [
+			{
+				"region": "blackwater_marsh",
+				"poi": "witch_hut",
+				"quest_id": "swamp_witch",
+				"description": "Confront the swamp witch"
+			},
+			{
+				"region": "blackwater_marsh",
+				"poi": "ritual_site",
+				"quest_id": "ancient_ritual",
+				"description": "Discover the ritual site's secrets"
+			},
+			{
+				"region": "blackwater_marsh",
+				"poi": "will_o_wisp",
+				"quest_id": "lost_souls",
+				"description": "Follow the mysterious lights"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 40,
+		"ensure_all_regions_connected": true,
+		"require_player_home": false,
+		"max_generation_time_seconds": 120
+	}
+}

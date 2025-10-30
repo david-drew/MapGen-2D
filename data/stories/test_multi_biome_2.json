@@ -1,0 +1,137 @@
+{
+	"story_metadata": {
+		"title": "Biome Journey - Desert to Beach",
+		"version": "1.0.0",
+		"author": "Test",
+		"description": "Multi-biome test with desert, swamp, and beach connected by paths"
+	},
+	
+	"world_config": {
+		"total_size_km2": 3.5,
+		"time_of_day": "afternoon",
+		"weather_default": "clear",
+		"global_theme": "adventure",
+		"seed": -1
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "arid_wasteland",
+				"type": "desert",
+				"size_km2": 1.2,
+				"theme": "survival",
+				"description": "Harsh desert with nomadic camps and ancient ruins",
+				
+				"generation_params": {
+					"dune_intensity": 0.55,
+					"num_oases": 2,
+					"num_rock_formations": 3
+				}
+			},
+			{
+				"id": "dark_swamp",
+				"type": "swamp",
+				"size_km2": 1.3,
+				"theme": "eerie",
+				"description": "Foggy marshlands between desert and coast",
+				
+				"generation_params": {
+					"water_coverage": 0.65,
+					"num_dry_islands": 5,
+					"fog_density": 0.70
+				}
+			},
+			{
+				"id": "coastal_paradise",
+				"type": "beach",
+				"size_km2": 1.0,
+				"theme": "tropical",
+				"description": "Beautiful beach at the edge of the swamp",
+				
+				"generation_params": {
+					"water_percentage": 0.35,
+					"beach_width_percentage": 0.30,
+					"num_palm_clusters": 5,
+					"water_side": "right"
+				}
+			}
+		]
+	},
+	
+	"connectors": [
+		{
+			"id": "desert_trail",
+			"type": "dirt_path",
+			"from": "arid_wasteland",
+			"to": "dark_swamp",
+			"from_exit": "east",
+			"to_entrance": "west",
+			"travel_time_minutes": 15,
+			"difficulty": "medium",
+			"tags": ["muddy", "dangerous"]
+		},
+		{
+			"id": "boardwalk",
+			"type": "wooden_path",
+			"from": "dark_swamp",
+			"to": "coastal_paradise",
+			"from_exit": "east",
+			"to_entrance": "west",
+			"travel_time_minutes": 8,
+			"difficulty": "easy",
+			"tags": ["elevated", "safe"]
+		}
+	],
+	
+	"quest_anchors": {
+		"starting_location": "arid_wasteland",
+		"starting_position": "oasis",
+		"key_locations": [
+			{
+				"region": "arid_wasteland",
+				"poi": "ancient_ruins",
+				"quest_id": "desert_mystery",
+				"description": "Investigate the ancient desert ruins"
+			},
+			{
+				"region": "dark_swamp",
+				"poi": "witch_hut",
+				"quest_id": "swamp_witch",
+				"description": "Find the hermit who knows the way"
+			},
+			{
+				"region": "coastal_paradise",
+				"poi": "lighthouse",
+				"quest_id": "coastal_beacon",
+				"description": "Light the beacon to signal for rescue"
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "Desert Survival",
+				"description": "Cross the desert and find the path to the coast"
+			},
+			{
+				"act_number": 2,
+				"title": "Swamp Passage",
+				"description": "Navigate the treacherous marshlands"
+			},
+			{
+				"act_number": 3,
+				"title": "Coastal Escape",
+				"description": "Reach the beach and signal for rescue"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 40,
+		"ensure_all_regions_connected": true,
+		"max_generation_time_seconds": 180
+	}
+}

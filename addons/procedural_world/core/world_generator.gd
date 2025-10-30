@@ -40,6 +40,9 @@ func _register_generators():
 	generators["city"] = CityGenerator.new() 
 	generators["suburban"] = SuburbanGenerator.new()
 	generators["mountain"] = MountainGenerator.new() 
+	generators["desert"] = DesertGenerator.new() 
+	generators["beach"] = BeachGenerator.new() 
+	generators["swamp"] = SwampGenerator.new() 
 	
 	# Add more as you create them
 

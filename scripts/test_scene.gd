@@ -38,9 +38,11 @@ func _load_test_story():
 	"""Load story JSON from file"""
 	var all_files:Array[String] = [ 
 		"res://data/stories/test_town.json", "res://data/stories/test_town_forest.json", "res://data/stories/test_graveyard.json", 
-		"res://data/stories/test_lakeside.json", 	"res://data/stories/test_city.json", "res://data/stories/test_suburban.json" 
+		"res://data/stories/test_lakeside.json", "res://data/stories/test_city.json", "res://data/stories/test_suburban.json",
+		"res://data/stories/test_mountain.json", "res://data/stories/test_desert.json", "res://data/stories/test_beach.json", 
+		"res://data/stories/test_swamp.json", "res://data/stories/test_multi_biome.json" 
 	]
-	var file_path = "res://data/stories/test_mountain.json"
+	var file_path = "res://data/stories/test_multi_biome_2.json"
 	
 	if FileAccess.file_exists(file_path):
 		var file = FileAccess.open(file_path, FileAccess.READ)

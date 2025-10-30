@@ -1,0 +1,172 @@
+{
+	"story_metadata": {
+		"title": "Cursed Coast - Multi-Biome Journey",
+		"version": "1.0.0",
+		"author": "MapGen Test",
+		"description": "Epic journey across desert, swamp, and beach biomes"
+	},
+	
+	"world_config": {
+		"total_size_km2": 5.0,
+		"time_of_day": "variable",
+		"weather_default": "clear",
+		"global_theme": "supernatural_mystery"
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "sun_scorched_wastes",
+				"type": "desert",
+				"size_km2": 1.8,
+				"theme": "arid",
+				"description": "A harsh desert where ancient secrets lie buried beneath the sand",
+				
+				"must_have": [
+					{"type": "ancient_ruins", "count": 1, "tags": ["quest_start", "ancient_power"]},
+					{"type": "oasis", "count": 1, "tags": ["rest_stop", "water_source"]}
+				],
+				
+				"should_have": [
+					{"type": "mirage_site", "probability": 0.7, "max_count": 1},
+					{"type": "nomad_camp", "probability": 0.8, "max_count": 1}
+				],
+				
+				"generation_params": {
+					"dune_intensity": 0.60,
+					"oasis_count": 2,
+					"num_rock_formations": 4
+				}
+			},
+			{
+				"id": "death_marsh",
+				"type": "swamp",
+				"size_km2": 1.5,
+				"theme": "eerie",
+				"description": "A fog-shrouded swamp where the veil between worlds is thin",
+				
+				"must_have": [
+					{"type": "ritual_site", "count": 1, "tags": ["quest_critical", "supernatural"]},
+					{"type": "dry_island", "count": 1, "tags": ["safe_camp"]}
+				],
+				
+				"should_have": [
+					{"type": "will_o_wisp", "probability": 0.9, "max_count": 2},
+					{"type": "witch_hut", "probability": 0.6, "max_count": 1}
+				],
+				
+				"generation_params": {
+					"water_coverage": 0.65,
+					"island_count": 7,
+					"fog_density": 0.8
+				}
+			},
+			{
+				"id": "haunted_shores",
+				"type": "beach",
+				"size_km2": 1.7,
+				"theme": "coastal",
+				"description": "A beautiful beach hiding a dark history of shipwrecks and disappearances",
+				
+				"must_have": [
+					{"type": "lighthouse", "count": 1, "tags": ["quest_end", "beacon"]},
+					{"type": "shipwreck", "count": 1, "tags": ["exploration", "treasure"]}
+				],
+				
+				"should_have": [
+					{"type": "sea_cave", "probability": 0.8, "max_count": 1},
+					{"type": "message_bottle", "probability": 0.9, "max_count": 2}
+				],
+				
+				"generation_params": {
+					"water_level": 0.40,
+					"beach_width": 0.25,
+					"num_tide_pools": 5,
+					"water_side": "left"
+				}
+			}
+		]
+	},
+	
+	"connectors": [
+		{
+			"id": "desert_to_swamp",
+			"type": "hidden_path",
+			"from": "sun_scorched_wastes",
+			"to": "death_marsh",
+			"from_exit": "east",
+			"to_entrance": "west",
+			"travel_time_minutes": 15,
+			"difficulty": "medium",
+			"tags": ["treacherous", "unmarked"],
+			"description": "A barely visible path leading from the desert into the swamp"
+		},
+		{
+			"id": "swamp_to_beach",
+			"type": "old_road",
+			"from": "death_marsh",
+			"to": "haunted_shores",
+			"from_exit": "east",
+			"to_entrance": "west",
+			"travel_time_minutes": 12,
+			"difficulty": "easy",
+			"tags": ["overgrown", "abandoned"],
+			"description": "An overgrown coastal road emerging from the swamp"
+		}
+	],
+	
+	"quest_anchors": {
+		"starting_location": "sun_scorched_wastes",
+		"starting_position": "oasis",
+		"key_locations": [
+			{
+				"region": "sun_scorched_wastes",
+				"poi": "ancient_ruins",
+				"quest_id": "awakening",
+				"description": "Discover the source of the curse at the ancient ruins"
+			},
+			{
+				"region": "death_marsh",
+				"poi": "ritual_site",
+				"quest_id": "dark_ritual",
+				"description": "Stop the ritual being performed in the swamp"
+			},
+			{
+				"region": "haunted_shores",
+				"poi": "lighthouse",
+				"quest_id": "final_beacon",
+				"description": "Light the beacon to banish the darkness"
+			}
+		]
+	},
+	
+	"story": {
+		"acts": [
+			{
+				"act_number": 1,
+				"title": "The Desert Awakening",
+				"description": "Begin your journey in the scorching desert",
+				"primary_region": "sun_scorched_wastes"
+			},
+			{
+				"act_number": 2,
+				"title": "Through the Murk",
+				"description": "Navigate the treacherous swamp",
+				"primary_region": "death_marsh"
+			},
+			{
+				"act_number": 3,
+				"title": "Shores of Redemption",
+				"description": "Reach the lighthouse and end the curse",
+				"primary_region": "haunted_shores"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 50,
+		"ensure_all_regions_connected": true,
+		"require_player_home": false,
+		"max_generation_time_seconds": 180
+	}
+}

@@ -1,0 +1,73 @@
+{
+	"story_metadata": {
+		"title": "Desert Expedition",
+		"version": "1.0.0",
+		"author": "MapGen Test",
+		"description": "Test story for desert biome generation"
+	},
+	
+	"world_config": {
+		"total_size_km2": 2.0,
+		"time_of_day": "noon",
+		"weather_default": "clear",
+		"global_theme": "survival"
+	},
+	
+	"locations": {
+		"regions": [
+			{
+				"id": "scorched_sands",
+				"type": "desert",
+				"size_km2": 2.0,
+				"theme": "arid",
+				"description": "An expansive desert with towering dunes and hidden oases",
+				
+				"must_have": [
+					{"type": "oasis", "count": 1, "tags": ["quest_critical", "water_source"]},
+					{"type": "ancient_ruins", "count": 1, "tags": ["mystery", "quest_location"]},
+					{"type": "trading_post", "count": 1, "tags": ["commerce", "safe_zone"]}
+				],
+				
+				"should_have": [
+					{"type": "nomad_camp", "probability": 0.8, "max_count": 2},
+					{"type": "well", "probability": 0.7, "max_count": 1},
+					{"type": "cactus_grove", "probability": 0.9, "max_count": 3},
+					{"type": "mirage_site", "probability": 0.5, "max_count": 1}
+				],
+				
+				"generation_params": {
+					"dune_intensity": 0.65,
+					"oasis_count": 3,
+					"num_rock_formations": 5,
+					"path_density": 0.03
+				}
+			}
+		]
+	},
+	
+	"quest_anchors": {
+		"starting_location": "scorched_sands",
+		"starting_position": "trading_post",
+		"key_locations": [
+			{
+				"region": "scorched_sands",
+				"poi": "ancient_ruins",
+				"quest_id": "lost_temple",
+				"description": "Investigate the ancient desert ruins"
+			},
+			{
+				"region": "scorched_sands",
+				"poi": "oasis",
+				"quest_id": "water_source",
+				"description": "Find the hidden oasis"
+			}
+		]
+	},
+	
+	"validation_rules": {
+		"min_distance_between_pois_m": 50,
+		"ensure_all_regions_connected": true,
+		"require_player_home": false,
+		"max_generation_time_seconds": 120
+	}
+}
