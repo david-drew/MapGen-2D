@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "description": "NPC catalog for RPG character pools. Core everyday set plus themed expansions.",
+  "sets": [
+    {
+      "file": "core_people.json",
+      "category": "core",
+      "title": "Everyday People (Core Set)",
+      "tags": ["modern", "grounded", "baseline", "general"],
+      "count": 50,
+      "weight": 1.0
+    },
+    {
+      "file": "theme_blue_collar_supernatural.json",
+      "category": "theme",
+      "title": "Blue-Collar Supernatural",
+      "tags": ["workers", "industrial", "urban-horror", "supernatural"],
+      "count": 25,
+      "weight": 1.0
+    },
+    {
+      "file": "theme_academic_occult.json",
+      "category": "theme",
+      "title": "Academic & Occult",
+      "tags": ["occult", "academic", "investigative", "mystery"],
+      "count": 25,
+      "weight": 1.0
+    },
+    {
+      "file": "theme_night_city.json",
+      "category": "theme",
+      "title": "Night City",
+      "tags": ["urban", "noir", "nightlife", "cyberpunk", "modern"],
+      "count": 25,
+      "weight": 1.0
+    },
+    {
+      "file": "theme_small_town_eerie.json",
+      "category": "theme",
+      "title": "Small Town Eerie",
+      "tags": ["rural", "folk-horror", "mystery", "small-town", "weird"],
+      "count": 25,
+      "weight": 1.0
+    }
+  ]
+}

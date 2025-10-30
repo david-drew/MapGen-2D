@@ -1,0 +1,252 @@
+[
+  {
+    "name": "Nyla “Nyx” Rourke",
+    "classification": "Club DJ",
+    "description": "Beat alchemist headlining warehouse sets until dawn.",
+    "hook": "Her sampler occasionally plays a track no one loaded — a voice counting down in an unknown language.",
+    "traits": ["Magnetic", "Restless", "Obsessive"],
+    "skills": ["Music Production", "Crowd Reading", "Electronics"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Mateo Serrano",
+    "classification": "Street Food Vendor",
+    "description": "Runs a beloved late-night taco cart by the river.",
+    "hook": "Strangers keep paying with coins that are warm to the touch and vanish by morning.",
+    "traits": ["Generous", "Talkative", "Superstitious"],
+    "skills": ["Cooking", "Local Lore", "Negotiation"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Zadie Noor",
+    "classification": "Night Pharmacist",
+    "description": "Keeps the neon-lit counter calm when things turn weird.",
+    "hook": "Fills a recurring prescription for a patient declared deceased last year.",
+    "traits": ["Composed", "Diligent", "Skeptical"],
+    "skills": ["Pharmacology", "Observation", "De-Escalation"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Dax Hollow",
+    "classification": "Graffiti Filmmaker",
+    "description": "Bombs rooftops and films drone fly-throughs at 3 a.m.",
+    "hook": "His latest mural paints itself when no one is watching — changing nightly.",
+    "traits": ["Rebellious", "Creative", "Nocturnal"],
+    "skills": ["Drone Piloting", "Parkour", "Art"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Bianca Volkov",
+    "classification": "Club Promoter",
+    "description": "Curates impossible guest lists and secret venues.",
+    "hook": "Gets texts from a future event she hasn’t announced — with security warnings.",
+    "traits": ["Ambitious", "Connected", "Calculated"],
+    "skills": ["Networking", "Logistics", "Persuasion"],
+    "stress": 4,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Jordan Kincaid",
+    "classification": "Night Chauffeur",
+    "description": "Discrete driver for VIPs and the very unlucky.",
+    "hook": "His GPS adds a fifth basement level to certain hotels after midnight.",
+    "traits": ["Discreet", "Patient", "Observant"],
+    "skills": ["Driving", "Navigation", "Situational Awareness"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Sloane Ito",
+    "classification": "Rooftop Bartender",
+    "description": "Mixes perfection with a skyline view.",
+    "hook": "The bar mirror shows patrons missing from the room — who arrive minutes later.",
+    "traits": ["Charming", "Precise", "Unflappable"],
+    "skills": ["Mixology", "Reading People", "Memory"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Bishop Kane",
+    "classification": "Bouncer",
+    "description": "Stoic door guardian who rarely needs to raise his voice.",
+    "hook": "His clicker tallies more guests than physically enter — always the same extra number.",
+    "traits": ["Calm", "Intimidating", "Loyal"],
+    "skills": ["Security", "De-Escalation", "Observation"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Lila Petrov",
+    "classification": "Cabaret Performer",
+    "description": "Velvet-voiced singer with a devoted midnight crowd.",
+    "hook": "Her closing song makes the room’s clocks stop until the final note.",
+    "traits": ["Sultry", "Disciplined", "Mysterious"],
+    "skills": ["Singing", "Stage Presence", "Charm"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Ray “Switch” Delgado",
+    "classification": "Bike Messenger",
+    "description": "Threading traffic like a ghost through headlights.",
+    "hook": "Keeps getting runs to buildings that were condemned years ago.",
+    "traits": ["Daring", "Quick", "Sarcastic"],
+    "skills": ["Cycling", "Route Finding", "Lockpicking"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Mina Farrow",
+    "classification": "Late-Night Radio Host",
+    "description": "Voice in the darkness taking calls that no one should take.",
+    "hook": "Caller ID flashes her own number during on-air confessions.",
+    "traits": ["Empathetic", "Curious", "Steady"],
+    "skills": ["Interviewing", "Storytelling", "Persuasion"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Tariq Haddad",
+    "classification": "Bodega Clerk",
+    "description": "Sells coffee, smokes, and quiet advice at 4 a.m.",
+    "hook": "Security cam shows customers that never triggered the door chime.",
+    "traits": ["Practical", "Kind", "Observant"],
+    "skills": ["Surveillance", "Customer Service", "Local Knowledge"],
+    "stress": 2,
+    "mystery_potential": 3
+  },
+  {
+    "name": "Cassie Luo",
+    "classification": "Karaoke Host",
+    "description": "Turns dive nights into legends with perfect cue timing.",
+    "hook": "A mysterious track appears in the queue that compels duets from strangers.",
+    "traits": ["Playful", "Encouraging", "Sharp-Eared"],
+    "skills": ["Sound Equipment", "Event Flow", "People Skills"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Viktor Dima",
+    "classification": "Street Racer",
+    "description": "Owns the night on elevated expressways.",
+    "hook": "Challenged by a driver in a model that went out of production in 1969 — plate unregistered.",
+    "traits": ["Reckless", "Proud", "Focused"],
+    "skills": ["Driving", "Mechanics", "Reflexes"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Greta Kozlov",
+    "classification": "After-Hours Tailor",
+    "description": "Repairs ripped suits and bloody cuffs without questions.",
+    "hook": "Finds identical gray dust in every pocket — it clings to needles like iron filings.",
+    "traits": ["Discreet", "Meticulous", "World-Weary"],
+    "skills": ["Sewing", "Forensics (Amateur)", "Appraisal"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Theo Marchand",
+    "classification": "Night Photographer",
+    "description": "Hunts neon reflections and empty intersections.",
+    "hook": "Long-exposures reveal people walking where the street was demolished years ago.",
+    "traits": ["Patient", "Artistic", "Obsessive"],
+    "skills": ["Photography", "Stealth", "Perception"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Raven Cortez",
+    "classification": "Rooftop Drone Operator",
+    "description": "Scouts skylines for live VJ feeds.",
+    "hook": "Her drone’s altimeter reports ‘negative height’ above a certain alley.",
+    "traits": ["Innovative", "Aloof", "Precise"],
+    "skills": ["Drone Piloting", "Electronics", "Navigation"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Quinn Marlowe",
+    "classification": "Pop-Up Rave Organizer",
+    "description": "Summons parties in forgotten places with a single post.",
+    "hook": "Coordinates keep arriving for sites that don’t exist on city maps — yet crowds find them anyway.",
+    "traits": ["Resourceful", "Charismatic", "Secretive"],
+    "skills": ["Logistics", "Negotiation", "Social Media"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Jiro Watanabe",
+    "classification": "Night-Market Sushi Chef",
+    "description": "Blade dancer serving perfection from a stall under the overpass.",
+    "hook": "Occasionally fillets a fish with bones arranged like letters spelling customers’ names.",
+    "traits": ["Disciplined", "Proud", "Quiet"],
+    "skills": ["Knife Skills", "Food Safety", "Composure"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Serena Bell",
+    "classification": "Ambulance Dispatcher",
+    "description": "Routes chaos with a clipped tone and perfect memory.",
+    "hook": "Gets distress calls timestamped ten minutes in the future — sometimes she prevents them.",
+    "traits": ["Focused", "Empathetic", "Efficient"],
+    "skills": ["Comms", "Crisis Management", "City Grid Knowledge"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Pavel Moroz",
+    "classification": "Hotel Doorman",
+    "description": "Human metronome of the revolving door on midnight shifts.",
+    "hook": "Greets a guest every night who never crosses the threshold but leaves wet footprints inside.",
+    "traits": ["Polite", "Attentive", "Traditional"],
+    "skills": ["Observation", "Etiquette", "Security"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Tegan Rowe",
+    "classification": "Underground Tattooist",
+    "description": "Specializes in intricate linework in an unlisted basement studio.",
+    "hook": "A client’s ink re-arranged overnight to form a map that leads beneath the river.",
+    "traits": ["Patient", "Artistic", "Secretive"],
+    "skills": ["Tattooing", "Sterile Technique", "Street Contacts"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Dante Vega",
+    "classification": "Hacker",
+    "description": "Freelances out of neon laundromats and dim gaming cafés.",
+    "hook": "Found an admin account named after him active since before he was born.",
+    "traits": ["Clever", "Paranoid", "Pragmatic"],
+    "skills": ["Cybersecurity", "Scripting", "Social Engineering"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Yolanda Cruz",
+    "classification": "Club Janitor",
+    "description": "Cleans up the mess the city pretends not to see.",
+    "hook": "Mops up footprints that lead up the walls and across the ceiling — only after last call.",
+    "traits": ["Stoic", "Invisible", "Observant"],
+    "skills": ["Cleaning", "Stealth", "Routine"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Felix Arroyo",
+    "classification": "Night Code Inspector",
+    "description": "Inspects venues for permits no one bothered to apply for.",
+    "hook": "Keeps citing a theater that burned down in 1911 — the citation prints freshly every month.",
+    "traits": ["By-the-Book", "Persistent", "Dry"],
+    "skills": ["Regulations", "Investigation", "Documentation"],
+    "stress": 3,
+    "mystery_potential": 4
+  }
+]

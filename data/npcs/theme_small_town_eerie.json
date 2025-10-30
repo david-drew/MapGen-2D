@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Martha “Marty” Coen",
+    "classification": "Diner Waitress",
+    "description": "Always remembers your order and never ages past forty-something.",
+    "hook": "The clock above her counter resets to 6:23 every morning, no matter the repairs.",
+    "traits": ["Friendly", "Tidy", "Secretive"],
+    "skills": ["Memory", "Customer Service", "Listening"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Sheriff Dale Rowland",
+    "classification": "Town Sheriff",
+    "description": "By-the-book lawman who keeps a flask of holy water in his coat.",
+    "hook": "Every arrest he makes vanishes from the records within a week.",
+    "traits": ["Stoic", "Protective", "Skeptical"],
+    "skills": ["Investigation", "Firearms", "Leadership"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Irene Maddox",
+    "classification": "Retired Schoolteacher",
+    "description": "Reads fortunes at the farmers’ market on weekends.",
+    "hook": "Her teacups show images of missing people — who later return changed.",
+    "traits": ["Kind", "Perceptive", "Lonely"],
+    "skills": ["Teaching", "Folklore", "Divination"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Caleb Muir",
+    "classification": "Ranch Hand",
+    "description": "Rugged worker more comfortable with animals than people.",
+    "hook": "Cattle found mutilated with surgical precision — no tracks in the mud.",
+    "traits": ["Quiet", "Loyal", "Suspicious"],
+    "skills": ["Animal Handling", "Survival", "Tracking"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Delia Harp",
+    "classification": "Postmaster",
+    "description": "Runs the post office like a sacred trust.",
+    "hook": "Keeps receiving mail from ‘The Future Route’ — dated next year.",
+    "traits": ["Orderly", "Polite", "Curious"],
+    "skills": ["Organization", "Observation", "Local Knowledge"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Jonah Briggs",
+    "classification": "Gas Station Attendant",
+    "description": "Pumps gas and tunes old radios on slow nights.",
+    "hook": "Can only tune one station after dark — a voice reciting coordinates nearby.",
+    "traits": ["Bored", "Courteous", "Nervous"],
+    "skills": ["Mechanics", "Observation", "Electronics"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Pastor Abigail Moore",
+    "classification": "Preacher",
+    "description": "Radiant smile, sermons heavy with warnings.",
+    "hook": "Claims she hears confessions before people make them.",
+    "traits": ["Charismatic", "Faithful", "Ominous"],
+    "skills": ["Public Speaking", "Persuasion", "Empathy"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Ethan Cole",
+    "classification": "Local Mechanic",
+    "description": "Can fix anything with an engine — except his own truck.",
+    "hook": "Found oil leaking upward from the floor instead of down.",
+    "traits": ["Practical", "Skeptical", "Lonely"],
+    "skills": ["Repair", "Engineering", "Endurance"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Penny Voss",
+    "classification": "Librarian",
+    "description": "Runs the single-room town library and whispers to the shelves.",
+    "hook": "One shelf keeps rearranging itself into words — yesterday it said ‘RUN’.",
+    "traits": ["Quiet", "Patient", "Odd"],
+    "skills": ["Research", "Organization", "Memory"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Harold Gunn",
+    "classification": "Mortician",
+    "description": "Soft-spoken embalmer who hums gospel tunes at work.",
+    "hook": "One body opened its eyes mid-service and mouthed his full name.",
+    "traits": ["Gentle", "Stoic", "Religious"],
+    "skills": ["Medicine", "Steady Hands", "Observation"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Ruby Collins",
+    "classification": "Hairdresser",
+    "description": "Talkative stylist and part-time gossip columnist.",
+    "hook": "Clients keep leaving with identical scars behind their ears.",
+    "traits": ["Chatty", "Observant", "Curious"],
+    "skills": ["Socializing", "Attention to Detail", "Memory"],
+    "stress": 2,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Frank Dawes",
+    "classification": "Used-Car Salesman",
+    "description": "Smooth talker with an endless supply of bad coffee and worse cars.",
+    "hook": "One sedan on the lot refills its own gas tank overnight.",
+    "traits": ["Charming", "Greedy", "Superstitious"],
+    "skills": ["Persuasion", "Negotiation", "Deception"],
+    "stress": 3,
+    "mystery_potential": 3
+  },
+  {
+    "name": "Nina Alvarez",
+    "classification": "School Bus Driver",
+    "description": "Drives kids safely through the backroads, rain or shine.",
+    "hook": "Each morning one extra child boards the bus and disappears before the final stop.",
+    "traits": ["Caring", "Steady", "Haunted"],
+    "skills": ["Driving", "Observation", "Patience"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Gabe Hollow",
+    "classification": "Park Ranger",
+    "description": "Knows every tree in the county and names them like friends.",
+    "hook": "Found a new trail one night — it vanished by morning.",
+    "traits": ["Brave", "Observant", "Solitary"],
+    "skills": ["Survival", "Tracking", "Navigation"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Lois Finch",
+    "classification": "Antique Shop Owner",
+    "description": "Sells curiosities from forgotten attics.",
+    "hook": "Every mirror she polishes shows the shop’s interior on fire.",
+    "traits": ["Polite", "Eccentric", "Clever"],
+    "skills": ["Appraisal", "Negotiation", "Occult Lore"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Cody Redd",
+    "classification": "Volunteer Firefighter",
+    "description": "Adrenaline junkie hiding grief behind laughter.",
+    "hook": "Keeps seeing the same figure standing in every blaze’s reflection.",
+    "traits": ["Brave", "Jokester", "Haunted"],
+    "skills": ["Firefighting", "Rescue", "Athletics"],
+    "stress": 4,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Janice Tiller",
+    "classification": "Grocery Clerk",
+    "description": "Friendly checkout worker who tracks everyone’s business.",
+    "hook": "Her scanner sometimes displays names instead of barcodes — of people recently deceased.",
+    "traits": ["Cheerful", "Inquisitive", "Anxious"],
+    "skills": ["Customer Service", "Observation", "Organization"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Travis Boone",
+    "classification": "Town Drunk",
+    "description": "Rambling storyteller with a flask and a frightening memory for details.",
+    "hook": "Claims to have seen the town burn down — next Thursday.",
+    "traits": ["Talkative", "Unreliable", "Perceptive"],
+    "skills": ["Lore", "Performance", "Deception"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Becca Lorne",
+    "classification": "High-School Student",
+    "description": "Art kid who paints eerie landscapes of places no one recognizes.",
+    "hook": "Her newest painting perfectly depicts last night’s unsolved crime scene.",
+    "traits": ["Creative", "Withdrawn", "Intuitive"],
+    "skills": ["Art", "Observation", "Empathy"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Earl Tatum",
+    "classification": "Farmer",
+    "description": "Generations on the same land, no one’s sure how old he really is.",
+    "hook": "His fields bloom under a new moon with crops that don’t match any seed sold locally.",
+    "traits": ["Stoic", "Pragmatic", "Secretive"],
+    "skills": ["Agriculture", "Machinery", "Survival"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Greta Miles",
+    "classification": "Bed-and-Breakfast Owner",
+    "description": "Sweet hostess offering homemade pies and unsettling smiles.",
+    "hook": "Guests always check out happy — but none of them leave town afterward.",
+    "traits": ["Hospitable", "Patient", "Creepy"],
+    "skills": ["Cooking", "Charm", "Hospitality"],
+    "stress": 2,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Riley Darnell",
+    "classification": "Local Journalist",
+    "description": "Writes small-town fluff pieces but dreams of breaking big stories.",
+    "hook": "The paper archives keep deleting any mention of the old mine collapse.",
+    "traits": ["Ambitious", "Curious", "Cynical"],
+    "skills": ["Writing", "Investigation", "Interviewing"],
+    "stress": 3,
+    "mystery_potential": 4
+  },
+  {
+    "name": "Noah Pierce",
+    "classification": "Carpenter",
+    "description": "Carves elaborate wooden angels for the churchyard.",
+    "hook": "One statue started crying sap — that hardens into teeth.",
+    "traits": ["Pious", "Artistic", "Obsessive"],
+    "skills": ["Woodworking", "Design", "Precision"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Chloe Dent",
+    "classification": "Veterinarian",
+    "description": "Keeps calm hands even with feral animals.",
+    "hook": "A litter of kittens she treated all share the same mismatched eyes as her.",
+    "traits": ["Compassionate", "Practical", "Sleepless"],
+    "skills": ["Medicine", "Animal Handling", "Observation"],
+    "stress": 4,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Paul Ingram",
+    "classification": "Mayor",
+    "description": "Affable politician who never seems to lose elections.",
+    "hook": "His campaign photos show the same crowd of supporters — identical faces for twenty years.",
+    "traits": ["Charming", "Confident", "Corrupt"],
+    "skills": ["Public Speaking", "Negotiation", "Leadership"],
+    "stress": 3,
+    "mystery_potential": 5
+  },
+  {
+    "name": "Sadie North",
+    "classification": "Antique Restorer",
+    "description": "Lives in a cluttered barn filled with clocks that all tick in unison.",
+    "hook": "At midnight, every clock stops — and resumes one minute later with her voice whispering.",
+    "traits": ["Gentle", "Focused", "Odd"],
+    "skills": ["Repair", "Appraisal", "Craftsmanship"],
+    "stress": 3,
+    "mystery_potential": 5
+  }
+]
