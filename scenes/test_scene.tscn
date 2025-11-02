@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://p6dqvyjb6uwn"]
+[gd_scene load_steps=8 format=3 uid="uid://p6dqvyjb6uwn"]
 
 [ext_resource type="Script" uid="uid://di306m116qo6n" path="res://scripts/test_scene.gd" id="1_g7g4h"]
 [ext_resource type="Script" uid="uid://blaikrh7uc4v7" path="res://scripts/ui/grid_visualizer_2d.gd" id="2_j8ivh"]
 [ext_resource type="PackedScene" uid="uid://4cgr3spy7low" path="res://scenes/ui/location_ui.tscn" id="3_7ddre"]
 [ext_resource type="Script" uid="uid://bv1nkaq1edt41" path="res://scripts/ui/info_panel.gd" id="3_nd71p"]
+[ext_resource type="Script" uid="uid://v2g31xlcgn5o" path="res://scripts/print_nodes.gd" id="5_qjeyg"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_7ddre"]
 
@@ -110,6 +111,13 @@ text = "Right-click Drag to Pan"
 layout_mode = 2
 text = "Left-click to inspect cell"
 
+[node name="ToggleNPCsButton" type="Button" parent="GridVisualizer2D/UI/Panel/VBox"]
+layout_mode = 2
+toggle_mode = true
+button_pressed = true
+text = "Show NPCs"
+flat = true
+
 [node name="InfoPanel" type="PanelContainer" parent="GridVisualizer2D/UI"]
 custom_minimum_size = Vector2(300, 0)
 anchors_preset = 1
@@ -168,3 +176,6 @@ theme_override_font_sizes/bold_italics_font_size = 24
 theme_override_font_sizes/italics_font_size = 24
 theme_override_font_sizes/mono_font_size = 24
 bbcode_enabled = true
+
+[node name="PrintNodes" type="Node" parent="."]
+script = ExtResource("5_qjeyg")

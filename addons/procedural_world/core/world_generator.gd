@@ -63,7 +63,7 @@ func generate() -> Dictionary:
 	_pass_4b_template_poi_placement() 
 	_pass_5_building_generation()
 	_pass_5b_template_building_placement()
-	_pass_6_connector_generation()  # NEW: Generate connections between regions
+	_pass_6_connector_generation()  
 	_pass_7_entity_spawning() 
 
 	# Calculate generation time

@@ -87,6 +87,35 @@ func display_cell_info(info: Dictionary):
 			text += "[color=red][b]★ Required POI[/b][/color]\n"
 		text += "\n"
 	
+	# NEW: NPC Spawn details
+	if info.has("spawn_type"):
+		text += "[b][color=red]═══ NPC Spawn ═══[/color][/b]\n"
+		text += "[b]Entity:[/b] %s\n" % info.get("spawn_name", "Unknown")
+		text += "[b]ID:[/b] %s\n" % info.get("spawn_id", "unknown")
+		text += "[b]Type:[/b] %s\n" % info.get("spawn_type", "npc").capitalize()
+		text += "[b]Placement:[/b] %s\n" % info.get("spawn_placement", "exterior").capitalize()
+		
+		# NPC-specific details
+		if info.has("npc_species"):
+			text += "\n[b]Character Details:[/b]\n"
+			text += "  [b]Species:[/b] %s\n" % info.npc_species.capitalize()
+			text += "  [b]Gender:[/b] %s\n" % info.npc_gender.capitalize()
+			text += "  [b]Age:[/b] %s\n" % info.npc_age.replace("_", " ").capitalize()
+			text += "  [b]Disposition:[/b] %s\n" % info.npc_disposition.capitalize()
+			text += "  [b]Behavior:[/b] %s\n" % info.npc_behavior.capitalize()
+			
+			# Special roles
+			var roles = []
+			if info.get("npc_is_merchant", false):
+				roles.append("[color=green]Merchant[/color]")
+			if info.get("npc_is_quest_giver", false):
+				roles.append("[color=yellow]Quest Giver[/color]")
+			
+			if not roles.is_empty():
+				text += "  [b]Roles:[/b] %s\n" % ", ".join(roles)
+		
+		text += "\n"
+	
 	# Additional info
 	if info.has("notes"):
 		text += "[i]%s[/i]\n" % info.notes
@@ -96,7 +125,9 @@ func display_cell_info(info: Dictionary):
 	print("  ContentLabel updated with %d characters" % text.length())
 	
 	# Update title
-	if info.has("building_type"):
+	if info.has("spawn_name"):
+		title_label.text = "NPC: %s" % info.spawn_name
+	elif info.has("building_type"):
 		title_label.text = "Building: %s" % info.building_type.capitalize()
 	elif info.has("poi_type"):
 		title_label.text = "POI: %s" % info.poi_type.capitalize()

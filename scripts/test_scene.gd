@@ -128,11 +128,17 @@ func display_region(region_id: String):
 	var region = current_world.regions[region_id]
 	
 	print("\n=== Displaying Region: %s ===" % region_id)
-	visualizer.visualize(region.grid, region.pois, region.buildings)
+	
+	# NEW: Get spawns for this region
+	var region_spawns = _get_spawns_for_region(region_id)
+	print("  Found %d spawns in this region" % region_spawns.size())
+	
+	# Pass spawns to visualizer
+	visualizer.visualize(region.grid, region.pois, region.buildings, region_spawns)
 	_center_camera_on_grid(region.grid)
 	
 	# Update location UI
-	_update_location_ui()  # NEW
+	_update_location_ui()
 
 func _center_camera_on_grid(grid: WorldGrid):
 	"""Center camera on grid"""
@@ -218,6 +224,20 @@ func _on_next_location_pressed():
 	current_region_index = (current_region_index + 1) % region_ids.size()
 	display_region(region_ids[current_region_index])
 	print("▶ Next location: %s" % region_ids[current_region_index])
+
+func _get_spawns_for_region(region_id: String) -> Array:
+	"""Get all spawns belonging to a specific region"""
+	var region_spawns: Array = []
+	
+	if not current_generator:
+		return region_spawns
+	
+	var all_spawns = current_generator.generation_stats.get("spawns", [])
+	for spawn in all_spawns:
+		if spawn.region_id == region_id and spawn.has_position():
+			region_spawns.append(spawn)
+	
+	return region_spawns
 
 func _update_stats_display():
 	"""Update stats label"""
@@ -326,6 +346,28 @@ func _inspect_cell_at_mouse():
 		info["poi_tags"] = poi.tags
 		info["poi_required"] = poi.required
 	
+	# Check if this is an NPC spawn
+	var region_spawns = _get_spawns_for_region(current_region_id)
+	var spawn = _find_spawn_at_cell(cell, region_spawns)
+	if spawn and spawn.entity_data:
+		info["spawn_type"] = spawn.spawn_type
+		info["spawn_name"] = spawn.entity_data.display_name
+		info["spawn_id"] = spawn.spawn_id
+		info["spawn_placement"] = spawn.placement_type
+		
+		# Add NPC-specific info if it's an NPC
+		if spawn.entity_data is NPCData:
+			var npc = spawn.entity_data as NPCData
+			info["npc_gender"] = npc.gender
+			info["npc_age"] = npc.age_category
+			info["npc_species"] = npc.species
+			info["npc_disposition"] = npc.disposition
+			info["npc_behavior"] = npc.behavior_type
+			if npc.is_merchant:
+				info["npc_is_merchant"] = true
+			if npc.quest_giver:
+				info["npc_is_quest_giver"] = true
+	
 	# Print to console (enhanced)
 	_print_cell_info_to_console(info)
 	
@@ -343,6 +385,15 @@ func _switch_to_region_index(index: int):
 		current_region_index = index
 		display_region(region_ids[current_region_index])
 		print("Switched to region: %s (press 1-%d to switch)" % [region_ids[current_region_index], region_ids.size()])
+
+func _find_spawn_at_cell(cell: Vector2i, spawns: Array) -> SpawnData:
+	"""Find spawn at specific cell"""
+	for spawn in spawns:
+		if not spawn or not spawn.has_position():
+			continue
+		if spawn.position == cell:
+			return spawn
+	return null
 
 func _find_building_at_cell(cell: Vector2i, buildings: Array) -> BuildingData:
 	"""Find building that contains this cell"""
@@ -401,6 +452,25 @@ func _print_cell_info_to_console(info: Dictionary):
 			output += " ★ REQUIRED"
 		output += "\n"
 	
+	# NPC spawn info
+	if info.has("spawn_type"):
+		output += "  NPC: %s [%s]\n" % [info.get("spawn_name", "Unknown"), info.get("spawn_id", "")]
+		output += "    Type: %s, Placement: %s\n" % [
+			info.spawn_type.capitalize(),
+			info.spawn_placement.capitalize()
+		]
+		if info.has("npc_species"):
+			output += "    %s %s %s" % [
+				info.npc_age.replace("_", " ").capitalize(),
+				info.npc_gender.capitalize(),
+				info.npc_species.capitalize()
+			]
+			if info.get("npc_is_merchant", false):
+				output += " [MERCHANT]"
+			if info.get("npc_is_quest_giver", false):
+				output += " [QUEST]"
+			output += "\n"
+	
 	output += "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 	
 	print(output)
@@ -413,3 +483,8 @@ func _on_zoom_in_pressed():
 
 func _on_zoom_out_pressed():
 	_zoom_camera(0.8)
+
+func _on_toggle_npcs(button_pressed: bool):
+	"""Handle NPC visibility toggle"""
+	visualizer.set_show_npcs(button_pressed)
+	print("NPC visibility: ", "ON" if button_pressed else "OFF")

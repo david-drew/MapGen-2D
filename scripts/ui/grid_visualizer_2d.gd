@@ -7,6 +7,9 @@ var cell_size: int = 4  # Pixels per grid cell
 var pois: Array = []
 var buildings: Array = []  # Array of BuildingData
 
+var spawns: Array = []  # Array of SpawnData
+var show_npcs: bool = true  # Toggle visibility
+
 # Color scheme
 var colors = {
 	"grass": Color(0.2, 0.6, 0.2),
@@ -33,14 +36,18 @@ var colors = {
 	"hospital": Color(0.95, 0.95, 0.95),
 	
 	# Actor colors
-	#"npc": Color(0.95, 0.25, 0.35)
+	"npc": Color(0.95, 0.25, 0.35),  			# Red/pink for NPCs
+	"npc_merchant": Color(0.8, 0.2, 0.7),  	# Pink-Violet for merchants
+	"npc_quest": Color(0.9, 0.4, 0.7),     	# Pink for quest givers
+	"npc_hostile": Color(0.7, 0.2, 0.2) 		# Dark red for hostile
 }
 
-func visualize(world_grid: WorldGrid, poi_list: Array = [], building_list: Array = []):
+func visualize(world_grid: WorldGrid, poi_list: Array = [], building_list: Array = [], spawn_list: Array = []):
 	"""Set grid to visualize and trigger redraw"""
 	grid = world_grid
 	pois = poi_list
 	buildings = building_list
+	spawns = spawn_list  		# Store spawn list
 	queue_redraw()
 
 func _draw():
@@ -70,8 +77,8 @@ func _draw():
 			# Draw POI type label (optional, for debugging)
 			# draw_string(ThemeDB.fallback_font, pos, poi.poi_type, HORIZONTAL_ALIGNMENT_LEFT, -1, 12, Color.WHITE)
 	
-	# Draw building outlines
-	_draw_building_rectangles()
+	_draw_building_rectangles() 		# Draw building outlines
+	_draw_npcs()						# NEW: Draw NPC spawns on top of everything
 	
 func _draw_building_rectangles():
 	"""Draw rectangles for actual buildings"""
@@ -96,6 +103,51 @@ func _draw_building_rectangles():
 		
 		# Draw outline
 		draw_rect(rect, outline_color, false, 2.0)
+
+
+func _draw_npcs():
+	"""Draw NPC spawn markers"""
+	if not show_npcs:
+		return
+	
+	for spawn in spawns:
+		if not spawn or not spawn.has_position():
+			continue
+		
+		# Calculate center position
+		var grid_pos = spawn.position
+		var pixel_pos = Vector2(grid_pos.x * cell_size, grid_pos.y * cell_size)
+		var center = pixel_pos + Vector2(cell_size * 0.5, cell_size * 0.5)
+		
+		# Determine color based on NPC type
+		var npc_color = colors.npc
+		if spawn.entity_data and spawn.entity_data is NPCData:
+			var npc = spawn.entity_data as NPCData
+			if npc.is_merchant:
+				npc_color = colors.npc_merchant
+			elif npc.quest_giver:
+				npc_color = colors.npc_quest
+			elif npc.disposition == "hostile":
+				npc_color = colors.npc_hostile
+		
+		# Draw filled circle
+		var radius = cell_size * 0.4
+		draw_circle(center, radius, npc_color, true)
+		
+		# Draw white outline for visibility
+		draw_arc(center, radius, 0, TAU, 16, Color.WHITE, 1.0)
+		
+		# Optional: Draw facing direction indicator
+		if spawn.facing_degrees != 0.0:
+			var facing_rad = deg_to_rad(spawn.facing_degrees)
+			var direction = Vector2(cos(facing_rad), sin(facing_rad))
+			var line_end = center + direction * (radius + 2)
+			draw_line(center, line_end, Color.WHITE, 2.0)
+
+func set_show_npcs(enabled: bool):
+	"""Toggle NPC visibility"""
+	show_npcs = enabled
+	queue_redraw()
 
 func _get_cell_color(x: int, y: int) -> Color:
 	"""Get color for cell based on occupancy and terrain"""
