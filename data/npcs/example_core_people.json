@@ -1,0 +1,173 @@
+{
+  "pool_name": "core_people",
+  "description": "Common townsfolk and basic NPCs",
+  "npcs": [
+	{
+	  "entity_id": "npc_bartender_01",
+	  "display_name": "Tom the Bartender",
+	  "classification": "service_worker",
+	  "archetype": "bartender",
+	  "pools": ["core_people", "merchants"],
+	  "sprite_path": "res://sprites/npcs/bartender.png",
+	  "scale": 1.0,
+	  "tags": ["friendly", "gossip", "alcohol"],
+	  "gender": "male",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": ["friendly", "talkative", "wise"],
+	  "disposition": "friendly",
+	  "behavior_type": "work",
+	  "wander_radius": 5.0,
+	  "movement_speed": 0.8,
+	  "is_merchant": true,
+	  "merchant_inventory": ["beer", "wine", "whiskey", "food"],
+	  "currency_amount": 150,
+	  "quest_giver": false,
+	  "greeting_lines": [
+		"Welcome! What can I get you?",
+		"Pull up a stool, friend.",
+        "First drink's on the house... just kidding!"
+	  ],
+	  "bark_lines": [
+		"Clean these glasses, that's what I do...",
+		"Business has been slow today.",
+        "Did you hear the latest gossip?"
+	  ],
+	  "health": 80,
+	  "max_health": 80
+	},
+	{
+	  "entity_id": "npc_merchant_01",
+	  "display_name": "Sarah the Merchant",
+	  "classification": "merchant",
+	  "archetype": "shopkeeper",
+	  "pools": ["core_people", "merchants"],
+	  "sprite_path": "res://sprites/npcs/merchant_female.png",
+	  "scale": 1.0,
+	  "tags": ["merchant", "trade", "inventory"],
+	  "gender": "female",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": ["business-minded", "fair", "shrewd"],
+	  "disposition": "neutral",
+	  "behavior_type": "work",
+	  "wander_radius": 3.0,
+	  "movement_speed": 0.5,
+	  "is_merchant": true,
+	  "merchant_inventory": ["potion", "rope", "torch", "rations"],
+	  "currency_amount": 500,
+	  "quest_giver": true,
+	  "quest_ids": ["fetch_supplies", "rare_item_hunt"],
+	  "greeting_lines": [
+		"Looking to buy or sell?",
+		"I've got the best prices in town.",
+        "Quality goods at fair prices!"
+	  ],
+	  "bark_lines": [
+		"Step right up, don't be shy!",
+		"Fresh stock just arrived!",
+        "Everything must go!"
+	  ],
+	  "health": 60,
+	  "max_health": 60
+	},
+	{
+	  "entity_id": "npc_farmer_01",
+	  "display_name": "Old Man Jenkins",
+	  "classification": "farmer",
+	  "archetype": "farmer",
+	  "pools": ["core_people"],
+	  "sprite_path": "res://sprites/npcs/farmer.png",
+	  "scale": 1.0,
+	  "tags": ["rural", "agriculture", "wise"],
+	  "gender": "male",
+	  "age_category": "elder",
+	  "species": "human",
+	  "personality_traits": ["patient", "wise", "stubborn"],
+	  "disposition": "friendly",
+	  "behavior_type": "work",
+	  "wander_radius": 15.0,
+	  "movement_speed": 0.7,
+	  "is_merchant": false,
+	  "quest_giver": true,
+	  "quest_ids": ["protect_crops", "find_lost_tools"],
+	  "greeting_lines": [
+		"Ah, a visitor! Don't see many folks out here.",
+		"Hard day's work never hurt nobody.",
+        "Weather's been strange lately..."
+	  ],
+	  "bark_lines": [
+		"*wipes sweat* This heat is something else.",
+		"These crops won't tend themselves.",
+        "Back in my day..."
+	  ],
+	  "health": 70,
+	  "max_health": 70
+	},
+	{
+	  "entity_id": "npc_child_01",
+	  "display_name": "Little Amy",
+	  "classification": "civilian",
+	  "archetype": "child",
+	  "pools": ["core_people"],
+	  "sprite_path": "res://sprites/npcs/child_girl.png",
+	  "scale": 0.7,
+	  "tags": ["innocent", "playful"],
+	  "gender": "female",
+	  "age_category": "child",
+	  "species": "human",
+	  "personality_traits": ["playful", "curious", "energetic"],
+	  "disposition": "friendly",
+	  "behavior_type": "wander",
+	  "wander_radius": 20.0,
+	  "movement_speed": 1.2,
+	  "is_merchant": false,
+	  "quest_giver": false,
+	  "greeting_lines": [
+		"Hi! Want to play?",
+		"Have you seen my cat?",
+        "My mom says I shouldn't talk to strangers... but you look nice!"
+	  ],
+	  "bark_lines": [
+		"*giggles*",
+		"Tag! You're it!",
+        "I'm bored..."
+	  ],
+	  "health": 30,
+	  "max_health": 30
+	},
+	{
+	  "entity_id": "npc_guard_01",
+	  "display_name": "Guard Captain Marcus",
+	  "classification": "guard",
+	  "archetype": "guard_captain",
+	  "pools": ["core_people", "guards"],
+	  "sprite_path": "res://sprites/npcs/guard_captain.png",
+	  "scale": 1.1,
+	  "tags": ["authority", "law", "combat"],
+	  "gender": "male",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": ["stern", "honorable", "protective"],
+	  "disposition": "neutral",
+	  "behavior_type": "patrol",
+	  "wander_radius": 30.0,
+	  "movement_speed": 1.0,
+	  "is_merchant": false,
+	  "quest_giver": true,
+	  "quest_ids": ["bandit_trouble", "investigate_theft"],
+	  "greeting_lines": [
+		"Citizen. State your business.",
+		"Everything's under control here.",
+        "Keep your nose clean and we won't have problems."
+	  ],
+	  "bark_lines": [
+		"All quiet on this patrol.",
+		"Stay vigilant, men!",
+        "Any trouble, you come find me."
+	  ],
+	  "health": 150,
+	  "max_health": 150
+	}
+  ]
+}

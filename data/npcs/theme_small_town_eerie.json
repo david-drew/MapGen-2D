@@ -1,262 +1,1228 @@
-[
-  {
-    "name": "Martha “Marty” Coen",
-    "classification": "Diner Waitress",
-    "description": "Always remembers your order and never ages past forty-something.",
-    "hook": "The clock above her counter resets to 6:23 every morning, no matter the repairs.",
-    "traits": ["Friendly", "Tidy", "Secretive"],
-    "skills": ["Memory", "Customer Service", "Listening"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Sheriff Dale Rowland",
-    "classification": "Town Sheriff",
-    "description": "By-the-book lawman who keeps a flask of holy water in his coat.",
-    "hook": "Every arrest he makes vanishes from the records within a week.",
-    "traits": ["Stoic", "Protective", "Skeptical"],
-    "skills": ["Investigation", "Firearms", "Leadership"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Irene Maddox",
-    "classification": "Retired Schoolteacher",
-    "description": "Reads fortunes at the farmers’ market on weekends.",
-    "hook": "Her teacups show images of missing people — who later return changed.",
-    "traits": ["Kind", "Perceptive", "Lonely"],
-    "skills": ["Teaching", "Folklore", "Divination"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Caleb Muir",
-    "classification": "Ranch Hand",
-    "description": "Rugged worker more comfortable with animals than people.",
-    "hook": "Cattle found mutilated with surgical precision — no tracks in the mud.",
-    "traits": ["Quiet", "Loyal", "Suspicious"],
-    "skills": ["Animal Handling", "Survival", "Tracking"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Delia Harp",
-    "classification": "Postmaster",
-    "description": "Runs the post office like a sacred trust.",
-    "hook": "Keeps receiving mail from ‘The Future Route’ — dated next year.",
-    "traits": ["Orderly", "Polite", "Curious"],
-    "skills": ["Organization", "Observation", "Local Knowledge"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Jonah Briggs",
-    "classification": "Gas Station Attendant",
-    "description": "Pumps gas and tunes old radios on slow nights.",
-    "hook": "Can only tune one station after dark — a voice reciting coordinates nearby.",
-    "traits": ["Bored", "Courteous", "Nervous"],
-    "skills": ["Mechanics", "Observation", "Electronics"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Pastor Abigail Moore",
-    "classification": "Preacher",
-    "description": "Radiant smile, sermons heavy with warnings.",
-    "hook": "Claims she hears confessions before people make them.",
-    "traits": ["Charismatic", "Faithful", "Ominous"],
-    "skills": ["Public Speaking", "Persuasion", "Empathy"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Ethan Cole",
-    "classification": "Local Mechanic",
-    "description": "Can fix anything with an engine — except his own truck.",
-    "hook": "Found oil leaking upward from the floor instead of down.",
-    "traits": ["Practical", "Skeptical", "Lonely"],
-    "skills": ["Repair", "Engineering", "Endurance"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Penny Voss",
-    "classification": "Librarian",
-    "description": "Runs the single-room town library and whispers to the shelves.",
-    "hook": "One shelf keeps rearranging itself into words — yesterday it said ‘RUN’.",
-    "traits": ["Quiet", "Patient", "Odd"],
-    "skills": ["Research", "Organization", "Memory"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Harold Gunn",
-    "classification": "Mortician",
-    "description": "Soft-spoken embalmer who hums gospel tunes at work.",
-    "hook": "One body opened its eyes mid-service and mouthed his full name.",
-    "traits": ["Gentle", "Stoic", "Religious"],
-    "skills": ["Medicine", "Steady Hands", "Observation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Ruby Collins",
-    "classification": "Hairdresser",
-    "description": "Talkative stylist and part-time gossip columnist.",
-    "hook": "Clients keep leaving with identical scars behind their ears.",
-    "traits": ["Chatty", "Observant", "Curious"],
-    "skills": ["Socializing", "Attention to Detail", "Memory"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Frank Dawes",
-    "classification": "Used-Car Salesman",
-    "description": "Smooth talker with an endless supply of bad coffee and worse cars.",
-    "hook": "One sedan on the lot refills its own gas tank overnight.",
-    "traits": ["Charming", "Greedy", "Superstitious"],
-    "skills": ["Persuasion", "Negotiation", "Deception"],
-    "stress": 3,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Nina Alvarez",
-    "classification": "School Bus Driver",
-    "description": "Drives kids safely through the backroads, rain or shine.",
-    "hook": "Each morning one extra child boards the bus and disappears before the final stop.",
-    "traits": ["Caring", "Steady", "Haunted"],
-    "skills": ["Driving", "Observation", "Patience"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Gabe Hollow",
-    "classification": "Park Ranger",
-    "description": "Knows every tree in the county and names them like friends.",
-    "hook": "Found a new trail one night — it vanished by morning.",
-    "traits": ["Brave", "Observant", "Solitary"],
-    "skills": ["Survival", "Tracking", "Navigation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Lois Finch",
-    "classification": "Antique Shop Owner",
-    "description": "Sells curiosities from forgotten attics.",
-    "hook": "Every mirror she polishes shows the shop’s interior on fire.",
-    "traits": ["Polite", "Eccentric", "Clever"],
-    "skills": ["Appraisal", "Negotiation", "Occult Lore"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Cody Redd",
-    "classification": "Volunteer Firefighter",
-    "description": "Adrenaline junkie hiding grief behind laughter.",
-    "hook": "Keeps seeing the same figure standing in every blaze’s reflection.",
-    "traits": ["Brave", "Jokester", "Haunted"],
-    "skills": ["Firefighting", "Rescue", "Athletics"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Janice Tiller",
-    "classification": "Grocery Clerk",
-    "description": "Friendly checkout worker who tracks everyone’s business.",
-    "hook": "Her scanner sometimes displays names instead of barcodes — of people recently deceased.",
-    "traits": ["Cheerful", "Inquisitive", "Anxious"],
-    "skills": ["Customer Service", "Observation", "Organization"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Travis Boone",
-    "classification": "Town Drunk",
-    "description": "Rambling storyteller with a flask and a frightening memory for details.",
-    "hook": "Claims to have seen the town burn down — next Thursday.",
-    "traits": ["Talkative", "Unreliable", "Perceptive"],
-    "skills": ["Lore", "Performance", "Deception"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Becca Lorne",
-    "classification": "High-School Student",
-    "description": "Art kid who paints eerie landscapes of places no one recognizes.",
-    "hook": "Her newest painting perfectly depicts last night’s unsolved crime scene.",
-    "traits": ["Creative", "Withdrawn", "Intuitive"],
-    "skills": ["Art", "Observation", "Empathy"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Earl Tatum",
-    "classification": "Farmer",
-    "description": "Generations on the same land, no one’s sure how old he really is.",
-    "hook": "His fields bloom under a new moon with crops that don’t match any seed sold locally.",
-    "traits": ["Stoic", "Pragmatic", "Secretive"],
-    "skills": ["Agriculture", "Machinery", "Survival"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Greta Miles",
-    "classification": "Bed-and-Breakfast Owner",
-    "description": "Sweet hostess offering homemade pies and unsettling smiles.",
-    "hook": "Guests always check out happy — but none of them leave town afterward.",
-    "traits": ["Hospitable", "Patient", "Creepy"],
-    "skills": ["Cooking", "Charm", "Hospitality"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Riley Darnell",
-    "classification": "Local Journalist",
-    "description": "Writes small-town fluff pieces but dreams of breaking big stories.",
-    "hook": "The paper archives keep deleting any mention of the old mine collapse.",
-    "traits": ["Ambitious", "Curious", "Cynical"],
-    "skills": ["Writing", "Investigation", "Interviewing"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Noah Pierce",
-    "classification": "Carpenter",
-    "description": "Carves elaborate wooden angels for the churchyard.",
-    "hook": "One statue started crying sap — that hardens into teeth.",
-    "traits": ["Pious", "Artistic", "Obsessive"],
-    "skills": ["Woodworking", "Design", "Precision"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Chloe Dent",
-    "classification": "Veterinarian",
-    "description": "Keeps calm hands even with feral animals.",
-    "hook": "A litter of kittens she treated all share the same mismatched eyes as her.",
-    "traits": ["Compassionate", "Practical", "Sleepless"],
-    "skills": ["Medicine", "Animal Handling", "Observation"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Paul Ingram",
-    "classification": "Mayor",
-    "description": "Affable politician who never seems to lose elections.",
-    "hook": "His campaign photos show the same crowd of supporters — identical faces for twenty years.",
-    "traits": ["Charming", "Confident", "Corrupt"],
-    "skills": ["Public Speaking", "Negotiation", "Leadership"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Sadie North",
-    "classification": "Antique Restorer",
-    "description": "Lives in a cluttered barn filled with clocks that all tick in unison.",
-    "hook": "At midnight, every clock stops — and resumes one minute later with her voice whispering.",
-    "traits": ["Gentle", "Focused", "Odd"],
-    "skills": ["Repair", "Appraisal", "Craftsmanship"],
-    "stress": 3,
-    "mystery_potential": 5
-  }
-]
+{
+  "pool_name": "theme_small_town_eerie",
+  "description": "NPC pool: theme_small_town_eerie",
+  "npcs": [
+	{
+	  "entity_id": "npc_small_town_01",
+	  "display_name": "Martha “Marty” Coen",
+	  "classification": "Diner Waitress",
+	  "archetype": "diner_waitress",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Friendly",
+		"Tidy",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Always remembers your order and never ages past forty-something.",
+		"hook": "The clock above her counter resets to 6:23 every morning, no matter the repairs.",
+		"skills": [
+		  "Memory",
+		  "Customer Service",
+          "Listening"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_02",
+	  "display_name": "Sheriff Dale Rowland",
+	  "classification": "Town Sheriff",
+	  "archetype": "town_sheriff",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Stoic",
+		"Protective",
+        "Skeptical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "By-the-book lawman who keeps a flask of holy water in his coat.",
+		"hook": "Every arrest he makes vanishes from the records within a week.",
+		"skills": [
+		  "Investigation",
+		  "Firearms",
+          "Leadership"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_03",
+	  "display_name": "Irene Maddox",
+	  "classification": "Retired Schoolteacher",
+	  "archetype": "retired_schoolteacher",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Kind",
+		"Perceptive",
+        "Lonely"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Reads fortunes at the farmers’ market on weekends.",
+		"hook": "Her teacups show images of missing people — who later return changed.",
+		"skills": [
+		  "Teaching",
+		  "Folklore",
+          "Divination"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_04",
+	  "display_name": "Caleb Muir",
+	  "classification": "Ranch Hand",
+	  "archetype": "ranch_hand",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Loyal",
+        "Suspicious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Rugged worker more comfortable with animals than people.",
+		"hook": "Cattle found mutilated with surgical precision — no tracks in the mud.",
+		"skills": [
+		  "Animal Handling",
+		  "Survival",
+          "Tracking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_05",
+	  "display_name": "Delia Harp",
+	  "classification": "Postmaster",
+	  "archetype": "postmaster",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Orderly",
+		"Polite",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Runs the post office like a sacred trust.",
+		"hook": "Keeps receiving mail from ‘The Future Route’ — dated next year.",
+		"skills": [
+		  "Organization",
+		  "Observation",
+          "Local Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_06",
+	  "display_name": "Jonah Briggs",
+	  "classification": "Gas Station Attendant",
+	  "archetype": "gas_station_attendant",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Bored",
+		"Courteous",
+        "Nervous"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Pumps gas and tunes old radios on slow nights.",
+		"hook": "Can only tune one station after dark — a voice reciting coordinates nearby.",
+		"skills": [
+		  "Mechanics",
+		  "Observation",
+          "Electronics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_07",
+	  "display_name": "Pastor Abigail Moore",
+	  "classification": "Preacher",
+	  "archetype": "preacher",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charismatic",
+		"Faithful",
+        "Ominous"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Radiant smile, sermons heavy with warnings.",
+		"hook": "Claims she hears confessions before people make them.",
+		"skills": [
+		  "Public Speaking",
+		  "Persuasion",
+          "Empathy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_08",
+	  "display_name": "Ethan Cole",
+	  "classification": "Local Mechanic",
+	  "archetype": "local_mechanic",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Practical",
+		"Skeptical",
+        "Lonely"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Can fix anything with an engine — except his own truck.",
+		"hook": "Found oil leaking upward from the floor instead of down.",
+		"skills": [
+		  "Repair",
+		  "Engineering",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_09",
+	  "display_name": "Penny Voss",
+	  "classification": "Librarian",
+	  "archetype": "librarian",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Patient",
+        "Odd"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Runs the single-room town library and whispers to the shelves.",
+		"hook": "One shelf keeps rearranging itself into words — yesterday it said ‘RUN’.",
+		"skills": [
+		  "Research",
+		  "Organization",
+          "Memory"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_10",
+	  "display_name": "Harold Gunn",
+	  "classification": "Mortician",
+	  "archetype": "mortician",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Gentle",
+		"Stoic",
+        "Religious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Soft-spoken embalmer who hums gospel tunes at work.",
+		"hook": "One body opened its eyes mid-service and mouthed his full name.",
+		"skills": [
+		  "Medicine",
+		  "Steady Hands",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_11",
+	  "display_name": "Ruby Collins",
+	  "classification": "Hairdresser",
+	  "archetype": "hairdresser",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Chatty",
+		"Observant",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Talkative stylist and part-time gossip columnist.",
+		"hook": "Clients keep leaving with identical scars behind their ears.",
+		"skills": [
+		  "Socializing",
+		  "Attention to Detail",
+          "Memory"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_12",
+	  "display_name": "Frank Dawes",
+	  "classification": "Used-Car Salesman",
+	  "archetype": "used_car_salesman",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charming",
+		"Greedy",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Smooth talker with an endless supply of bad coffee and worse cars.",
+		"hook": "One sedan on the lot refills its own gas tank overnight.",
+		"skills": [
+		  "Persuasion",
+		  "Negotiation",
+          "Deception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_13",
+	  "display_name": "Nina Alvarez",
+	  "classification": "School Bus Driver",
+	  "archetype": "school_bus_driver",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Caring",
+		"Steady",
+        "Haunted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Drives kids safely through the backroads, rain or shine.",
+		"hook": "Each morning one extra child boards the bus and disappears before the final stop.",
+		"skills": [
+		  "Driving",
+		  "Observation",
+          "Patience"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_14",
+	  "display_name": "Gabe Hollow",
+	  "classification": "Park Ranger",
+	  "archetype": "park_ranger",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Brave",
+		"Observant",
+        "Solitary"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Knows every tree in the county and names them like friends.",
+		"hook": "Found a new trail one night — it vanished by morning.",
+		"skills": [
+		  "Survival",
+		  "Tracking",
+          "Navigation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_15",
+	  "display_name": "Lois Finch",
+	  "classification": "Antique Shop Owner",
+	  "archetype": "antique_shop_owner",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Polite",
+		"Eccentric",
+        "Clever"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Sells curiosities from forgotten attics.",
+		"hook": "Every mirror she polishes shows the shop’s interior on fire.",
+		"skills": [
+		  "Appraisal",
+		  "Negotiation",
+          "Occult Lore"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_16",
+	  "display_name": "Cody Redd",
+	  "classification": "Volunteer Firefighter",
+	  "archetype": "volunteer_firefighter",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Brave",
+		"Jokester",
+        "Haunted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Adrenaline junkie hiding grief behind laughter.",
+		"hook": "Keeps seeing the same figure standing in every blaze’s reflection.",
+		"skills": [
+		  "Firefighting",
+		  "Rescue",
+          "Athletics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_17",
+	  "display_name": "Janice Tiller",
+	  "classification": "Grocery Clerk",
+	  "archetype": "grocery_clerk",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Cheerful",
+		"Inquisitive",
+        "Anxious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Friendly checkout worker who tracks everyone’s business.",
+		"hook": "Her scanner sometimes displays names instead of barcodes — of people recently deceased.",
+		"skills": [
+		  "Customer Service",
+		  "Observation",
+          "Organization"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_18",
+	  "display_name": "Travis Boone",
+	  "classification": "Town Drunk",
+	  "archetype": "town_drunk",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Talkative",
+		"Unreliable",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Rambling storyteller with a flask and a frightening memory for details.",
+		"hook": "Claims to have seen the town burn down — next Thursday.",
+		"skills": [
+		  "Lore",
+		  "Performance",
+          "Deception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_19",
+	  "display_name": "Becca Lorne",
+	  "classification": "High-School Student",
+	  "archetype": "high_school_student",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Creative",
+		"Withdrawn",
+        "Intuitive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Art kid who paints eerie landscapes of places no one recognizes.",
+		"hook": "Her newest painting perfectly depicts last night’s unsolved crime scene.",
+		"skills": [
+		  "Art",
+		  "Observation",
+          "Empathy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_20",
+	  "display_name": "Earl Tatum",
+	  "classification": "Farmer",
+	  "archetype": "farmer",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Stoic",
+		"Pragmatic",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Generations on the same land, no one’s sure how old he really is.",
+		"hook": "His fields bloom under a new moon with crops that don’t match any seed sold locally.",
+		"skills": [
+		  "Agriculture",
+		  "Machinery",
+          "Survival"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_21",
+	  "display_name": "Greta Miles",
+	  "classification": "Bed-and-Breakfast Owner",
+	  "archetype": "bed_and_breakfast_owner",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Hospitable",
+		"Patient",
+        "Creepy"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Sweet hostess offering homemade pies and unsettling smiles.",
+		"hook": "Guests always check out happy — but none of them leave town afterward.",
+		"skills": [
+		  "Cooking",
+		  "Charm",
+          "Hospitality"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_22",
+	  "display_name": "Riley Darnell",
+	  "classification": "Local Journalist",
+	  "archetype": "local_journalist",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Ambitious",
+		"Curious",
+        "Cynical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Writes small-town fluff pieces but dreams of breaking big stories.",
+		"hook": "The paper archives keep deleting any mention of the old mine collapse.",
+		"skills": [
+		  "Writing",
+		  "Investigation",
+          "Interviewing"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_23",
+	  "display_name": "Noah Pierce",
+	  "classification": "Carpenter",
+	  "archetype": "carpenter",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Pious",
+		"Artistic",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Carves elaborate wooden angels for the churchyard.",
+		"hook": "One statue started crying sap — that hardens into teeth.",
+		"skills": [
+		  "Woodworking",
+		  "Design",
+          "Precision"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_24",
+	  "display_name": "Chloe Dent",
+	  "classification": "Veterinarian",
+	  "archetype": "veterinarian",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Compassionate",
+		"Practical",
+        "Sleepless"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Keeps calm hands even with feral animals.",
+		"hook": "A litter of kittens she treated all share the same mismatched eyes as her.",
+		"skills": [
+		  "Medicine",
+		  "Animal Handling",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_25",
+	  "display_name": "Paul Ingram",
+	  "classification": "Mayor",
+	  "archetype": "mayor",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charming",
+		"Confident",
+        "Corrupt"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Affable politician who never seems to lose elections.",
+		"hook": "His campaign photos show the same crowd of supporters — identical faces for twenty years.",
+		"skills": [
+		  "Public Speaking",
+		  "Negotiation",
+          "Leadership"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_small_town_26",
+	  "display_name": "Sadie North",
+	  "classification": "Antique Restorer",
+	  "archetype": "antique_restorer",
+	  "pools": [
+        "theme_small_town_eerie"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Gentle",
+		"Focused",
+        "Odd"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Lives in a cluttered barn filled with clocks that all tick in unison.",
+		"hook": "At midnight, every clock stops — and resumes one minute later with her voice whispering.",
+		"skills": [
+		  "Repair",
+		  "Appraisal",
+          "Craftsmanship"
+		]
+	  }
+	}
+  ]
+}

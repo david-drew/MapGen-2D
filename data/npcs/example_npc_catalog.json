@@ -2,6 +2,8 @@
   "catalog_version": "1.0.0",
   "description": "Main NPC catalog - references all NPC pool files",
   "pool_files": [
-    "core_people.json"
+	"core_people.json",
+	"merchants.json",
+    "guards.json"
   ]
 }

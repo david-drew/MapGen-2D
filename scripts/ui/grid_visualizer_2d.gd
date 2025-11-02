@@ -31,6 +31,9 @@ var colors = {
 	"hotel": Color(0.7, 0.6, 0.5),
 	"clinic": Color(0.9, 0.9, 0.9),
 	"hospital": Color(0.95, 0.95, 0.95),
+	
+	# Actor colors
+	#"npc": Color(0.95, 0.25, 0.35)
 }
 
 func visualize(world_grid: WorldGrid, poi_list: Array = [], building_list: Array = []):
@@ -93,12 +96,6 @@ func _draw_building_rectangles():
 		
 		# Draw outline
 		draw_rect(rect, outline_color, false, 2.0)
-
-func _draw_building_outlines():
-	"""Draw outlines around building clusters (OLD METHOD - now unused)"""
-	# This is replaced by _draw_building_rectangles
-	pass
-
 
 func _get_cell_color(x: int, y: int) -> Color:
 	"""Get color for cell based on occupancy and terrain"""

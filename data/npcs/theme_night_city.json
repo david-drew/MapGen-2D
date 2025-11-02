@@ -1,252 +1,1181 @@
-[
-  {
-    "name": "Nyla “Nyx” Rourke",
-    "classification": "Club DJ",
-    "description": "Beat alchemist headlining warehouse sets until dawn.",
-    "hook": "Her sampler occasionally plays a track no one loaded — a voice counting down in an unknown language.",
-    "traits": ["Magnetic", "Restless", "Obsessive"],
-    "skills": ["Music Production", "Crowd Reading", "Electronics"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Mateo Serrano",
-    "classification": "Street Food Vendor",
-    "description": "Runs a beloved late-night taco cart by the river.",
-    "hook": "Strangers keep paying with coins that are warm to the touch and vanish by morning.",
-    "traits": ["Generous", "Talkative", "Superstitious"],
-    "skills": ["Cooking", "Local Lore", "Negotiation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Zadie Noor",
-    "classification": "Night Pharmacist",
-    "description": "Keeps the neon-lit counter calm when things turn weird.",
-    "hook": "Fills a recurring prescription for a patient declared deceased last year.",
-    "traits": ["Composed", "Diligent", "Skeptical"],
-    "skills": ["Pharmacology", "Observation", "De-Escalation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Dax Hollow",
-    "classification": "Graffiti Filmmaker",
-    "description": "Bombs rooftops and films drone fly-throughs at 3 a.m.",
-    "hook": "His latest mural paints itself when no one is watching — changing nightly.",
-    "traits": ["Rebellious", "Creative", "Nocturnal"],
-    "skills": ["Drone Piloting", "Parkour", "Art"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Bianca Volkov",
-    "classification": "Club Promoter",
-    "description": "Curates impossible guest lists and secret venues.",
-    "hook": "Gets texts from a future event she hasn’t announced — with security warnings.",
-    "traits": ["Ambitious", "Connected", "Calculated"],
-    "skills": ["Networking", "Logistics", "Persuasion"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Jordan Kincaid",
-    "classification": "Night Chauffeur",
-    "description": "Discrete driver for VIPs and the very unlucky.",
-    "hook": "His GPS adds a fifth basement level to certain hotels after midnight.",
-    "traits": ["Discreet", "Patient", "Observant"],
-    "skills": ["Driving", "Navigation", "Situational Awareness"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Sloane Ito",
-    "classification": "Rooftop Bartender",
-    "description": "Mixes perfection with a skyline view.",
-    "hook": "The bar mirror shows patrons missing from the room — who arrive minutes later.",
-    "traits": ["Charming", "Precise", "Unflappable"],
-    "skills": ["Mixology", "Reading People", "Memory"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Bishop Kane",
-    "classification": "Bouncer",
-    "description": "Stoic door guardian who rarely needs to raise his voice.",
-    "hook": "His clicker tallies more guests than physically enter — always the same extra number.",
-    "traits": ["Calm", "Intimidating", "Loyal"],
-    "skills": ["Security", "De-Escalation", "Observation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Lila Petrov",
-    "classification": "Cabaret Performer",
-    "description": "Velvet-voiced singer with a devoted midnight crowd.",
-    "hook": "Her closing song makes the room’s clocks stop until the final note.",
-    "traits": ["Sultry", "Disciplined", "Mysterious"],
-    "skills": ["Singing", "Stage Presence", "Charm"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Ray “Switch” Delgado",
-    "classification": "Bike Messenger",
-    "description": "Threading traffic like a ghost through headlights.",
-    "hook": "Keeps getting runs to buildings that were condemned years ago.",
-    "traits": ["Daring", "Quick", "Sarcastic"],
-    "skills": ["Cycling", "Route Finding", "Lockpicking"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Mina Farrow",
-    "classification": "Late-Night Radio Host",
-    "description": "Voice in the darkness taking calls that no one should take.",
-    "hook": "Caller ID flashes her own number during on-air confessions.",
-    "traits": ["Empathetic", "Curious", "Steady"],
-    "skills": ["Interviewing", "Storytelling", "Persuasion"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Tariq Haddad",
-    "classification": "Bodega Clerk",
-    "description": "Sells coffee, smokes, and quiet advice at 4 a.m.",
-    "hook": "Security cam shows customers that never triggered the door chime.",
-    "traits": ["Practical", "Kind", "Observant"],
-    "skills": ["Surveillance", "Customer Service", "Local Knowledge"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Cassie Luo",
-    "classification": "Karaoke Host",
-    "description": "Turns dive nights into legends with perfect cue timing.",
-    "hook": "A mysterious track appears in the queue that compels duets from strangers.",
-    "traits": ["Playful", "Encouraging", "Sharp-Eared"],
-    "skills": ["Sound Equipment", "Event Flow", "People Skills"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Viktor Dima",
-    "classification": "Street Racer",
-    "description": "Owns the night on elevated expressways.",
-    "hook": "Challenged by a driver in a model that went out of production in 1969 — plate unregistered.",
-    "traits": ["Reckless", "Proud", "Focused"],
-    "skills": ["Driving", "Mechanics", "Reflexes"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Greta Kozlov",
-    "classification": "After-Hours Tailor",
-    "description": "Repairs ripped suits and bloody cuffs without questions.",
-    "hook": "Finds identical gray dust in every pocket — it clings to needles like iron filings.",
-    "traits": ["Discreet", "Meticulous", "World-Weary"],
-    "skills": ["Sewing", "Forensics (Amateur)", "Appraisal"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Theo Marchand",
-    "classification": "Night Photographer",
-    "description": "Hunts neon reflections and empty intersections.",
-    "hook": "Long-exposures reveal people walking where the street was demolished years ago.",
-    "traits": ["Patient", "Artistic", "Obsessive"],
-    "skills": ["Photography", "Stealth", "Perception"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Raven Cortez",
-    "classification": "Rooftop Drone Operator",
-    "description": "Scouts skylines for live VJ feeds.",
-    "hook": "Her drone’s altimeter reports ‘negative height’ above a certain alley.",
-    "traits": ["Innovative", "Aloof", "Precise"],
-    "skills": ["Drone Piloting", "Electronics", "Navigation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Quinn Marlowe",
-    "classification": "Pop-Up Rave Organizer",
-    "description": "Summons parties in forgotten places with a single post.",
-    "hook": "Coordinates keep arriving for sites that don’t exist on city maps — yet crowds find them anyway.",
-    "traits": ["Resourceful", "Charismatic", "Secretive"],
-    "skills": ["Logistics", "Negotiation", "Social Media"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Jiro Watanabe",
-    "classification": "Night-Market Sushi Chef",
-    "description": "Blade dancer serving perfection from a stall under the overpass.",
-    "hook": "Occasionally fillets a fish with bones arranged like letters spelling customers’ names.",
-    "traits": ["Disciplined", "Proud", "Quiet"],
-    "skills": ["Knife Skills", "Food Safety", "Composure"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Serena Bell",
-    "classification": "Ambulance Dispatcher",
-    "description": "Routes chaos with a clipped tone and perfect memory.",
-    "hook": "Gets distress calls timestamped ten minutes in the future — sometimes she prevents them.",
-    "traits": ["Focused", "Empathetic", "Efficient"],
-    "skills": ["Comms", "Crisis Management", "City Grid Knowledge"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Pavel Moroz",
-    "classification": "Hotel Doorman",
-    "description": "Human metronome of the revolving door on midnight shifts.",
-    "hook": "Greets a guest every night who never crosses the threshold but leaves wet footprints inside.",
-    "traits": ["Polite", "Attentive", "Traditional"],
-    "skills": ["Observation", "Etiquette", "Security"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Tegan Rowe",
-    "classification": "Underground Tattooist",
-    "description": "Specializes in intricate linework in an unlisted basement studio.",
-    "hook": "A client’s ink re-arranged overnight to form a map that leads beneath the river.",
-    "traits": ["Patient", "Artistic", "Secretive"],
-    "skills": ["Tattooing", "Sterile Technique", "Street Contacts"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dante Vega",
-    "classification": "Hacker",
-    "description": "Freelances out of neon laundromats and dim gaming cafés.",
-    "hook": "Found an admin account named after him active since before he was born.",
-    "traits": ["Clever", "Paranoid", "Pragmatic"],
-    "skills": ["Cybersecurity", "Scripting", "Social Engineering"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Yolanda Cruz",
-    "classification": "Club Janitor",
-    "description": "Cleans up the mess the city pretends not to see.",
-    "hook": "Mops up footprints that lead up the walls and across the ceiling — only after last call.",
-    "traits": ["Stoic", "Invisible", "Observant"],
-    "skills": ["Cleaning", "Stealth", "Routine"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Felix Arroyo",
-    "classification": "Night Code Inspector",
-    "description": "Inspects venues for permits no one bothered to apply for.",
-    "hook": "Keeps citing a theater that burned down in 1911 — the citation prints freshly every month.",
-    "traits": ["By-the-Book", "Persistent", "Dry"],
-    "skills": ["Regulations", "Investigation", "Documentation"],
-    "stress": 3,
-    "mystery_potential": 4
-  }
-]
+{
+  "pool_name": "theme_night_city",
+  "description": "NPC pool: theme_night_city",
+  "npcs": [
+	{
+	  "entity_id": "npc_night_city_01",
+	  "display_name": "Nyla “Nyx” Rourke",
+	  "classification": "Club DJ",
+	  "archetype": "club_dj",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Magnetic",
+		"Restless",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Beat alchemist headlining warehouse sets until dawn.",
+		"hook": "Her sampler occasionally plays a track no one loaded — a voice counting down in an unknown language.",
+		"skills": [
+		  "Music Production",
+		  "Crowd Reading",
+          "Electronics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_02",
+	  "display_name": "Mateo Serrano",
+	  "classification": "Street Food Vendor",
+	  "archetype": "street_food_vendor",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Generous",
+		"Talkative",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Runs a beloved late-night taco cart by the river.",
+		"hook": "Strangers keep paying with coins that are warm to the touch and vanish by morning.",
+		"skills": [
+		  "Cooking",
+		  "Local Lore",
+          "Negotiation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_03",
+	  "display_name": "Zadie Noor",
+	  "classification": "Night Pharmacist",
+	  "archetype": "night_pharmacist",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Composed",
+		"Diligent",
+        "Skeptical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Keeps the neon-lit counter calm when things turn weird.",
+		"hook": "Fills a recurring prescription for a patient declared deceased last year.",
+		"skills": [
+		  "Pharmacology",
+		  "Observation",
+          "De-Escalation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_04",
+	  "display_name": "Dax Hollow",
+	  "classification": "Graffiti Filmmaker",
+	  "archetype": "graffiti_filmmaker",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Rebellious",
+		"Creative",
+        "Nocturnal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Bombs rooftops and films drone fly-throughs at 3 a.m.",
+		"hook": "His latest mural paints itself when no one is watching — changing nightly.",
+		"skills": [
+		  "Drone Piloting",
+		  "Parkour",
+          "Art"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_05",
+	  "display_name": "Bianca Volkov",
+	  "classification": "Club Promoter",
+	  "archetype": "club_promoter",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Ambitious",
+		"Connected",
+        "Calculated"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Curates impossible guest lists and secret venues.",
+		"hook": "Gets texts from a future event she hasn’t announced — with security warnings.",
+		"skills": [
+		  "Networking",
+		  "Logistics",
+          "Persuasion"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_06",
+	  "display_name": "Jordan Kincaid",
+	  "classification": "Night Chauffeur",
+	  "archetype": "night_chauffeur",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Discreet",
+		"Patient",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Discrete driver for VIPs and the very unlucky.",
+		"hook": "His GPS adds a fifth basement level to certain hotels after midnight.",
+		"skills": [
+		  "Driving",
+		  "Navigation",
+          "Situational Awareness"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_07",
+	  "display_name": "Sloane Ito",
+	  "classification": "Rooftop Bartender",
+	  "archetype": "rooftop_bartender",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charming",
+		"Precise",
+        "Unflappable"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Mixes perfection with a skyline view.",
+		"hook": "The bar mirror shows patrons missing from the room — who arrive minutes later.",
+		"skills": [
+		  "Mixology",
+		  "Reading People",
+          "Memory"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_08",
+	  "display_name": "Bishop Kane",
+	  "classification": "Bouncer",
+	  "archetype": "bouncer",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Calm",
+		"Intimidating",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Stoic door guardian who rarely needs to raise his voice.",
+		"hook": "His clicker tallies more guests than physically enter — always the same extra number.",
+		"skills": [
+		  "Security",
+		  "De-Escalation",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_09",
+	  "display_name": "Lila Petrov",
+	  "classification": "Cabaret Performer",
+	  "archetype": "cabaret_performer",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Sultry",
+		"Disciplined",
+        "Mysterious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Velvet-voiced singer with a devoted midnight crowd.",
+		"hook": "Her closing song makes the room’s clocks stop until the final note.",
+		"skills": [
+		  "Singing",
+		  "Stage Presence",
+          "Charm"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_10",
+	  "display_name": "Ray “Switch” Delgado",
+	  "classification": "Bike Messenger",
+	  "archetype": "bike_messenger",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Daring",
+		"Quick",
+        "Sarcastic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Threading traffic like a ghost through headlights.",
+		"hook": "Keeps getting runs to buildings that were condemned years ago.",
+		"skills": [
+		  "Cycling",
+		  "Route Finding",
+          "Lockpicking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_11",
+	  "display_name": "Mina Farrow",
+	  "classification": "Late-Night Radio Host",
+	  "archetype": "late_night_radio_host",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Empathetic",
+		"Curious",
+        "Steady"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Voice in the darkness taking calls that no one should take.",
+		"hook": "Caller ID flashes her own number during on-air confessions.",
+		"skills": [
+		  "Interviewing",
+		  "Storytelling",
+          "Persuasion"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_12",
+	  "display_name": "Tariq Haddad",
+	  "classification": "Bodega Clerk",
+	  "archetype": "bodega_clerk",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Practical",
+		"Kind",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Sells coffee, smokes, and quiet advice at 4 a.m.",
+		"hook": "Security cam shows customers that never triggered the door chime.",
+		"skills": [
+		  "Surveillance",
+		  "Customer Service",
+          "Local Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_13",
+	  "display_name": "Cassie Luo",
+	  "classification": "Karaoke Host",
+	  "archetype": "karaoke_host",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Playful",
+		"Encouraging",
+        "Sharp-Eared"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Turns dive nights into legends with perfect cue timing.",
+		"hook": "A mysterious track appears in the queue that compels duets from strangers.",
+		"skills": [
+		  "Sound Equipment",
+		  "Event Flow",
+          "People Skills"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_14",
+	  "display_name": "Viktor Dima",
+	  "classification": "Street Racer",
+	  "archetype": "street_racer",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Reckless",
+		"Proud",
+        "Focused"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Owns the night on elevated expressways.",
+		"hook": "Challenged by a driver in a model that went out of production in 1969 — plate unregistered.",
+		"skills": [
+		  "Driving",
+		  "Mechanics",
+          "Reflexes"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_15",
+	  "display_name": "Greta Kozlov",
+	  "classification": "After-Hours Tailor",
+	  "archetype": "after_hours_tailor",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Discreet",
+		"Meticulous",
+        "World-Weary"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Repairs ripped suits and bloody cuffs without questions.",
+		"hook": "Finds identical gray dust in every pocket — it clings to needles like iron filings.",
+		"skills": [
+		  "Sewing",
+		  "Forensics (Amateur)",
+          "Appraisal"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_16",
+	  "display_name": "Theo Marchand",
+	  "classification": "Night Photographer",
+	  "archetype": "night_photographer",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Artistic",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Hunts neon reflections and empty intersections.",
+		"hook": "Long-exposures reveal people walking where the street was demolished years ago.",
+		"skills": [
+		  "Photography",
+		  "Stealth",
+          "Perception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_17",
+	  "display_name": "Raven Cortez",
+	  "classification": "Rooftop Drone Operator",
+	  "archetype": "rooftop_drone_operator",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Innovative",
+		"Aloof",
+        "Precise"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Scouts skylines for live VJ feeds.",
+		"hook": "Her drone’s altimeter reports ‘negative height’ above a certain alley.",
+		"skills": [
+		  "Drone Piloting",
+		  "Electronics",
+          "Navigation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_18",
+	  "display_name": "Quinn Marlowe",
+	  "classification": "Pop-Up Rave Organizer",
+	  "archetype": "pop_up_rave_organizer",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Resourceful",
+		"Charismatic",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Summons parties in forgotten places with a single post.",
+		"hook": "Coordinates keep arriving for sites that don’t exist on city maps — yet crowds find them anyway.",
+		"skills": [
+		  "Logistics",
+		  "Negotiation",
+          "Social Media"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_19",
+	  "display_name": "Jiro Watanabe",
+	  "classification": "Night-Market Sushi Chef",
+	  "archetype": "night_market_sushi_chef",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Disciplined",
+		"Proud",
+        "Quiet"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Blade dancer serving perfection from a stall under the overpass.",
+		"hook": "Occasionally fillets a fish with bones arranged like letters spelling customers’ names.",
+		"skills": [
+		  "Knife Skills",
+		  "Food Safety",
+          "Composure"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_20",
+	  "display_name": "Serena Bell",
+	  "classification": "Ambulance Dispatcher",
+	  "archetype": "ambulance_dispatcher",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Focused",
+		"Empathetic",
+        "Efficient"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Routes chaos with a clipped tone and perfect memory.",
+		"hook": "Gets distress calls timestamped ten minutes in the future — sometimes she prevents them.",
+		"skills": [
+		  "Comms",
+		  "Crisis Management",
+          "City Grid Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_21",
+	  "display_name": "Pavel Moroz",
+	  "classification": "Hotel Doorman",
+	  "archetype": "hotel_doorman",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Polite",
+		"Attentive",
+        "Traditional"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Human metronome of the revolving door on midnight shifts.",
+		"hook": "Greets a guest every night who never crosses the threshold but leaves wet footprints inside.",
+		"skills": [
+		  "Observation",
+		  "Etiquette",
+          "Security"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_22",
+	  "display_name": "Tegan Rowe",
+	  "classification": "Underground Tattooist",
+	  "archetype": "underground_tattooist",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Artistic",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Specializes in intricate linework in an unlisted basement studio.",
+		"hook": "A client’s ink re-arranged overnight to form a map that leads beneath the river.",
+		"skills": [
+		  "Tattooing",
+		  "Sterile Technique",
+          "Street Contacts"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_23",
+	  "display_name": "Dante Vega",
+	  "classification": "Hacker",
+	  "archetype": "hacker",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Clever",
+		"Paranoid",
+        "Pragmatic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Freelances out of neon laundromats and dim gaming cafés.",
+		"hook": "Found an admin account named after him active since before he was born.",
+		"skills": [
+		  "Cybersecurity",
+		  "Scripting",
+          "Social Engineering"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_24",
+	  "display_name": "Yolanda Cruz",
+	  "classification": "Club Janitor",
+	  "archetype": "club_janitor",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Stoic",
+		"Invisible",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Cleans up the mess the city pretends not to see.",
+		"hook": "Mops up footprints that lead up the walls and across the ceiling — only after last call.",
+		"skills": [
+		  "Cleaning",
+		  "Stealth",
+          "Routine"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_night_city_25",
+	  "display_name": "Felix Arroyo",
+	  "classification": "Night Code Inspector",
+	  "archetype": "night_code_inspector",
+	  "pools": [
+        "theme_night_city"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"By-the-Book",
+		"Persistent",
+        "Dry"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Inspects venues for permits no one bothered to apply for.",
+		"hook": "Keeps citing a theater that burned down in 1911 — the citation prints freshly every month.",
+		"skills": [
+		  "Regulations",
+		  "Investigation",
+          "Documentation"
+		]
+	  }
+	}
+  ]
+}

@@ -1,252 +1,1181 @@
-[
-  {
-    "name": "Rita Calhoun",
-    "classification": "Tow Truck Operator",
-    "description": "Gruff but kind-hearted driver who rescues stranded motorists.",
-    "hook": "Keeps towing the same burned-out sedan — it reappears on the same road each night.",
-    "traits": ["Practical", "Patient", "Tough"],
-    "skills": ["Driving", "Repair", "Streetwise"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Tommy Griggs",
-    "classification": "Electrician",
-    "description": "Union-trained electrician with a sarcastic sense of humor.",
-    "hook": "Reports of power surges always lead him to buildings that don’t exist on city plans.",
-    "traits": ["Clever", "Skeptical", "Reliable"],
-    "skills": ["Wiring", "Engineering", "Diagnostics"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Bea Morales",
-    "classification": "Mail Carrier",
-    "description": "Small-town mail carrier who knows everyone’s secrets.",
-    "hook": "Has started delivering envelopes sealed with black wax — no return address.",
-    "traits": ["Friendly", "Observant", "Curious"],
-    "skills": ["Local Knowledge", "Logistics", "Perception"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Nico Barrett",
-    "classification": "Plumber",
-    "description": "Laid-back tradesman who’s seen everything in old pipes.",
-    "hook": "Claims a client’s basement had running water that whispered his name.",
-    "traits": ["Easygoing", "Resourceful", "Superstitious"],
-    "skills": ["Repair", "Endurance", "Plumbing"],
-    "stress": 3,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Kayla Drew",
-    "classification": "Paramedic",
-    "description": "Confident, competent EMT with a haunted look in her eyes.",
-    "hook": "One patient she pronounced dead now sends her text messages from an unknown number.",
-    "traits": ["Brave", "Grounded", "Compassionate"],
-    "skills": ["First Aid", "Driving", "Crisis Response"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Mitch Hanlon",
-    "classification": "Long-Haul Trucker",
-    "description": "Quiet trucker who prefers CB chatter to real conversation.",
-    "hook": "He’s been hearing the same voice on Channel 19 for years — from a driver who died in ’87.",
-    "traits": ["Lonely", "Reliable", "Superstitious"],
-    "skills": ["Driving", "Navigation", "Endurance"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Tanya Briggs",
-    "classification": "HVAC Technician",
-    "description": "Detail-oriented tech who takes pride in perfect air balance.",
-    "hook": "Found a duct that exhales warm air — with the faint scent of blood.",
-    "traits": ["Precise", "Calm", "Inquisitive"],
-    "skills": ["Mechanics", "Temperature Systems", "Problem Solving"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Earl Weston",
-    "classification": "Dock Worker",
-    "description": "Tough guy who’s worked the same port for 30 years.",
-    "hook": "Crates marked ‘Do Not Open’ keep arriving with no manifest — and move by themselves at night.",
-    "traits": ["Loyal", "Strong", "Skeptical"],
-    "skills": ["Lifting", "Logistics", "Observation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Grace Li",
-    "classification": "Subway Maintenance Tech",
-    "description": "Efficient worker used to weird noises underground.",
-    "hook": "Found a station deeper than any mapped tunnel — with power still running.",
-    "traits": ["Efficient", "Quiet", "Methodical"],
-    "skills": ["Electrical", "Blueprint Reading", "Mechanics"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Rick Alvarez",
-    "classification": "Mechanic",
-    "description": "Grease-stained joker who can fix anything with duct tape and luck.",
-    "hook": "A customer’s car comes in weekly — though its owner died last winter.",
-    "traits": ["Sarcastic", "Pragmatic", "Loyal"],
-    "skills": ["Repair", "Tools", "Negotiation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Darla Quinn",
-    "classification": "Factory Worker",
-    "description": "Production line veteran who knows the machines by sound alone.",
-    "hook": "One machine hums in perfect rhythm with her heartbeat — even when she’s away from it.",
-    "traits": ["Hardworking", "Introverted", "Reliable"],
-    "skills": ["Machinery", "Timing", "Routine"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Ramon Castillo",
-    "classification": "Roofer",
-    "description": "Daredevil worker with no fear of heights or storms.",
-    "hook": "During a lightning strike, he saw something watching him from inside the clouds.",
-    "traits": ["Reckless", "Brave", "Loyal"],
-    "skills": ["Climbing", "Balance", "Endurance"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Sandy Nguyen",
-    "classification": "Bus Driver",
-    "description": "Friendly driver who treats passengers like family.",
-    "hook": "Sometimes a ghostly commuter sits in the rear seats and leaves behind tickets from 1972.",
-    "traits": ["Friendly", "Patient", "Observant"],
-    "skills": ["Driving", "Navigation", "Local Knowledge"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Cole Sanders",
-    "classification": "Security Guard",
-    "description": "Night shift guard who takes his rounds seriously.",
-    "hook": "One camera always shows an empty hallway — except on the monitor, where someone stands waiting.",
-    "traits": ["Dependable", "Stoic", "Paranoid"],
-    "skills": ["Observation", "Patrolling", "Composure"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Leah Winters",
-    "classification": "Bridge Welder",
-    "description": "Independent tradeswoman who thrives on danger.",
-    "hook": "Found her initials welded into a new beam — in metal she hadn’t touched yet.",
-    "traits": ["Independent", "Confident", "Tough"],
-    "skills": ["Welding", "Engineering", "Endurance"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Owen Martel",
-    "classification": "Cemetery Groundskeeper",
-    "description": "Quiet caretaker who tends graves like old friends.",
-    "hook": "He’s been digging up empty coffins — but the names match recent obituaries.",
-    "traits": ["Solitary", "Gentle", "Practical"],
-    "skills": ["Maintenance", "Botany", "Observation"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Jada Price",
-    "classification": "Construction Crane Operator",
-    "description": "Cool-headed worker with nerves of steel and a taste for thrill.",
-    "hook": "Her crane sometimes moves on its own when she steps away — always facing north.",
-    "traits": ["Calm", "Focused", "Bold"],
-    "skills": ["Machinery", "Coordination", "Awareness"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Riley Cobb",
-    "classification": "Fisherman",
-    "description": "Rough-edged dockhand who’s seen too many strange catches.",
-    "hook": "Pulled up a net full of unidentifiable bones — and a gold coin engraved with his initials.",
-    "traits": ["Gruff", "Superstitious", "Loyal"],
-    "skills": ["Boating", "Survival", "Observation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Gloria Pierce",
-    "classification": "Garbage Collector",
-    "description": "Cheerful worker who jokes her route could tell the town’s secrets.",
-    "hook": "Keeps finding identical porcelain dolls in trash bins — each one blinking when she turns away.",
-    "traits": ["Upbeat", "Strong", "Grounded"],
-    "skills": ["Endurance", "Observation", "Street Knowledge"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Caleb Knox",
-    "classification": "Snowplow Driver",
-    "description": "Stoic driver keeping lonely roads clear through the night.",
-    "hook": "Saw headlights approaching in the blizzard — but no tire tracks behind them.",
-    "traits": ["Patient", "Quiet", "Resilient"],
-    "skills": ["Driving", "Navigation", "Endurance"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Yara Singh",
-    "classification": "Janitor",
-    "description": "Night cleaner who finds peace in the hum of empty hallways.",
-    "hook": "Her mop leaves faint glowing trails that vanish when she looks away.",
-    "traits": ["Meticulous", "Calm", "Lonely"],
-    "skills": ["Cleaning", "Observation", "Stealth"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Max Dillon",
-    "classification": "Auto Body Painter",
-    "description": "Detail-obsessed craftsman who sees beauty in chrome and flame decals.",
-    "hook": "One car’s paint keeps changing colors — depicting accident scenes that haven’t happened yet.",
-    "traits": ["Creative", "Proud", "Focused"],
-    "skills": ["Painting", "Mechanics", "Observation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Shelby Ward",
-    "classification": "Power Plant Operator",
-    "description": "Steady worker with deep respect for the machinery.",
-    "hook": "Once a week, the turbines spin backward for exactly 13 seconds.",
-    "traits": ["Logical", "Reliable", "Introverted"],
-    "skills": ["Engineering", "Maintenance", "Observation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Hank Fletcher",
-    "classification": "Handyman",
-    "description": "Jack-of-all-trades with a rusty pickup and endless stories.",
-    "hook": "Clients report that objects he repairs sometimes work before he even arrives.",
-    "traits": ["Helpful", "Easygoing", "Superstitious"],
-    "skills": ["Repair", "Improvisation", "Tool Use"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Mira Patel",
-    "classification": "Elevator Technician",
-    "description": "Specialist who keeps skyscrapers moving smoothly.",
-    "hook": "An elevator she maintains opens to a floor that doesn’t exist.",
-    "traits": ["Focused", "Quiet", "Precise"],
-    "skills": ["Mechanical Systems", "Diagnostics", "Electronics"],
-    "stress": 3,
-    "mystery_potential": 5
-  }
-]
+{
+  "pool_name": "theme_blue_collar_supernatural",
+  "description": "NPC pool: theme_blue_collar_supernatural",
+  "npcs": [
+	{
+	  "entity_id": "npc_blue_collar_01",
+	  "display_name": "Rita Calhoun",
+	  "classification": "Tow Truck Operator",
+	  "archetype": "tow_truck_operator",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Practical",
+		"Patient",
+        "Tough"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Gruff but kind-hearted driver who rescues stranded motorists.",
+		"hook": "Keeps towing the same burned-out sedan — it reappears on the same road each night.",
+		"skills": [
+		  "Driving",
+		  "Repair",
+          "Streetwise"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_02",
+	  "display_name": "Tommy Griggs",
+	  "classification": "Electrician",
+	  "archetype": "electrician",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Clever",
+		"Skeptical",
+        "Reliable"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Union-trained electrician with a sarcastic sense of humor.",
+		"hook": "Reports of power surges always lead him to buildings that don’t exist on city plans.",
+		"skills": [
+		  "Wiring",
+		  "Engineering",
+          "Diagnostics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_03",
+	  "display_name": "Bea Morales",
+	  "classification": "Mail Carrier",
+	  "archetype": "mail_carrier",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Friendly",
+		"Observant",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Small-town mail carrier who knows everyone’s secrets.",
+		"hook": "Has started delivering envelopes sealed with black wax — no return address.",
+		"skills": [
+		  "Local Knowledge",
+		  "Logistics",
+          "Perception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_04",
+	  "display_name": "Nico Barrett",
+	  "classification": "Plumber",
+	  "archetype": "plumber",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Easygoing",
+		"Resourceful",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Laid-back tradesman who’s seen everything in old pipes.",
+		"hook": "Claims a client’s basement had running water that whispered his name.",
+		"skills": [
+		  "Repair",
+		  "Endurance",
+          "Plumbing"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_05",
+	  "display_name": "Kayla Drew",
+	  "classification": "Paramedic",
+	  "archetype": "paramedic",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Brave",
+		"Grounded",
+        "Compassionate"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Confident, competent EMT with a haunted look in her eyes.",
+		"hook": "One patient she pronounced dead now sends her text messages from an unknown number.",
+		"skills": [
+		  "First Aid",
+		  "Driving",
+          "Crisis Response"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_06",
+	  "display_name": "Mitch Hanlon",
+	  "classification": "Long-Haul Trucker",
+	  "archetype": "long_haul_trucker",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Lonely",
+		"Reliable",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Quiet trucker who prefers CB chatter to real conversation.",
+		"hook": "He’s been hearing the same voice on Channel 19 for years — from a driver who died in ’87.",
+		"skills": [
+		  "Driving",
+		  "Navigation",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_07",
+	  "display_name": "Tanya Briggs",
+	  "classification": "HVAC Technician",
+	  "archetype": "hvac_technician",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Precise",
+		"Calm",
+        "Inquisitive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Detail-oriented tech who takes pride in perfect air balance.",
+		"hook": "Found a duct that exhales warm air — with the faint scent of blood.",
+		"skills": [
+		  "Mechanics",
+		  "Temperature Systems",
+          "Problem Solving"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_08",
+	  "display_name": "Earl Weston",
+	  "classification": "Dock Worker",
+	  "archetype": "dock_worker",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Loyal",
+		"Strong",
+        "Skeptical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Tough guy who’s worked the same port for 30 years.",
+		"hook": "Crates marked ‘Do Not Open’ keep arriving with no manifest — and move by themselves at night.",
+		"skills": [
+		  "Lifting",
+		  "Logistics",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_09",
+	  "display_name": "Grace Li",
+	  "classification": "Subway Maintenance Tech",
+	  "archetype": "subway_maintenance_tech",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Efficient",
+		"Quiet",
+        "Methodical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Efficient worker used to weird noises underground.",
+		"hook": "Found a station deeper than any mapped tunnel — with power still running.",
+		"skills": [
+		  "Electrical",
+		  "Blueprint Reading",
+          "Mechanics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_10",
+	  "display_name": "Rick Alvarez",
+	  "classification": "Mechanic",
+	  "archetype": "mechanic",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Sarcastic",
+		"Pragmatic",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Grease-stained joker who can fix anything with duct tape and luck.",
+		"hook": "A customer’s car comes in weekly — though its owner died last winter.",
+		"skills": [
+		  "Repair",
+		  "Tools",
+          "Negotiation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_11",
+	  "display_name": "Darla Quinn",
+	  "classification": "Factory Worker",
+	  "archetype": "factory_worker",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Hardworking",
+		"Introverted",
+        "Reliable"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Production line veteran who knows the machines by sound alone.",
+		"hook": "One machine hums in perfect rhythm with her heartbeat — even when she’s away from it.",
+		"skills": [
+		  "Machinery",
+		  "Timing",
+          "Routine"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_12",
+	  "display_name": "Ramon Castillo",
+	  "classification": "Roofer",
+	  "archetype": "roofer",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Reckless",
+		"Brave",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Daredevil worker with no fear of heights or storms.",
+		"hook": "During a lightning strike, he saw something watching him from inside the clouds.",
+		"skills": [
+		  "Climbing",
+		  "Balance",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_13",
+	  "display_name": "Sandy Nguyen",
+	  "classification": "Bus Driver",
+	  "archetype": "bus_driver",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Friendly",
+		"Patient",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Friendly driver who treats passengers like family.",
+		"hook": "Sometimes a ghostly commuter sits in the rear seats and leaves behind tickets from 1972.",
+		"skills": [
+		  "Driving",
+		  "Navigation",
+          "Local Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_14",
+	  "display_name": "Cole Sanders",
+	  "classification": "Security Guard",
+	  "archetype": "security_guard",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Dependable",
+		"Stoic",
+        "Paranoid"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Night shift guard who takes his rounds seriously.",
+		"hook": "One camera always shows an empty hallway — except on the monitor, where someone stands waiting.",
+		"skills": [
+		  "Observation",
+		  "Patrolling",
+          "Composure"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_15",
+	  "display_name": "Leah Winters",
+	  "classification": "Bridge Welder",
+	  "archetype": "bridge_welder",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Independent",
+		"Confident",
+        "Tough"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Independent tradeswoman who thrives on danger.",
+		"hook": "Found her initials welded into a new beam — in metal she hadn’t touched yet.",
+		"skills": [
+		  "Welding",
+		  "Engineering",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_16",
+	  "display_name": "Owen Martel",
+	  "classification": "Cemetery Groundskeeper",
+	  "archetype": "cemetery_groundskeeper",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Solitary",
+		"Gentle",
+        "Practical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Quiet caretaker who tends graves like old friends.",
+		"hook": "He’s been digging up empty coffins — but the names match recent obituaries.",
+		"skills": [
+		  "Maintenance",
+		  "Botany",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_17",
+	  "display_name": "Jada Price",
+	  "classification": "Construction Crane Operator",
+	  "archetype": "construction_crane_operator",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Calm",
+		"Focused",
+        "Bold"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Cool-headed worker with nerves of steel and a taste for thrill.",
+		"hook": "Her crane sometimes moves on its own when she steps away — always facing north.",
+		"skills": [
+		  "Machinery",
+		  "Coordination",
+          "Awareness"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_18",
+	  "display_name": "Riley Cobb",
+	  "classification": "Fisherman",
+	  "archetype": "fisherman",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Gruff",
+		"Superstitious",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Rough-edged dockhand who’s seen too many strange catches.",
+		"hook": "Pulled up a net full of unidentifiable bones — and a gold coin engraved with his initials.",
+		"skills": [
+		  "Boating",
+		  "Survival",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_19",
+	  "display_name": "Gloria Pierce",
+	  "classification": "Garbage Collector",
+	  "archetype": "garbage_collector",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Upbeat",
+		"Strong",
+        "Grounded"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Cheerful worker who jokes her route could tell the town’s secrets.",
+		"hook": "Keeps finding identical porcelain dolls in trash bins — each one blinking when she turns away.",
+		"skills": [
+		  "Endurance",
+		  "Observation",
+          "Street Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_20",
+	  "display_name": "Caleb Knox",
+	  "classification": "Snowplow Driver",
+	  "archetype": "snowplow_driver",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Quiet",
+        "Resilient"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Stoic driver keeping lonely roads clear through the night.",
+		"hook": "Saw headlights approaching in the blizzard — but no tire tracks behind them.",
+		"skills": [
+		  "Driving",
+		  "Navigation",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_21",
+	  "display_name": "Yara Singh",
+	  "classification": "Janitor",
+	  "archetype": "janitor",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Meticulous",
+		"Calm",
+        "Lonely"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Night cleaner who finds peace in the hum of empty hallways.",
+		"hook": "Her mop leaves faint glowing trails that vanish when she looks away.",
+		"skills": [
+		  "Cleaning",
+		  "Observation",
+          "Stealth"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_22",
+	  "display_name": "Max Dillon",
+	  "classification": "Auto Body Painter",
+	  "archetype": "auto_body_painter",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Creative",
+		"Proud",
+        "Focused"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Detail-obsessed craftsman who sees beauty in chrome and flame decals.",
+		"hook": "One car’s paint keeps changing colors — depicting accident scenes that haven’t happened yet.",
+		"skills": [
+		  "Painting",
+		  "Mechanics",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_23",
+	  "display_name": "Shelby Ward",
+	  "classification": "Power Plant Operator",
+	  "archetype": "power_plant_operator",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Logical",
+		"Reliable",
+        "Introverted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Steady worker with deep respect for the machinery.",
+		"hook": "Once a week, the turbines spin backward for exactly 13 seconds.",
+		"skills": [
+		  "Engineering",
+		  "Maintenance",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_24",
+	  "display_name": "Hank Fletcher",
+	  "classification": "Handyman",
+	  "archetype": "handyman",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Helpful",
+		"Easygoing",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Jack-of-all-trades with a rusty pickup and endless stories.",
+		"hook": "Clients report that objects he repairs sometimes work before he even arrives.",
+		"skills": [
+		  "Repair",
+		  "Improvisation",
+          "Tool Use"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_blue_collar_25",
+	  "display_name": "Mira Patel",
+	  "classification": "Elevator Technician",
+	  "archetype": "elevator_technician",
+	  "pools": [
+        "theme_blue_collar_supernatural"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Focused",
+		"Quiet",
+        "Precise"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Specialist who keeps skyscrapers moving smoothly.",
+		"hook": "An elevator she maintains opens to a floor that doesn’t exist.",
+		"skills": [
+		  "Mechanical Systems",
+		  "Diagnostics",
+          "Electronics"
+		]
+	  }
+	}
+  ]
+}

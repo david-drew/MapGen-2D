@@ -1,252 +1,1181 @@
-[
-  {
-    "name": "Dr. Evelyn Harrow",
-    "classification": "Anthropologist",
-    "description": "Respected academic specializing in ritual cultures and oral histories.",
-    "hook": "Recently discovered a chant in multiple unrelated cultures — and it answers when spoken aloud.",
-    "traits": ["Curious", "Polite", "Fearless"],
-    "skills": ["Research", "Linguistics", "Fieldwork"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Professor Leon Gates",
-    "classification": "Historian",
-    "description": "Charismatic lecturer whose passion hides a personal obsession with secret societies.",
-    "hook": "His private office wall conceals a door that only appears after midnight.",
-    "traits": ["Charming", "Driven", "Obsessive"],
-    "skills": ["History", "Teaching", "Investigation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Anita Rao",
-    "classification": "Librarian",
-    "description": "Archivist overseeing rare manuscripts in a university basement.",
-    "hook": "A book she catalogued writes new marginal notes each night — addressed to her by name.",
-    "traits": ["Quiet", "Organized", "Curious"],
-    "skills": ["Archiving", "Cataloguing", "Languages"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dr. Malcolm N’Doye",
-    "classification": "Theoretical Physicist",
-    "description": "Brilliant but erratic scientist researching quantum resonance.",
-    "hook": "His equations predict the exact timing of local disappearances.",
-    "traits": ["Eccentric", "Brilliant", "Anxious"],
-    "skills": ["Mathematics", "Physics", "Analysis"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Samantha Liddell",
-    "classification": "Archivist",
-    "description": "Specializes in genealogy and forgotten institutions.",
-    "hook": "Every family tree she traces ends in the same name — ‘M. Liddell.’",
-    "traits": ["Patient", "Meticulous", "Perceptive"],
-    "skills": ["Research", "Documentation", "History"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Dr. Julian Okafor",
-    "classification": "Biologist",
-    "description": "Lab researcher studying cell regeneration in extremophiles.",
-    "hook": "One of his samples continues to divide even after being incinerated.",
-    "traits": ["Methodical", "Curious", "Skeptical"],
-    "skills": ["Microscopy", "Experimentation", "Data Analysis"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Helene Cross",
-    "classification": "Occult Historian",
-    "description": "Private scholar who insists that the supernatural is just undiscovered science.",
-    "hook": "Her mentor’s journals describe the exact night terrors she experiences.",
-    "traits": ["Pragmatic", "Cynical", "Obsessive"],
-    "skills": ["Occultism", "Research", "Translation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "David Lin",
-    "classification": "Linguist",
-    "description": "Expert in extinct languages who delights in puzzles.",
-    "hook": "Found a symbol in a Sumerian text that perfectly matches a logo from a modern biotech firm.",
-    "traits": ["Analytical", "Patient", "Insightful"],
-    "skills": ["Translation", "Deciphering", "Communication"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dr. Nora Vance",
-    "classification": "Psychologist",
-    "description": "University clinician studying collective hallucinations.",
-    "hook": "Her entire seminar group dreamt the same dream — of her office burning.",
-    "traits": ["Empathetic", "Composed", "Skeptical"],
-    "skills": ["Psychology", "Observation", "Counseling"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Elijah Bloom",
-    "classification": "Museum Curator",
-    "description": "Guardian of ancient artifacts with a secret knack for spotting fakes.",
-    "hook": "A new exhibit arrived with no shipping record and a heartbeat faintly audible inside the crate.",
-    "traits": ["Cultured", "Cautious", "Proud"],
-    "skills": ["Curation", "Appraisal", "Networking"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Mara Devereux",
-    "classification": "Archivist Monk",
-    "description": "Keeps records for a cloistered order with centuries of silence.",
-    "hook": "Every prayer she copies bleeds through the paper into the next volume.",
-    "traits": ["Quiet", "Faithful", "Obsessive"],
-    "skills": ["Calligraphy", "Translation", "Discipline"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Jon Keller",
-    "classification": "Graduate Student",
-    "description": "Overworked PhD candidate obsessed with his dissertation topic: urban myths as cognitive viruses.",
-    "hook": "His case studies start spreading to people he’s never met.",
-    "traits": ["Driven", "Sleep-Deprived", "Curious"],
-    "skills": ["Writing", "Research", "Data Gathering"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dr. Yuki Tanaka",
-    "classification": "Archaeologist",
-    "description": "Specialist in prehistory who believes civilization has reset multiple times.",
-    "hook": "Unearthed an artifact inscribed with her own handwriting.",
-    "traits": ["Adventurous", "Rational", "Perceptive"],
-    "skills": ["Excavation", "Mapping", "Analysis"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Lucien Wright",
-    "classification": "Occult Bookseller",
-    "description": "Polite shopkeeper who trades in out-of-print grimoires and favors.",
-    "hook": "A regular customer buys the same book every week — and it’s always gone from the shelf again.",
-    "traits": ["Charming", "World-Weary", "Secretive"],
-    "skills": ["Negotiation", "Occultism", "Appraisal"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Ava Corrigan",
-    "classification": "Folklorist",
-    "description": "Collects ghost stories and local legends for a podcast.",
-    "hook": "Listeners started calling in from towns she hasn’t visited yet, describing her arrival.",
-    "traits": ["Curious", "Charming", "Adventurous"],
-    "skills": ["Storytelling", "Interviewing", "Research"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Father Dominic Hale",
-    "classification": "Theologian",
-    "description": "A priest who views faith as a form of math waiting to be solved.",
-    "hook": "A lost scripture he translated begins predicting parishioners’ deaths.",
-    "traits": ["Faithful", "Analytical", "Quiet"],
-    "skills": ["Latin", "Philosophy", "Public Speaking"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Clara Webb",
-    "classification": "Archivist",
-    "description": "Assistant librarian recently reassigned to manage ‘restricted’ materials.",
-    "hook": "Every document she files in the restricted section ages decades overnight.",
-    "traits": ["Polite", "Anxious", "Precise"],
-    "skills": ["Filing", "Organization", "Observation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Dr. Omar Hadid",
-    "classification": "Chemist",
-    "description": "Teaches organic chemistry and moonlights as a consultant for paranormal cases.",
-    "hook": "Traces of impossible isotopes keep appearing in his samples — forming words.",
-    "traits": ["Pragmatic", "Calm", "Curious"],
-    "skills": ["Chemistry", "Lab Work", "Analysis"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Nadia Frost",
-    "classification": "Parapsychologist",
-    "description": "Runs controlled experiments on telepathy and psychic phenomena.",
-    "hook": "Her participants begin reporting dreams of her own memories.",
-    "traits": ["Cynical", "Intuitive", "Driven"],
-    "skills": ["Psychology", "Testing", "Observation"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Walter King",
-    "classification": "Janitor (Occult Library)",
-    "description": "Custodian of a secret university wing, knows every shadow and draft.",
-    "hook": "Keeps finding strange footprints leading into the locked stacks.",
-    "traits": ["Quiet", "Reliable", "Perceptive"],
-    "skills": ["Maintenance", "Stealth", "Observation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Isabelle March",
-    "classification": "Archivist of the Dead",
-    "description": "Works for a government office cataloguing unidentified remains.",
-    "hook": "Recently received a file on herself — dated three years in the future.",
-    "traits": ["Methodical", "Lonely", "Efficient"],
-    "skills": ["Forensics", "Record Keeping", "Analysis"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dr. Peter Nash",
-    "classification": "Sociologist",
-    "description": "Researches mass hysteria, currently studying ‘urban angel sightings.’",
-    "hook": "His interview subjects all share the same scar — a faint circle behind the ear.",
-    "traits": ["Rational", "Curious", "Tired"],
-    "skills": ["Sociology", "Interviewing", "Observation"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Madeline Roche",
-    "classification": "Cryptographer",
-    "description": "Brilliant coder hired to digitize ancient manuscripts.",
-    "hook": "Discovered an unbreakable cipher that decrypts itself when she sleeps near the monitor.",
-    "traits": ["Analytical", "Introverted", "Precise"],
-    "skills": ["Cryptography", "Coding", "Problem Solving"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dr. Felix Brandt",
-    "classification": "Cognitive Scientist",
-    "description": "Studies perception, particularly how people see what shouldn’t exist.",
-    "hook": "His lab’s security footage shows participants vanishing during tests — only in the recordings.",
-    "traits": ["Methodical", "Curious", "Detached"],
-    "skills": ["Experimentation", "Neuroscience", "Statistics"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Renee Lang",
-    "classification": "Occult Archivist",
-    "description": "Catalogues supernatural artifacts for a private collector.",
-    "hook": "An object she logged three years ago appeared in her living room this morning.",
-    "traits": ["Practical", "Discreet", "Intelligent"],
-    "skills": ["Documentation", "Research", "Appraisal"],
-    "stress": 3,
-    "mystery_potential": 5
-  }
-]
+{
+  "pool_name": "theme_academic_occult",
+  "description": "NPC pool: theme_academic_occult",
+  "npcs": [
+	{
+	  "entity_id": "npc_academic_01",
+	  "display_name": "Dr. Evelyn Harrow",
+	  "classification": "Anthropologist",
+	  "archetype": "anthropologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Curious",
+		"Polite",
+        "Fearless"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Respected academic specializing in ritual cultures and oral histories.",
+		"hook": "Recently discovered a chant in multiple unrelated cultures — and it answers when spoken aloud.",
+		"skills": [
+		  "Research",
+		  "Linguistics",
+          "Fieldwork"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_02",
+	  "display_name": "Professor Leon Gates",
+	  "classification": "Historian",
+	  "archetype": "historian",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charming",
+		"Driven",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Charismatic lecturer whose passion hides a personal obsession with secret societies.",
+		"hook": "His private office wall conceals a door that only appears after midnight.",
+		"skills": [
+		  "History",
+		  "Teaching",
+          "Investigation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_03",
+	  "display_name": "Anita Rao",
+	  "classification": "Librarian",
+	  "archetype": "librarian",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Organized",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Archivist overseeing rare manuscripts in a university basement.",
+		"hook": "A book she catalogued writes new marginal notes each night — addressed to her by name.",
+		"skills": [
+		  "Archiving",
+		  "Cataloguing",
+          "Languages"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_04",
+	  "display_name": "Dr. Malcolm N’Doye",
+	  "classification": "Theoretical Physicist",
+	  "archetype": "theoretical_physicist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Eccentric",
+		"Brilliant",
+        "Anxious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Brilliant but erratic scientist researching quantum resonance.",
+		"hook": "His equations predict the exact timing of local disappearances.",
+		"skills": [
+		  "Mathematics",
+		  "Physics",
+          "Analysis"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_05",
+	  "display_name": "Samantha Liddell",
+	  "classification": "Archivist",
+	  "archetype": "archivist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Meticulous",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Specializes in genealogy and forgotten institutions.",
+		"hook": "Every family tree she traces ends in the same name — ‘M. Liddell.’",
+		"skills": [
+		  "Research",
+		  "Documentation",
+          "History"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_06",
+	  "display_name": "Dr. Julian Okafor",
+	  "classification": "Biologist",
+	  "archetype": "biologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Methodical",
+		"Curious",
+        "Skeptical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Lab researcher studying cell regeneration in extremophiles.",
+		"hook": "One of his samples continues to divide even after being incinerated.",
+		"skills": [
+		  "Microscopy",
+		  "Experimentation",
+          "Data Analysis"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_07",
+	  "display_name": "Helene Cross",
+	  "classification": "Occult Historian",
+	  "archetype": "occult_historian",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Pragmatic",
+		"Cynical",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Private scholar who insists that the supernatural is just undiscovered science.",
+		"hook": "Her mentor’s journals describe the exact night terrors she experiences.",
+		"skills": [
+		  "Occultism",
+		  "Research",
+          "Translation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_08",
+	  "display_name": "David Lin",
+	  "classification": "Linguist",
+	  "archetype": "linguist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Analytical",
+		"Patient",
+        "Insightful"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Expert in extinct languages who delights in puzzles.",
+		"hook": "Found a symbol in a Sumerian text that perfectly matches a logo from a modern biotech firm.",
+		"skills": [
+		  "Translation",
+		  "Deciphering",
+          "Communication"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_09",
+	  "display_name": "Dr. Nora Vance",
+	  "classification": "Psychologist",
+	  "archetype": "psychologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Empathetic",
+		"Composed",
+        "Skeptical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "University clinician studying collective hallucinations.",
+		"hook": "Her entire seminar group dreamt the same dream — of her office burning.",
+		"skills": [
+		  "Psychology",
+		  "Observation",
+          "Counseling"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_10",
+	  "display_name": "Elijah Bloom",
+	  "classification": "Museum Curator",
+	  "archetype": "museum_curator",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Cultured",
+		"Cautious",
+        "Proud"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Guardian of ancient artifacts with a secret knack for spotting fakes.",
+		"hook": "A new exhibit arrived with no shipping record and a heartbeat faintly audible inside the crate.",
+		"skills": [
+		  "Curation",
+		  "Appraisal",
+          "Networking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_11",
+	  "display_name": "Mara Devereux",
+	  "classification": "Archivist Monk",
+	  "archetype": "archivist_monk",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Faithful",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Keeps records for a cloistered order with centuries of silence.",
+		"hook": "Every prayer she copies bleeds through the paper into the next volume.",
+		"skills": [
+		  "Calligraphy",
+		  "Translation",
+          "Discipline"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_12",
+	  "display_name": "Jon Keller",
+	  "classification": "Graduate Student",
+	  "archetype": "graduate_student",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Driven",
+		"Sleep-Deprived",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Overworked PhD candidate obsessed with his dissertation topic: urban myths as cognitive viruses.",
+		"hook": "His case studies start spreading to people he’s never met.",
+		"skills": [
+		  "Writing",
+		  "Research",
+          "Data Gathering"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_13",
+	  "display_name": "Dr. Yuki Tanaka",
+	  "classification": "Archaeologist",
+	  "archetype": "archaeologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Adventurous",
+		"Rational",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Specialist in prehistory who believes civilization has reset multiple times.",
+		"hook": "Unearthed an artifact inscribed with her own handwriting.",
+		"skills": [
+		  "Excavation",
+		  "Mapping",
+          "Analysis"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_14",
+	  "display_name": "Lucien Wright",
+	  "classification": "Occult Bookseller",
+	  "archetype": "occult_bookseller",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charming",
+		"World-Weary",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Polite shopkeeper who trades in out-of-print grimoires and favors.",
+		"hook": "A regular customer buys the same book every week — and it’s always gone from the shelf again.",
+		"skills": [
+		  "Negotiation",
+		  "Occultism",
+          "Appraisal"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_15",
+	  "display_name": "Ava Corrigan",
+	  "classification": "Folklorist",
+	  "archetype": "folklorist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Curious",
+		"Charming",
+        "Adventurous"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Collects ghost stories and local legends for a podcast.",
+		"hook": "Listeners started calling in from towns she hasn’t visited yet, describing her arrival.",
+		"skills": [
+		  "Storytelling",
+		  "Interviewing",
+          "Research"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_16",
+	  "display_name": "Father Dominic Hale",
+	  "classification": "Theologian",
+	  "archetype": "theologian",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Faithful",
+		"Analytical",
+        "Quiet"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "A priest who views faith as a form of math waiting to be solved.",
+		"hook": "A lost scripture he translated begins predicting parishioners’ deaths.",
+		"skills": [
+		  "Latin",
+		  "Philosophy",
+          "Public Speaking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_17",
+	  "display_name": "Clara Webb",
+	  "classification": "Archivist",
+	  "archetype": "archivist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Polite",
+		"Anxious",
+        "Precise"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Assistant librarian recently reassigned to manage ‘restricted’ materials.",
+		"hook": "Every document she files in the restricted section ages decades overnight.",
+		"skills": [
+		  "Filing",
+		  "Organization",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_18",
+	  "display_name": "Dr. Omar Hadid",
+	  "classification": "Chemist",
+	  "archetype": "chemist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Pragmatic",
+		"Calm",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Teaches organic chemistry and moonlights as a consultant for paranormal cases.",
+		"hook": "Traces of impossible isotopes keep appearing in his samples — forming words.",
+		"skills": [
+		  "Chemistry",
+		  "Lab Work",
+          "Analysis"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_19",
+	  "display_name": "Nadia Frost",
+	  "classification": "Parapsychologist",
+	  "archetype": "parapsychologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Cynical",
+		"Intuitive",
+        "Driven"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Runs controlled experiments on telepathy and psychic phenomena.",
+		"hook": "Her participants begin reporting dreams of her own memories.",
+		"skills": [
+		  "Psychology",
+		  "Testing",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_20",
+	  "display_name": "Walter King",
+	  "classification": "Janitor (Occult Library)",
+	  "archetype": "janitor_(occult_library)",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Reliable",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Custodian of a secret university wing, knows every shadow and draft.",
+		"hook": "Keeps finding strange footprints leading into the locked stacks.",
+		"skills": [
+		  "Maintenance",
+		  "Stealth",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_21",
+	  "display_name": "Isabelle March",
+	  "classification": "Archivist of the Dead",
+	  "archetype": "archivist_of_the_dead",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Methodical",
+		"Lonely",
+        "Efficient"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Works for a government office cataloguing unidentified remains.",
+		"hook": "Recently received a file on herself — dated three years in the future.",
+		"skills": [
+		  "Forensics",
+		  "Record Keeping",
+          "Analysis"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_22",
+	  "display_name": "Dr. Peter Nash",
+	  "classification": "Sociologist",
+	  "archetype": "sociologist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Rational",
+		"Curious",
+        "Tired"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Researches mass hysteria, currently studying ‘urban angel sightings.’",
+		"hook": "His interview subjects all share the same scar — a faint circle behind the ear.",
+		"skills": [
+		  "Sociology",
+		  "Interviewing",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_23",
+	  "display_name": "Madeline Roche",
+	  "classification": "Cryptographer",
+	  "archetype": "cryptographer",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Analytical",
+		"Introverted",
+        "Precise"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Brilliant coder hired to digitize ancient manuscripts.",
+		"hook": "Discovered an unbreakable cipher that decrypts itself when she sleeps near the monitor.",
+		"skills": [
+		  "Cryptography",
+		  "Coding",
+          "Problem Solving"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_24",
+	  "display_name": "Dr. Felix Brandt",
+	  "classification": "Cognitive Scientist",
+	  "archetype": "cognitive_scientist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Methodical",
+		"Curious",
+        "Detached"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Studies perception, particularly how people see what shouldn’t exist.",
+		"hook": "His lab’s security footage shows participants vanishing during tests — only in the recordings.",
+		"skills": [
+		  "Experimentation",
+		  "Neuroscience",
+          "Statistics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_academic_25",
+	  "display_name": "Renee Lang",
+	  "classification": "Occult Archivist",
+	  "archetype": "occult_archivist",
+	  "pools": [
+        "theme_academic_occult"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Practical",
+		"Discreet",
+        "Intelligent"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Catalogues supernatural artifacts for a private collector.",
+		"hook": "An object she logged three years ago appeared in her living room this morning.",
+		"skills": [
+		  "Documentation",
+		  "Research",
+          "Appraisal"
+		]
+	  }
+	}
+  ]
+}

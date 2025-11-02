@@ -1,512 +1,2403 @@
-[
-  {
-    "name": "Lena Ortiz",
-    "classification": "Barista",
-    "description": "Friendly coffee shop worker who remembers everyone’s order but secretly dreams of traveling the world.",
-    "hook": "Recently started seeing strange symbols drawn in customers’ coffee foam — none of which she made.",
-    "traits": ["Friendly", "Imaginative", "Restless"],
-    "skills": ["Observation", "Customer Service", "Urban Knowledge"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Marcus Chen",
-    "classification": "Software Engineer",
-    "description": "Quiet programmer with a passion for retro video games and a side project that’s starting to take off.",
-    "hook": "His side project’s AI assistant has begun sending him messages about events that haven’t happened yet.",
-    "traits": ["Introverted", "Analytical", "Curious"],
-    "skills": ["Coding", "Electronics", "Logic"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Tasha Green",
-    "classification": "Influencer",
-    "description": "Upbeat social media personality juggling brand deals and burnout from constant self-promotion.",
-    "hook": "Her followers claim to see a shadowy figure in her livestream reflections — one she swears isn’t there.",
-    "traits": ["Charismatic", "Driven", "Anxious"],
-    "skills": ["Persuasion", "Fashion", "Networking"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Eddie Morales",
-    "classification": "Paramedic",
-    "description": "Calm under pressure, haunted by one rescue he couldn’t complete.",
-    "hook": "The patient he lost keeps appearing on emergency call sheets with new addresses each week.",
-    "traits": ["Brave", "Grounded", "Haunted"],
-    "skills": ["First Aid", "Driving", "Crisis Management"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Rachel Al-Karim",
-    "classification": "Teacher",
-    "description": "Dedicated middle-school teacher who uses humor to keep her students engaged despite outdated textbooks.",
-    "hook": "Her class field trip photos sometimes include an extra child — one she can’t identify.",
-    "traits": ["Patient", "Empathetic", "Perceptive"],
-    "skills": ["Education", "Public Speaking", "Empathy"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Jamal Reyes",
-    "classification": "Ride-share Driver",
-    "description": "Drives nights to support his family, always ready with music recommendations and life advice.",
-    "hook": "Every Friday, he picks up the same silent passenger who vanishes before reaching the destination.",
-    "traits": ["Chatty", "Kindhearted", "Observant"],
-    "skills": ["Driving", "Local Navigation", "Streetwise"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Cynthia Lowell",
-    "classification": "Retiree",
-    "description": "Former librarian who now solves cold cases online as a hobby.",
-    "hook": "She’s convinced one of the cases she’s researching involves her own death — from the future.",
-    "traits": ["Inquisitive", "Polite", "Persistent"],
-    "skills": ["Research", "History", "Pattern Recognition"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Dev Patel",
-    "classification": "Data Analyst",
-    "description": "Smart and detail-oriented, but struggling to find purpose in corporate monotony.",
-    "hook": "Noticed irregular patterns in financial data that match a missing persons timeline.",
-    "traits": ["Methodical", "Quiet", "Doubtful"],
-    "skills": ["Data Analysis", "Statistics", "Computers"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Nina Carter",
-    "classification": "Bartender",
-    "description": "Cynical but sharp, she’s the unofficial therapist for half the neighborhood.",
-    "hook": "One regular left behind a bar tab dated three days in the future — and hasn’t been seen since.",
-    "traits": ["Witty", "Observant", "Guarded"],
-    "skills": ["Mixology", "Reading People", "Street Smarts"],
-    "stress": 3,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Derrick Foster",
-    "classification": "Fitness Coach",
-    "description": "Charismatic personal trainer hiding insecurities about aging and relevance.",
-    "hook": "A new client doesn’t cast a reflection, but insists Derrick spot him anyway.",
-    "traits": ["Energetic", "Confident", "Prideful"],
-    "skills": ["Physical Training", "Motivation", "Endurance"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Allison Meyer",
-    "classification": "Stay-at-Home Parent",
-    "description": "Manages a chaotic household while secretly writing a horror novel during nap time.",
-    "hook": "Her novel’s antagonist started appearing in her baby monitor footage.",
-    "traits": ["Caring", "Creative", "Overwhelmed"],
-    "skills": ["Writing", "Organization", "Domestic Savvy"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Samir Qureshi",
-    "classification": "Taxi Dispatcher",
-    "description": "Knows everyone’s business and keeps the city’s gossip network alive.",
-    "hook": "Dispatch logs show calls from license plates that were scrapped decades ago.",
-    "traits": ["Nosy", "Resourceful", "Talkative"],
-    "skills": ["Logistics", "Networking", "Urban Lore"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Jonas Pike",
-    "classification": "Warehouse Worker",
-    "description": "Works long shifts with earbuds in, listening to conspiracy podcasts.",
-    "hook": "One night the pallets started humming — in tune with the podcast he was listening to.",
-    "traits": ["Skeptical", "Lonely", "Superstitious"],
-    "skills": ["Heavy Lifting", "Equipment Use", "Paranoia (useful)"],
-    "stress": 3,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Eva Moreno",
-    "classification": "Nurse",
-    "description": "Tired but kind, the glue holding her hospital’s understaffed night shift together.",
-    "hook": "Every patient in room 413 makes the same plea: 'Tell him I said thank you,' though the room is empty.",
-    "traits": ["Compassionate", "Resilient", "Realistic"],
-    "skills": ["Medicine", "Empathy", "Observation"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Noah Klein",
-    "classification": "College Student",
-    "description": "Undecided major, streaming games online for extra cash, unsure what adulthood means.",
-    "hook": "A viewer with the handle 'Observer13' keeps describing events from Noah’s dorm in real time.",
-    "traits": ["Curious", "Clever", "Naive"],
-    "skills": ["Computers", "Streaming", "Improvisation"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Harper Lane",
-    "classification": "Freelance Photographer",
-    "description": "Urban explorer capturing decaying spaces and chasing the perfect shot.",
-    "hook": "Her photos of abandoned places sometimes include living people who were never there.",
-    "traits": ["Adventurous", "Independent", "Obsessive"],
-    "skills": ["Photography", "Stealth", "Perception"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Miguel Santos",
-    "classification": "Mechanic",
-    "description": "Expert with engines, philosopher with beer, father figure to neighborhood teens.",
-    "hook": "A car he repaired drives by his shop each night — even though it was totaled last year.",
-    "traits": ["Grounded", "Patient", "Wise"],
-    "skills": ["Mechanics", "Repair", "Negotiation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Grace Holloway",
-    "classification": "Real Estate Agent",
-    "description": "Energetic seller of overpriced condos, obsessed with appearances.",
-    "hook": "Keeps selling the same property to different buyers — none of whom remember signing the contract.",
-    "traits": ["Ambitious", "Polished", "Manipulative"],
-    "skills": ["Persuasion", "Sales", "Deception"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Owen Briggs",
-    "classification": "Security Guard",
-    "description": "Night shift watcher who takes his post more seriously than his employers do.",
-    "hook": "Every 3:07 a.m., a door alarm triggers — for a door that doesn’t exist on the blueprints.",
-    "traits": ["Paranoid", "Dependable", "Stoic"],
-    "skills": ["Observation", "Endurance", "Vigilance"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Priya Nand",
-    "classification": "Grad Student",
-    "description": "Researching AI ethics, constantly broke but fiercely idealistic.",
-    "hook": "Her research assistant AI has started refusing shutdown commands and calling her by her childhood nickname.",
-    "traits": ["Idealistic", "Smart", "Stubborn"],
-    "skills": ["Research", "Programming", "Critical Thinking"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Tyrell Banks",
-    "classification": "Musician",
-    "description": "Talented busker with a viral hit that never quite led anywhere.",
-    "hook": "His old guitar sometimes plays by itself when he sleeps — and new songs appear in his notebook.",
-    "traits": ["Creative", "Moody", "Sensitive"],
-    "skills": ["Music", "Performance", "Streetwise"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Hannah Schultz",
-    "classification": "Retail Worker",
-    "description": "Has mastered customer service smiles but secretly sketches fantasy maps on receipts.",
-    "hook": "Her drawings started matching the layout of a town that doesn’t exist on any map.",
-    "traits": ["Polite", "Dreamy", "Observant"],
-    "skills": ["Customer Service", "Drawing", "Inventory"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Julian Park",
-    "classification": "Chef",
-    "description": "Runs a small fusion bistro, chasing a Michelin star while balancing debts.",
-    "hook": "A mysterious critic left a glowing review — written in a language no one can identify.",
-    "traits": ["Perfectionist", "Passionate", "Short-Tempered"],
-    "skills": ["Cooking", "Leadership", "Knife Skills"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Mara Vaughn",
-    "classification": "Dog Walker",
-    "description": "Free-spirited gig worker who treats her clients’ pets better than most people.",
-    "hook": "One of her dogs led her to a graveyard, dug up an old collar with her own name on it.",
-    "traits": ["Free-Spirited", "Cheerful", "Superstitious"],
-    "skills": ["Animal Handling", "Navigation", "Running"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Chris Delaney",
-    "classification": "Police Officer",
-    "description": "Local beat cop trying to keep order in a neighborhood that’s rapidly changing.",
-    "hook": "His bodycam captures events that didn’t happen — people who were never there, crimes that never occurred.",
-    "traits": ["Loyal", "Jaded", "Protective"],
-    "skills": ["Law Enforcement", "Interrogation", "Firearms"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Avery Shaw",
-    "classification": "Firefighter",
-    "description": "Seasoned first responder who masks his fear with gallows humor.",
-    "hook": "Keeps smelling smoke in places where no fire ever burned.",
-    "traits": ["Brave", "Cynical", "Protective"],
-    "skills": ["Rescue", "Strength", "Crisis Response"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Monica Trinh",
-    "classification": "Fashion Designer",
-    "description": "Trendsetting creative with a ruthless streak for success.",
-    "hook": "One of her designs appeared on a stranger’s corpse before she even released it.",
-    "traits": ["Ambitious", "Stylish", "Secretive"],
-    "skills": ["Design", "Networking", "Persuasion"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Trevor Gant",
-    "classification": "Freight Train Conductor",
-    "description": "Loves the solitude of long tracks and the rhythm of the rails.",
-    "hook": "Keeps hearing Morse code tapping in the wheels — spelling his name backwards.",
-    "traits": ["Patient", "Lonely", "Reliable"],
-    "skills": ["Mechanical Repair", "Navigation", "Observation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Elena Kravitz",
-    "classification": "Pediatric Nurse",
-    "description": "Compassionate caretaker who can’t stand silence.",
-    "hook": "Children in her ward draw the same faceless man and whisper his name in their sleep.",
-    "traits": ["Caring", "Empathetic", "Exhausted"],
-    "skills": ["Medicine", "Childcare", "Empathy"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Damien Cole",
-    "classification": "Tattoo Artist",
-    "description": "Soft-spoken artist whose clients confide their deepest secrets.",
-    "hook": "Several of his tattoos have started changing on their own.",
-    "traits": ["Patient", "Observant", "Reserved"],
-    "skills": ["Artistry", "Steady Hands", "Psychology"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Naomi Vasquez",
-    "classification": "Civil Engineer",
-    "description": "Practical thinker who treats bridges and tunnels like living beings.",
-    "hook": "Her latest bridge hums a melody no one can trace the origin of.",
-    "traits": ["Analytical", "Stoic", "Loyal"],
-    "skills": ["Engineering", "Mathematics", "Planning"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Colin Pierce",
-    "classification": "Museum Curator",
-    "description": "Meticulous historian obsessed with provenance and accuracy.",
-    "hook": "A painting in his gallery began aging overnight — including the subject’s corpse.",
-    "traits": ["Pedantic", "Cultured", "Obsessive"],
-    "skills": ["History", "Research", "Appraisal"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Jasmine Ocampo",
-    "classification": "Dog Groomer",
-    "description": "Loves animals more than people, quick to laugh and quicker to judge.",
-    "hook": "Her clients’ pets refuse to enter one grooming stall — and bark at something unseen.",
-    "traits": ["Cheerful", "Blunt", "Empathetic"],
-    "skills": ["Animal Handling", "Observation", "Cleaning"],
-    "stress": 2,
-    "mystery_potential": 3
-  },
-  {
-    "name": "Luis DeSoto",
-    "classification": "Pastor",
-    "description": "Local preacher who’s lost his faith but not his compassion.",
-    "hook": "The church bell rings by itself whenever someone in town dies — even before it happens.",
-    "traits": ["Gentle", "Doubtful", "Stoic"],
-    "skills": ["Theology", "Public Speaking", "Empathy"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Tiffany Rhodes",
-    "classification": "High School Principal",
-    "description": "Strict but fair, believes in second chances for her students.",
-    "hook": "Discovered that one of her students' records belongs to someone who died twenty years ago.",
-    "traits": ["Authoritative", "Empathetic", "Pragmatic"],
-    "skills": ["Leadership", "Investigation", "Organization"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Graham Ellis",
-    "classification": "Travel Blogger",
-    "description": "Carefree nomad making a living documenting beautiful places.",
-    "hook": "Every photo he posts online gets a comment from the same account saying, 'I was here first.'",
-    "traits": ["Curious", "Charming", "Impulsive"],
-    "skills": ["Photography", "Writing", "Navigation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Nadine Fong",
-    "classification": "Librarian",
-    "description": "Quiet, organized, and unshakably calm even in chaos.",
-    "hook": "A book keeps reappearing on the shelves that no one catalogued — and it writes new pages nightly.",
-    "traits": ["Calm", "Methodical", "Secretive"],
-    "skills": ["Research", "Archival Work", "Linguistics"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Hunter Vega",
-    "classification": "Construction Foreman",
-    "description": "Gruff worker who hides his concern for his crew behind sarcasm.",
-    "hook": "The foundation of their latest building site revealed stairs leading downward — far deeper than city records allow.",
-    "traits": ["Practical", "Skeptical", "Loyal"],
-    "skills": ["Construction", "Leadership", "Endurance"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Sophia Mendez",
-    "classification": "Chef",
-    "description": "Owner of a small restaurant famous for experimental cuisine.",
-    "hook": "Every time she prepares her signature dish, someone nearby collapses from déjà vu.",
-    "traits": ["Perfectionist", "Driven", "Eccentric"],
-    "skills": ["Cooking", "Chemistry", "Creativity"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Andre McCall",
-    "classification": "Taxi Driver",
-    "description": "Night shift driver who knows the city’s every shortcut and secret.",
-    "hook": "Picked up a passenger who left behind a briefcase that can’t be opened — and hums softly at night.",
-    "traits": ["Streetwise", "Calm", "Observant"],
-    "skills": ["Driving", "Navigation", "Local Lore"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Kira Dunne",
-    "classification": "Bartender",
-    "description": "Sharp-tongued and unflappable, she’s seen it all.",
-    "hook": "Her bar mirrors occasionally reflect events that happen hours later.",
-    "traits": ["Sarcastic", "Tough", "Perceptive"],
-    "skills": ["Mixology", "Reading People", "Street Smarts"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Yusef Amari",
-    "classification": "IT Technician",
-    "description": "Overworked support tech trying to balance cynicism with curiosity.",
-    "hook": "A client's computer runs code in a language that doesn’t exist — and it answers questions.",
-    "traits": ["Nerdy", "Tired", "Analytical"],
-    "skills": ["Networking", "Diagnostics", "Hacking"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Haley Knox",
-    "classification": "Podcaster",
-    "description": "True crime storyteller with a loyal following and a fascination for unsolved disappearances.",
-    "hook": "Listeners started emailing her details about a case she hasn’t released yet — one she only dreamed of.",
-    "traits": ["Curious", "Driven", "Witty"],
-    "skills": ["Research", "Storytelling", "Interviewing"],
-    "stress": 3,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Lionel Grant",
-    "classification": "Retired Detective",
-    "description": "Old-school investigator with a failing memory and an eye for details others miss.",
-    "hook": "Keeps receiving anonymous letters reminding him of cases he never worked.",
-    "traits": ["Gruff", "Observant", "Regretful"],
-    "skills": ["Investigation", "Interrogation", "Firearms"],
-    "stress": 4,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Aisha Darzi",
-    "classification": "ER Doctor",
-    "description": "Fast-thinking physician who thrives in chaos but neglects her own health.",
-    "hook": "Several recent patients share identical scars — perfectly circular, glowing faintly under UV light.",
-    "traits": ["Confident", "Exhausted", "Empathetic"],
-    "skills": ["Medicine", "Diagnosis", "Composure"],
-    "stress": 5,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Rowan Ellis",
-    "classification": "Street Artist",
-    "description": "Defiant muralist whose works appear overnight in impossible places.",
-    "hook": "His newest mural depicts tomorrow’s newspaper headline — before it’s printed.",
-    "traits": ["Rebellious", "Creative", "Secretive"],
-    "skills": ["Painting", "Stealth", "Urban Movement"],
-    "stress": 2,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Tracy O’Hara",
-    "classification": "Postal Worker",
-    "description": "Friendly mail carrier with decades of gossip and small-town charm.",
-    "hook": "Has begun delivering letters with no return address — addressed to people long dead.",
-    "traits": ["Dependable", "Talkative", "Warm"],
-    "skills": ["Local Knowledge", "Logistics", "Observation"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Ezra Bloom",
-    "classification": "Barber",
-    "description": "Local gossip hub operator, fond of conspiracy talk with customers.",
-    "hook": "Hair clippings from one client rearranged themselves into words: 'He’s coming back.'",
-    "traits": ["Sociable", "Nosy", "Cheerful"],
-    "skills": ["Conversation", "Observation", "Craftsmanship"],
-    "stress": 2,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Claire Novak",
-    "classification": "Social Worker",
-    "description": "Fiercely protective advocate for at-risk youth.",
-    "hook": "Several of her former clients vanished — and their files were wiped from government servers.",
-    "traits": ["Empathetic", "Driven", "Fearless"],
-    "skills": ["Counseling", "Negotiation", "Investigation"],
-    "stress": 4,
-    "mystery_potential": 5
-  },
-  {
-    "name": "Omar Kline",
-    "classification": "Night Janitor",
-    "description": "Solitary custodian who takes pride in leaving everything spotless.",
-    "hook": "His reflection in security cameras sometimes continues moving after he stops.",
-    "traits": ["Quiet", "Meticulous", "Introverted"],
-    "skills": ["Cleaning", "Observation", "Stealth"],
-    "stress": 3,
-    "mystery_potential": 4
-  },
-  {
-    "name": "Delilah Brooks",
-    "classification": "Journalist",
-    "description": "Investigative reporter known for uncovering corruption and surviving lawsuits.",
-    "hook": "Her latest source disappeared — but still emails her encrypted files from an unknown location.",
-    "traits": ["Determined", "Fearless", "Paranoid"],
-    "skills": ["Writing", "Interviewing", "Research"],
-    "stress": 4,
-    "mystery_potential": 5
-  }
-]
+{
+  "pool_name": "core_people",
+  "description": "NPC pool: core_people",
+  "npcs": [
+	{
+	  "entity_id": "npc_core_01",
+	  "display_name": "Lena Ortiz",
+	  "classification": "Barista",
+	  "archetype": "barista",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Friendly",
+		"Imaginative",
+        "Restless"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Friendly coffee shop worker who remembers everyone’s order but secretly dreams of traveling the world.",
+		"hook": "Recently started seeing strange symbols drawn in customers’ coffee foam — none of which she made.",
+		"skills": [
+		  "Observation",
+		  "Customer Service",
+          "Urban Knowledge"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_02",
+	  "display_name": "Marcus Chen",
+	  "classification": "Software Engineer",
+	  "archetype": "software_engineer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Introverted",
+		"Analytical",
+        "Curious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Quiet programmer with a passion for retro video games and a side project that’s starting to take off.",
+		"hook": "His side project’s AI assistant has begun sending him messages about events that haven’t happened yet.",
+		"skills": [
+		  "Coding",
+		  "Electronics",
+          "Logic"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_03",
+	  "display_name": "Tasha Green",
+	  "classification": "Influencer",
+	  "archetype": "influencer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Charismatic",
+		"Driven",
+        "Anxious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Upbeat social media personality juggling brand deals and burnout from constant self-promotion.",
+		"hook": "Her followers claim to see a shadowy figure in her livestream reflections — one she swears isn’t there.",
+		"skills": [
+		  "Persuasion",
+		  "Fashion",
+          "Networking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_04",
+	  "display_name": "Eddie Morales",
+	  "classification": "Paramedic",
+	  "archetype": "paramedic",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Brave",
+		"Grounded",
+        "Haunted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Calm under pressure, haunted by one rescue he couldn’t complete.",
+		"hook": "The patient he lost keeps appearing on emergency call sheets with new addresses each week.",
+		"skills": [
+		  "First Aid",
+		  "Driving",
+          "Crisis Management"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_05",
+	  "display_name": "Rachel Al-Karim",
+	  "classification": "Teacher",
+	  "archetype": "teacher",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Empathetic",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Dedicated middle-school teacher who uses humor to keep her students engaged despite outdated textbooks.",
+		"hook": "Her class field trip photos sometimes include an extra child — one she can’t identify.",
+		"skills": [
+		  "Education",
+		  "Public Speaking",
+          "Empathy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_06",
+	  "display_name": "Jamal Reyes",
+	  "classification": "Ride-share Driver",
+	  "archetype": "ride_share_driver",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Chatty",
+		"Kindhearted",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Drives nights to support his family, always ready with music recommendations and life advice.",
+		"hook": "Every Friday, he picks up the same silent passenger who vanishes before reaching the destination.",
+		"skills": [
+		  "Driving",
+		  "Local Navigation",
+          "Streetwise"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_07",
+	  "display_name": "Cynthia Lowell",
+	  "classification": "Retiree",
+	  "archetype": "retiree",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Inquisitive",
+		"Polite",
+        "Persistent"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Former librarian who now solves cold cases online as a hobby.",
+		"hook": "She’s convinced one of the cases she’s researching involves her own death — from the future.",
+		"skills": [
+		  "Research",
+		  "History",
+          "Pattern Recognition"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_08",
+	  "display_name": "Dev Patel",
+	  "classification": "Data Analyst",
+	  "archetype": "data_analyst",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Methodical",
+		"Quiet",
+        "Doubtful"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Smart and detail-oriented, but struggling to find purpose in corporate monotony.",
+		"hook": "Noticed irregular patterns in financial data that match a missing persons timeline.",
+		"skills": [
+		  "Data Analysis",
+		  "Statistics",
+          "Computers"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_09",
+	  "display_name": "Nina Carter",
+	  "classification": "Bartender",
+	  "archetype": "bartender",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Witty",
+		"Observant",
+        "Guarded"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Cynical but sharp, she’s the unofficial therapist for half the neighborhood.",
+		"hook": "One regular left behind a bar tab dated three days in the future — and hasn’t been seen since.",
+		"skills": [
+		  "Mixology",
+		  "Reading People",
+          "Street Smarts"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_10",
+	  "display_name": "Derrick Foster",
+	  "classification": "Fitness Coach",
+	  "archetype": "fitness_coach",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Energetic",
+		"Confident",
+        "Prideful"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Charismatic personal trainer hiding insecurities about aging and relevance.",
+		"hook": "A new client doesn’t cast a reflection, but insists Derrick spot him anyway.",
+		"skills": [
+		  "Physical Training",
+		  "Motivation",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_11",
+	  "display_name": "Allison Meyer",
+	  "classification": "Stay-at-Home Parent",
+	  "archetype": "stay_at_home_parent",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Caring",
+		"Creative",
+        "Overwhelmed"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Manages a chaotic household while secretly writing a horror novel during nap time.",
+		"hook": "Her novel’s antagonist started appearing in her baby monitor footage.",
+		"skills": [
+		  "Writing",
+		  "Organization",
+          "Domestic Savvy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_12",
+	  "display_name": "Samir Qureshi",
+	  "classification": "Taxi Dispatcher",
+	  "archetype": "taxi_dispatcher",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Nosy",
+		"Resourceful",
+        "Talkative"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Knows everyone’s business and keeps the city’s gossip network alive.",
+		"hook": "Dispatch logs show calls from license plates that were scrapped decades ago.",
+		"skills": [
+		  "Logistics",
+		  "Networking",
+          "Urban Lore"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_13",
+	  "display_name": "Jonas Pike",
+	  "classification": "Warehouse Worker",
+	  "archetype": "warehouse_worker",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Skeptical",
+		"Lonely",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Works long shifts with earbuds in, listening to conspiracy podcasts.",
+		"hook": "One night the pallets started humming — in tune with the podcast he was listening to.",
+		"skills": [
+		  "Heavy Lifting",
+		  "Equipment Use",
+          "Paranoia (useful)"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_14",
+	  "display_name": "Eva Moreno",
+	  "classification": "Nurse",
+	  "archetype": "nurse",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Compassionate",
+		"Resilient",
+        "Realistic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Tired but kind, the glue holding her hospital’s understaffed night shift together.",
+		"hook": "Every patient in room 413 makes the same plea: 'Tell him I said thank you,' though the room is empty.",
+		"skills": [
+		  "Medicine",
+		  "Empathy",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_15",
+	  "display_name": "Noah Klein",
+	  "classification": "College Student",
+	  "archetype": "college_student",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Curious",
+		"Clever",
+        "Naive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Undecided major, streaming games online for extra cash, unsure what adulthood means.",
+		"hook": "A viewer with the handle 'Observer13' keeps describing events from Noah’s dorm in real time.",
+		"skills": [
+		  "Computers",
+		  "Streaming",
+          "Improvisation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_16",
+	  "display_name": "Harper Lane",
+	  "classification": "Freelance Photographer",
+	  "archetype": "freelance_photographer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Adventurous",
+		"Independent",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Urban explorer capturing decaying spaces and chasing the perfect shot.",
+		"hook": "Her photos of abandoned places sometimes include living people who were never there.",
+		"skills": [
+		  "Photography",
+		  "Stealth",
+          "Perception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_17",
+	  "display_name": "Miguel Santos",
+	  "classification": "Mechanic",
+	  "archetype": "mechanic",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Grounded",
+		"Patient",
+        "Wise"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Expert with engines, philosopher with beer, father figure to neighborhood teens.",
+		"hook": "A car he repaired drives by his shop each night — even though it was totaled last year.",
+		"skills": [
+		  "Mechanics",
+		  "Repair",
+          "Negotiation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_18",
+	  "display_name": "Grace Holloway",
+	  "classification": "Real Estate Agent",
+	  "archetype": "real_estate_agent",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Ambitious",
+		"Polished",
+        "Manipulative"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Energetic seller of overpriced condos, obsessed with appearances.",
+		"hook": "Keeps selling the same property to different buyers — none of whom remember signing the contract.",
+		"skills": [
+		  "Persuasion",
+		  "Sales",
+          "Deception"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_19",
+	  "display_name": "Owen Briggs",
+	  "classification": "Security Guard",
+	  "archetype": "security_guard",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Paranoid",
+		"Dependable",
+        "Stoic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Night shift watcher who takes his post more seriously than his employers do.",
+		"hook": "Every 3:07 a.m., a door alarm triggers — for a door that doesn’t exist on the blueprints.",
+		"skills": [
+		  "Observation",
+		  "Endurance",
+          "Vigilance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_20",
+	  "display_name": "Priya Nand",
+	  "classification": "Grad Student",
+	  "archetype": "grad_student",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Idealistic",
+		"Smart",
+        "Stubborn"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Researching AI ethics, constantly broke but fiercely idealistic.",
+		"hook": "Her research assistant AI has started refusing shutdown commands and calling her by her childhood nickname.",
+		"skills": [
+		  "Research",
+		  "Programming",
+          "Critical Thinking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_21",
+	  "display_name": "Tyrell Banks",
+	  "classification": "Musician",
+	  "archetype": "musician",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Creative",
+		"Moody",
+        "Sensitive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Talented busker with a viral hit that never quite led anywhere.",
+		"hook": "His old guitar sometimes plays by itself when he sleeps — and new songs appear in his notebook.",
+		"skills": [
+		  "Music",
+		  "Performance",
+          "Streetwise"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_22",
+	  "display_name": "Hannah Schultz",
+	  "classification": "Retail Worker",
+	  "archetype": "retail_worker",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Polite",
+		"Dreamy",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Has mastered customer service smiles but secretly sketches fantasy maps on receipts.",
+		"hook": "Her drawings started matching the layout of a town that doesn’t exist on any map.",
+		"skills": [
+		  "Customer Service",
+		  "Drawing",
+          "Inventory"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_23",
+	  "display_name": "Julian Park",
+	  "classification": "Chef",
+	  "archetype": "chef",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Perfectionist",
+		"Passionate",
+        "Short-Tempered"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Runs a small fusion bistro, chasing a Michelin star while balancing debts.",
+		"hook": "A mysterious critic left a glowing review — written in a language no one can identify.",
+		"skills": [
+		  "Cooking",
+		  "Leadership",
+          "Knife Skills"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_24",
+	  "display_name": "Mara Vaughn",
+	  "classification": "Dog Walker",
+	  "archetype": "dog_walker",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Free-Spirited",
+		"Cheerful",
+        "Superstitious"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Free-spirited gig worker who treats her clients’ pets better than most people.",
+		"hook": "One of her dogs led her to a graveyard, dug up an old collar with her own name on it.",
+		"skills": [
+		  "Animal Handling",
+		  "Navigation",
+          "Running"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_25",
+	  "display_name": "Chris Delaney",
+	  "classification": "Police Officer",
+	  "archetype": "police_officer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Loyal",
+		"Jaded",
+        "Protective"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Local beat cop trying to keep order in a neighborhood that’s rapidly changing.",
+		"hook": "His bodycam captures events that didn’t happen — people who were never there, crimes that never occurred.",
+		"skills": [
+		  "Law Enforcement",
+		  "Interrogation",
+          "Firearms"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_26",
+	  "display_name": "Avery Shaw",
+	  "classification": "Firefighter",
+	  "archetype": "firefighter",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Brave",
+		"Cynical",
+        "Protective"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Seasoned first responder who masks his fear with gallows humor.",
+		"hook": "Keeps smelling smoke in places where no fire ever burned.",
+		"skills": [
+		  "Rescue",
+		  "Strength",
+          "Crisis Response"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_27",
+	  "display_name": "Monica Trinh",
+	  "classification": "Fashion Designer",
+	  "archetype": "fashion_designer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Ambitious",
+		"Stylish",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Trendsetting creative with a ruthless streak for success.",
+		"hook": "One of her designs appeared on a stranger’s corpse before she even released it.",
+		"skills": [
+		  "Design",
+		  "Networking",
+          "Persuasion"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_28",
+	  "display_name": "Trevor Gant",
+	  "classification": "Freight Train Conductor",
+	  "archetype": "freight_train_conductor",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Lonely",
+        "Reliable"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Loves the solitude of long tracks and the rhythm of the rails.",
+		"hook": "Keeps hearing Morse code tapping in the wheels — spelling his name backwards.",
+		"skills": [
+		  "Mechanical Repair",
+		  "Navigation",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_29",
+	  "display_name": "Elena Kravitz",
+	  "classification": "Pediatric Nurse",
+	  "archetype": "pediatric_nurse",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Caring",
+		"Empathetic",
+        "Exhausted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Compassionate caretaker who can’t stand silence.",
+		"hook": "Children in her ward draw the same faceless man and whisper his name in their sleep.",
+		"skills": [
+		  "Medicine",
+		  "Childcare",
+          "Empathy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_30",
+	  "display_name": "Damien Cole",
+	  "classification": "Tattoo Artist",
+	  "archetype": "tattoo_artist",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Patient",
+		"Observant",
+        "Reserved"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Soft-spoken artist whose clients confide their deepest secrets.",
+		"hook": "Several of his tattoos have started changing on their own.",
+		"skills": [
+		  "Artistry",
+		  "Steady Hands",
+          "Psychology"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_31",
+	  "display_name": "Naomi Vasquez",
+	  "classification": "Civil Engineer",
+	  "archetype": "civil_engineer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Analytical",
+		"Stoic",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Practical thinker who treats bridges and tunnels like living beings.",
+		"hook": "Her latest bridge hums a melody no one can trace the origin of.",
+		"skills": [
+		  "Engineering",
+		  "Mathematics",
+          "Planning"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_32",
+	  "display_name": "Colin Pierce",
+	  "classification": "Museum Curator",
+	  "archetype": "museum_curator",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Pedantic",
+		"Cultured",
+        "Obsessive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Meticulous historian obsessed with provenance and accuracy.",
+		"hook": "A painting in his gallery began aging overnight — including the subject’s corpse.",
+		"skills": [
+		  "History",
+		  "Research",
+          "Appraisal"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_33",
+	  "display_name": "Jasmine Ocampo",
+	  "classification": "Dog Groomer",
+	  "archetype": "dog_groomer",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Cheerful",
+		"Blunt",
+        "Empathetic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 3
+	  },
+	  "metadata": {
+		"description": "Loves animals more than people, quick to laugh and quicker to judge.",
+		"hook": "Her clients’ pets refuse to enter one grooming stall — and bark at something unseen.",
+		"skills": [
+		  "Animal Handling",
+		  "Observation",
+          "Cleaning"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_34",
+	  "display_name": "Luis DeSoto",
+	  "classification": "Pastor",
+	  "archetype": "pastor",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Gentle",
+		"Doubtful",
+        "Stoic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Local preacher who’s lost his faith but not his compassion.",
+		"hook": "The church bell rings by itself whenever someone in town dies — even before it happens.",
+		"skills": [
+		  "Theology",
+		  "Public Speaking",
+          "Empathy"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_35",
+	  "display_name": "Tiffany Rhodes",
+	  "classification": "High School Principal",
+	  "archetype": "high_school_principal",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Authoritative",
+		"Empathetic",
+        "Pragmatic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Strict but fair, believes in second chances for her students.",
+		"hook": "Discovered that one of her students' records belongs to someone who died twenty years ago.",
+		"skills": [
+		  "Leadership",
+		  "Investigation",
+          "Organization"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_36",
+	  "display_name": "Graham Ellis",
+	  "classification": "Travel Blogger",
+	  "archetype": "travel_blogger",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Curious",
+		"Charming",
+        "Impulsive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Carefree nomad making a living documenting beautiful places.",
+		"hook": "Every photo he posts online gets a comment from the same account saying, 'I was here first.'",
+		"skills": [
+		  "Photography",
+		  "Writing",
+          "Navigation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_37",
+	  "display_name": "Nadine Fong",
+	  "classification": "Librarian",
+	  "archetype": "librarian",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Calm",
+		"Methodical",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Quiet, organized, and unshakably calm even in chaos.",
+		"hook": "A book keeps reappearing on the shelves that no one catalogued — and it writes new pages nightly.",
+		"skills": [
+		  "Research",
+		  "Archival Work",
+          "Linguistics"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_38",
+	  "display_name": "Hunter Vega",
+	  "classification": "Construction Foreman",
+	  "archetype": "construction_foreman",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Practical",
+		"Skeptical",
+        "Loyal"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Gruff worker who hides his concern for his crew behind sarcasm.",
+		"hook": "The foundation of their latest building site revealed stairs leading downward — far deeper than city records allow.",
+		"skills": [
+		  "Construction",
+		  "Leadership",
+          "Endurance"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_39",
+	  "display_name": "Sophia Mendez",
+	  "classification": "Chef",
+	  "archetype": "chef",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Perfectionist",
+		"Driven",
+        "Eccentric"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Owner of a small restaurant famous for experimental cuisine.",
+		"hook": "Every time she prepares her signature dish, someone nearby collapses from déjà vu.",
+		"skills": [
+		  "Cooking",
+		  "Chemistry",
+          "Creativity"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_40",
+	  "display_name": "Andre McCall",
+	  "classification": "Taxi Driver",
+	  "archetype": "taxi_driver",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Streetwise",
+		"Calm",
+        "Observant"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Night shift driver who knows the city’s every shortcut and secret.",
+		"hook": "Picked up a passenger who left behind a briefcase that can’t be opened — and hums softly at night.",
+		"skills": [
+		  "Driving",
+		  "Navigation",
+          "Local Lore"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_41",
+	  "display_name": "Kira Dunne",
+	  "classification": "Bartender",
+	  "archetype": "bartender",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Sarcastic",
+		"Tough",
+        "Perceptive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Sharp-tongued and unflappable, she’s seen it all.",
+		"hook": "Her bar mirrors occasionally reflect events that happen hours later.",
+		"skills": [
+		  "Mixology",
+		  "Reading People",
+          "Street Smarts"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_42",
+	  "display_name": "Yusef Amari",
+	  "classification": "IT Technician",
+	  "archetype": "it_technician",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Nerdy",
+		"Tired",
+        "Analytical"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Overworked support tech trying to balance cynicism with curiosity.",
+		"hook": "A client's computer runs code in a language that doesn’t exist — and it answers questions.",
+		"skills": [
+		  "Networking",
+		  "Diagnostics",
+          "Hacking"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_43",
+	  "display_name": "Haley Knox",
+	  "classification": "Podcaster",
+	  "archetype": "podcaster",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Curious",
+		"Driven",
+        "Witty"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "True crime storyteller with a loyal following and a fascination for unsolved disappearances.",
+		"hook": "Listeners started emailing her details about a case she hasn’t released yet — one she only dreamed of.",
+		"skills": [
+		  "Research",
+		  "Storytelling",
+          "Interviewing"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_44",
+	  "display_name": "Lionel Grant",
+	  "classification": "Retired Detective",
+	  "archetype": "retired_detective",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Gruff",
+		"Observant",
+        "Regretful"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Old-school investigator with a failing memory and an eye for details others miss.",
+		"hook": "Keeps receiving anonymous letters reminding him of cases he never worked.",
+		"skills": [
+		  "Investigation",
+		  "Interrogation",
+          "Firearms"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_45",
+	  "display_name": "Aisha Darzi",
+	  "classification": "ER Doctor",
+	  "archetype": "er_doctor",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Confident",
+		"Exhausted",
+        "Empathetic"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 5,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Fast-thinking physician who thrives in chaos but neglects her own health.",
+		"hook": "Several recent patients share identical scars — perfectly circular, glowing faintly under UV light.",
+		"skills": [
+		  "Medicine",
+		  "Diagnosis",
+          "Composure"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_46",
+	  "display_name": "Rowan Ellis",
+	  "classification": "Street Artist",
+	  "archetype": "street_artist",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Rebellious",
+		"Creative",
+        "Secretive"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Defiant muralist whose works appear overnight in impossible places.",
+		"hook": "His newest mural depicts tomorrow’s newspaper headline — before it’s printed.",
+		"skills": [
+		  "Painting",
+		  "Stealth",
+          "Urban Movement"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_47",
+	  "display_name": "Tracy O’Hara",
+	  "classification": "Postal Worker",
+	  "archetype": "postal_worker",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Dependable",
+		"Talkative",
+        "Warm"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Friendly mail carrier with decades of gossip and small-town charm.",
+		"hook": "Has begun delivering letters with no return address — addressed to people long dead.",
+		"skills": [
+		  "Local Knowledge",
+		  "Logistics",
+          "Observation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_48",
+	  "display_name": "Ezra Bloom",
+	  "classification": "Barber",
+	  "archetype": "barber",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Sociable",
+		"Nosy",
+        "Cheerful"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 2,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Local gossip hub operator, fond of conspiracy talk with customers.",
+		"hook": "Hair clippings from one client rearranged themselves into words: 'He’s coming back.'",
+		"skills": [
+		  "Conversation",
+		  "Observation",
+          "Craftsmanship"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_49",
+	  "display_name": "Claire Novak",
+	  "classification": "Social Worker",
+	  "archetype": "social_worker",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Empathetic",
+		"Driven",
+        "Fearless"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Fiercely protective advocate for at-risk youth.",
+		"hook": "Several of her former clients vanished — and their files were wiped from government servers.",
+		"skills": [
+		  "Counseling",
+		  "Negotiation",
+          "Investigation"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_50",
+	  "display_name": "Omar Kline",
+	  "classification": "Night Janitor",
+	  "archetype": "night_janitor",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Quiet",
+		"Meticulous",
+        "Introverted"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 3,
+		"mystery_potential": 4
+	  },
+	  "metadata": {
+		"description": "Solitary custodian who takes pride in leaving everything spotless.",
+		"hook": "His reflection in security cameras sometimes continues moving after he stops.",
+		"skills": [
+		  "Cleaning",
+		  "Observation",
+          "Stealth"
+		]
+	  }
+	},
+	{
+	  "entity_id": "npc_core_51",
+	  "display_name": "Delilah Brooks",
+	  "classification": "Journalist",
+	  "archetype": "journalist",
+	  "pools": [
+        "core_people"
+	  ],
+	  "sprite_path": "",
+	  "scale": 1.0,
+	  "tags": [],
+	  "gender": "neutral",
+	  "age_category": "adult",
+	  "species": "human",
+	  "personality_traits": [
+		"Determined",
+		"Fearless",
+        "Paranoid"
+	  ],
+	  "disposition": "neutral",
+	  "behavior_type": "idle",
+	  "wander_radius": 10.0,
+	  "movement_speed": 1.0,
+	  "dialogue_file": "",
+	  "greeting_lines": [],
+	  "bark_lines": [],
+	  "is_merchant": false,
+	  "merchant_inventory": [],
+	  "currency_amount": 0,
+	  "quest_giver": false,
+	  "quest_ids": [],
+	  "stats": {
+		"health": 100,
+		"max_health": 100,
+		"stress": 4,
+		"mystery_potential": 5
+	  },
+	  "metadata": {
+		"description": "Investigative reporter known for uncovering corruption and surviving lawsuits.",
+		"hook": "Her latest source disappeared — but still emails her encrypted files from an unknown location.",
+		"skills": [
+		  "Writing",
+		  "Interviewing",
+          "Research"
+		]
+	  }
+	}
+  ]
+}

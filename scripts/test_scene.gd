@@ -42,7 +42,8 @@ func _load_test_story():
 		"res://data/stories/test_mountain.json", "res://data/stories/test_desert.json", "res://data/stories/test_beach.json", 
 		"res://data/stories/test_swamp.json", "res://data/stories/test_multi_biome.json" 
 	]
-	var file_path = "res://data/stories/test_multi_biome_2.json"
+	#"res://data/stories/test_multi_biome_2.json"
+	var file_path = "res://data/stories/example_story_with_spawns.json"
 	
 	if FileAccess.file_exists(file_path):
 		var file = FileAccess.open(file_path, FileAccess.READ)

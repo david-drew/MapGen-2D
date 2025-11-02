@@ -27,6 +27,9 @@ func _init(story_data: Dictionary, seed: int = -1):
 	
 	template_manager = BiomeTemplateManager.get_instance()
 	
+	var entity_mgr = EntityPoolManager.get_instance()
+	entity_mgr.load_all_entities()
+	
 	_register_generators()
 	
 	print("WorldGenerator initialized with seed: ", random_seed)
@@ -61,7 +64,8 @@ func generate() -> Dictionary:
 	_pass_5_building_generation()
 	_pass_5b_template_building_placement()
 	_pass_6_connector_generation()  # NEW: Generate connections between regions
-	
+	_pass_7_entity_spawning() 
+
 	# Calculate generation time
 	var duration = Time.get_ticks_msec() - generation_start_time
 	print("\n=== Generation Complete in %d ms ===" % duration)
@@ -460,6 +464,163 @@ func _pass_6_connector_generation():
 			print("  Created connector: %s" % connector)
 	
 	print("  Generated %d connectors" % connectors.size())
+
+
+# Add this pass method:
+func _pass_7_entity_spawning() -> void:
+	"""
+	Pass 7: Process spawn_points from story JSON and place entities
+	Requires EntityPoolManager and SpawnPointManager to be available
+	"""
+	print("\n[Pass 7] Entity Spawning")
+	var start_time = Time.get_ticks_msec()
+	
+	# Get spawn points from story
+	var spawn_points = story_json.get("spawn_points", [])
+	if spawn_points.is_empty():
+		print("  No spawn points defined in story")
+		return
+	
+	print("  Found %d spawn point specifications" % spawn_points.size())
+	
+	# Initialize managers
+	var spawn_mgr = SpawnPointManager.get_instance()
+	
+	# Step 1: Process spawn specifications from JSON
+	print("\n  Step 1: Loading spawn specifications...")
+	var spawns = spawn_mgr.process_story_spawns(story_json, self.rng)
+	
+	if spawns.is_empty():
+		print("  No valid spawns created from specifications")
+		return
+	
+	# Step 2: Expand multi-count spawns
+	print("\n  Step 2: Expanding multi-count spawns...")
+	spawns = spawn_mgr.expand_multi_spawns(spawns)
+	
+	# Step 3: Validate spawns against regions
+	print("\n  Step 3: Validating spawn points...")
+	var validation = spawn_mgr.validate_spawns(spawns, self.regions)
+	
+	if not validation.valid:
+		push_error("  ✗ Spawn validation failed:")
+		for error in validation.errors:
+			push_error("    - %s" % error)
+		return
+	else:
+		print("  ✓ Validation passed")
+	
+	for warning in validation.warnings:
+		push_warning("    Warning: %s" % warning)
+	
+	# Step 4: Find positions for each spawn
+	print("\n  Step 4: Finding spawn positions...")
+	var placed_spawns: Array[SpawnData] = []
+	var failed_required = 0
+	var skipped_optional = 0
+	
+	for spawn in spawns:
+		# Skip if already has position
+		if spawn.has_position():
+			placed_spawns.append(spawn)
+			print("  ✓ Pre-positioned '%s' at %s" % [spawn.spawn_id, spawn.position])
+			continue
+		
+		# Get region
+		var region = self.regions.get(spawn.region_id, {})
+		if region.is_empty():
+			if spawn.is_required:
+				push_error("  ✗ Required spawn '%s' references missing region '%s'" % [
+					spawn.spawn_id, spawn.region_id
+				])
+				failed_required += 1
+			else:
+				push_warning("  ⊘ Skipping optional spawn '%s' - region not found" % spawn.spawn_id)
+				skipped_optional += 1
+			continue
+		
+		# Get region's grid
+		var grid = region.grid
+		
+		# Find position based on placement type
+		var position = spawn_mgr.find_spawn_location(spawn, region, grid, placed_spawns)
+		
+		if position != Vector2i(-1, -1):
+			spawn.set_actual_position(position)
+			placed_spawns.append(spawn)
+			
+			var entity_name = spawn.entity_data.display_name if spawn.entity_data else "Unknown"
+			var entity_type = spawn.entity_data.classification if spawn.entity_data else ""
+			
+			print("  ✓ Placed '%s': %s (%s) at %s in %s" % [
+				spawn.spawn_id,
+				entity_name,
+				entity_type,
+				position,
+				spawn.region_id
+			])
+		else:
+			# Failed to find position
+			if spawn.is_required:
+				push_error("  ✗ Failed to place required spawn '%s' in %s" % [
+					spawn.spawn_id, spawn.region_id
+				])
+				failed_required += 1
+			else:
+				push_warning("  ⊘ Skipped optional spawn '%s' - no valid position found" % spawn.spawn_id)
+				skipped_optional += 1
+	
+	# Store spawns in generation_stats for access by other systems
+	if not generation_stats.has("spawns"):
+		generation_stats["spawns"] = []
+	generation_stats.spawns = placed_spawns
+	
+	# Print summary
+	print("\n  Placement Summary:")
+	print("    Total spawn specs: %d" % spawns.size())
+	print("    Successfully placed: %d" % placed_spawns.size())
+	print("    Skipped (optional): %d" % skipped_optional)
+	print("    Failed (required): %d" % failed_required)
+	
+	# Check for critical failures
+	if failed_required > 0:
+		push_error("\n  Pass 7 FAILED: %d required spawns could not be placed" % failed_required)
+	
+	# Print statistics
+	spawn_mgr.print_spawn_statistics(placed_spawns)
+	
+	var elapsed = Time.get_ticks_msec() - start_time
+	print("\n  Pass 7 completed in %d ms" % elapsed)
+
+# Also add this helper function to the world_generator.gd file
+func _debug_spawn_positions(context: Dictionary, grid) -> void:
+	"""
+	Debug function to visualize spawn positions on the grid
+	Call this after Pass 7 if you want to see where spawns were placed
+	"""
+	var spawns = context.get("spawns", [])
+	if spawns.is_empty():
+		return
+	
+	print("\n=== Debug: Spawn Positions ===")
+	
+	for spawn in spawns:
+		if spawn.has_position:
+			var symbol = "?"
+			match spawn.spawn_type:
+				"npc": symbol = "N"
+				"clue": symbol = "C"
+				"item": symbol = "I"
+				"event": symbol = "E"
+			
+			# You could mark the grid here if needed
+			# For now just print
+			print("  [%s] %s at %s (%s)" % [
+				symbol,
+				spawn.spawn_id,
+				spawn.position,
+				spawn.placement_type
+			])
 
 func _auto_generate_connectors():
 	"""Automatically generate connectors between adjacent regions"""

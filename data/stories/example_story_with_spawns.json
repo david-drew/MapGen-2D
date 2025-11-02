@@ -1,0 +1,99 @@
+{
+  "story_metadata": {
+	"title": "Test Town Story",
+	"version": "1.0.0",
+	"description": "Simple test story for spawn system"
+  },
+  "world_config": {
+	"total_size_km2": 2.0,
+	"seed": 12345
+  },
+  "locations": {
+	"regions": [
+	  {
+		"id": "town",
+		"type": "small_town",
+		"size_km2": 2.0,
+		"must_have": [
+		  {"type": "hotel", "count": 1},
+		  {"type": "general_store", "count": 1},
+		  {"type": "tavern", "count": 1}
+		]
+	  }
+	]
+  },
+  "spawn_points": [
+	{
+	  "id": "bartender_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_bartender_01",
+	  "location": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern"
+	  },
+	  "required": true,
+	  "facing": 180.0,
+	  "tags": ["story_npc", "important"]
+	},
+	{
+	  "id": "merchant_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_merchant_01",
+	  "location": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  "required": true,
+	  "tags": ["story_npc", "quest_related"]
+	},
+	{
+	  "id": "farmer_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_farmer_01",
+	  "location": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  "required": false,
+	  "tags": ["side_quest"]
+	},
+	{
+	  "id": "guard_captain_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_guard_01",
+	  "location": {
+		"region": "town",
+		"placement": "path"
+	  },
+	  "required": true,
+	  "tags": ["story_npc", "authority"]
+	},
+	{
+	  "id": "ambient_children",
+	  "type": "npc",
+	  "entity_archetype": "child",
+	  "entity_pool": "core_people",
+	  "location": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  "count": 3,
+	  "required": false,
+	  "tags": ["ambient", "flavor"]
+	},
+	{
+	  "id": "random_townsfolk",
+	  "type": "npc",
+	  "entity_pool": "core_people",
+	  "location": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  "count": 5,
+	  "required": false,
+	  "tags": ["ambient", "filler"]
+	}
+  ]
+}
