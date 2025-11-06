@@ -130,8 +130,8 @@ func _draw_npcs():
 			elif npc.disposition == "hostile":
 				npc_color = colors.npc_hostile
 		
-		# Draw filled circle
-		var radius = cell_size * 0.4
+		# Draw filled NPC circle
+		var radius = cell_size * 2.0 	# 0.4 - previous NPC size (too small)
 		draw_circle(center, radius, npc_color, true)
 		
 		# Draw white outline for visibility
