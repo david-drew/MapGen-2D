@@ -1,0 +1,466 @@
+{
+  "story_metadata": {
+	"title": "The General Store Mystery - Phase 3 Complete",
+	"version": "3.0.0",
+	"description": "Full Phase 3 with discovery gates, decay, and proof gates"
+  },
+  "world_config": {
+	"total_size_km2": 2.0,
+	"seed": 12345
+  },
+  "locations": {
+	"regions": [
+	  {
+		"id": "town",
+		"type": "small_town",
+		"size_km2": 2.0,
+		"must_have": [
+		  {"type": "hotel", "count": 1},
+		  {"type": "general_store", "count": 1},
+		  {"type": "tavern", "count": 1}
+		]
+	  }
+	]
+  },
+  
+  "spawn_points": [
+	{
+	  "id": "bartender_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_bartender_01",
+	  "location": {"region": "town", "placement": "interior", "building_type": "tavern"},
+	  "required": true,
+	  "tags": ["story_npc", "witness"]
+	},
+	{
+	  "id": "merchant_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_merchant_01",
+	  "location": {"region": "town", "placement": "interior", "building_type": "general_store"},
+	  "required": true,
+	  "tags": ["story_npc", "suspect"]
+	},
+	{
+	  "id": "guard_captain_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_guard_01",
+	  "location": {"region": "town", "placement": "path"},
+	  "required": true,
+	  "tags": ["story_npc", "authority"]
+	}
+  ],
+  
+  "_comment_phase3": "PHASE 3: Complete mystery with gates, decay, and dynamic progression",
+  
+  "clues": [
+	{
+	  "id": "clue_ledger_night_sales",
+	  "title": "After-Hours Sales Ledger",
+	  "flavor_text": "A worn ledger with columns of hurried handwriting. The entries are dated only after dusk, recording sales of unusual items: candles, salt, iron nails. No customer names, just tallies.",
+	  "modality": "document",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "was_present_at",
+		  "object": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.55
+		},
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "predicate": "shows_activity_at",
+		  "object": {"type": "object_tag", "tag": "register"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:motive_link", "tag:timeline_evidence"],
+	  "refutes": ["claim:alibi_shopkeeper_dusk"],
+	  
+	  "leads": [
+		{
+		  "text": "Compare these receipts to the delivery slips in the storeroom.",
+		  "target": {"type": "building_type", "building_type": "general_store"},
+		  "specificity": "specific"
+		}
+	  ],
+	  
+	  "_comment_gates": "PHASE 3: Requires basic investigation skills",
+	  "gates": {
+		"skill": {
+		  "observation": 1
+		}
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["evidence", "accounting", "presence_at_scene", "story_critical"]
+	},
+	
+	{
+	  "id": "clue_bartender_testimony",
+	  "title": "Bartender's Account",
+	  "flavor_text": "The bartender nervously admits to seeing the shopkeeper entering the tavern late at night through the back door. 'Thought nothing of it at the time,' he says, avoiding eye contact.",
+	  "modality": "testimonial",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "was_present_at",
+		  "object": {"type": "place", "region": "town", "building_type": "tavern"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.65
+		},
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "used_entrance",
+		  "object": {"type": "object_tag", "tag": "back_door"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:suspicious_behavior", "tag:timeline_evidence"],
+	  
+	  "leads": [
+		{
+		  "text": "Check the tavern's back entrance for signs of recent use.",
+		  "target": {"type": "building_type", "building_type": "tavern"},
+		  "specificity": "medium"
+		}
+	  ],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern",
+		"npc_holder": {"entity_id": "npc_bartender_01"}
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["testimony", "witness_account", "story_critical"]
+	},
+	
+	{
+	  "id": "clue_tunnel_airflow",
+	  "title": "Cold Draft from Below",
+	  "flavor_text": "A steady pull of cold air emanates from beneath the tavern floorboards, where no basement should exist. The draft carries a faint smell of earth and something... else.",
+	  "modality": "environmental",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "tavern"},
+		  "predicate": "suggests_egress_to",
+		  "object": {"type": "place", "region": "town", "building_type": "service_tunnel"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:egress_map", "tag:escape_route"],
+	  
+	  "leads": [
+		{
+		  "text": "Investigate the tavern's foundation for hidden passages.",
+		  "target": {"type": "building_type", "building_type": "tavern"},
+		  "specificity": "specific"
+		}
+	  ],
+	  
+	  "_comment_decay": "PHASE 3: This evidence is environmental and will fade",
+	  "decay": {
+		"type": "environmental",
+		"start_condition": "clue_observed",
+		"end_condition": "1_hour_passed"
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern"
+	  },
+	  
+	  "tags": ["environmental", "egress", "suspicious_location"]
+	},
+	
+	{
+	  "id": "clue_ritual_components",
+	  "title": "Hidden Ritual Components",
+	  "flavor_text": "Behind a loose board in the storeroom: fresh candles, iron filings, rock salt in small cloth bags, and a hand-drawn diagram of overlapping circles. The supplies match the ledger's night sales.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "possesses",
+		  "object": {"type": "object_tag", "tag": "ritual_components"},
+		  "confidence_base": 0.7
+		},
+		{
+		  "subject": {"type": "object_tag", "tag": "ritual_components"},
+		  "predicate": "matches_pattern_of",
+		  "object": {"type": "object_tag", "tag": "night_sales"},
+		  "confidence_base": 0.75
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:ritual_components", "tag:occult_sign", "tag:method_or_sign"],
+	  
+	  "leads": [
+		{
+		  "text": "Research the meaning of these ritual symbols in occult texts.",
+		  "target": {"type": "action", "action": "research", "item": "occult_book"},
+		  "specificity": "medium"
+		}
+	  ],
+	  
+	  "_comment_gates": "PHASE 3: Requires thorough search skills",
+	  "gates": {
+		"skill": {
+		  "observation": 2
+		}
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["physical_evidence", "ritual_components", "occult_sign", "story_critical"]
+	},
+	
+	{
+	  "id": "clue_scorch_marks",
+	  "title": "Scorch Marks on Floor",
+	  "flavor_text": "Circular burn marks scorched into the wooden floor, forming a pattern that doesn't match any normal fire damage. The wood is charred but not consumed, as if the heat came from beneath.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "predicate": "shows_evidence_of",
+		  "object": {"type": "object_tag", "tag": "ritual_performed"},
+		  "confidence_base": 0.65
+		},
+		{
+		  "subject": {"type": "object_tag", "tag": "ritual_performed"},
+		  "predicate": "matches_pattern_of",
+		  "object": {"type": "object_tag", "tag": "ritual_components"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:ritual_components", "tag:method_or_sign", "tag:occult_sign"],
+	  
+	  "_comment_gates": "PHASE 3: Only visible with UV light",
+	  "gates": {
+		"item": ["uv_lamp"]
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "tags": ["physical_evidence", "occult_sign", "ritual_evidence"]
+	},
+	
+	{
+	  "id": "clue_bloodstain_trace",
+	  "title": "Trace Blood Evidence",
+	  "flavor_text": "Barely visible without proper lighting, small droplets of blood form a trail leading toward the back room. The pattern suggests someone injured was here recently.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "object_tag", "tag": "violence"},
+		  "predicate": "occurred_at",
+		  "object": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "confidence_base": 0.7
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:method_or_sign"],
+	  
+	  "_comment_gates": "PHASE 3: Requires UV lamp AND forensic skills",
+	  "gates": {
+		"skill": {
+		  "observation": 3
+		},
+		"item": ["uv_lamp"]
+	  },
+	  
+	  "_comment_decay": "PHASE 3: Blood evidence degrades quickly",
+	  "decay": {
+		"type": "physical",
+		"start_condition": "clue_observed",
+		"end_condition": "30_minutes_passed"
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "tags": ["physical_evidence", "violence", "time_sensitive"]
+	},
+	
+	{
+	  "id": "clue_night_visitor",
+	  "title": "Witness of Night Visitor",
+	  "flavor_text": "A local resident mentions seeing someone in dark robes entering the general store well after midnight. 'Thought it was odd, but didn't want to pry,' they say.",
+	  "modality": "testimonial",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "object_tag", "tag": "mysterious_figure"},
+		  "predicate": "was_present_at",
+		  "object": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:suspicious_behavior"],
+	  
+	  "_comment_gates": "PHASE 3: Only available during day when NPCs are active",
+	  "gates": {
+		"time": {
+		  "window": "day"
+		}
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  
+	  "tags": ["testimony", "witness_account"]
+	},
+	
+	{
+	  "id": "clue_occult_book",
+	  "title": "Annotated Occult Text",
+	  "flavor_text": "A leather-bound book with handwritten notes in the margins. The diagrams match the symbols found elsewhere. Someone has been studying these rituals extensively.",
+	  "modality": "document",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "studied",
+		  "object": {"type": "object_tag", "tag": "occult_rituals"},
+		  "confidence_base": 0.75
+		}
+	  ],
+	  
+	  "supports": ["tag:motive_link", "tag:backstory", "tag:occult_sign"],
+	  
+	  "leads": [
+		{
+		  "text": "Cross-reference these symbols with the ones found at the ritual site.",
+		  "target": {"type": "building_type", "building_type": "general_store"},
+		  "specificity": "specific"
+		}
+	  ],
+	  
+	  "_comment_gates": "PHASE 3: Requires occult knowledge to understand",
+	  "gates": {
+		"skill": {
+		  "occult": 2
+		}
+	  },
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["document", "occult", "motive"]
+	}
+  ],
+  
+  "_comment_proof_gates": "PHASE 3: Win conditions based on evidence thresholds",
+  "proof_gates": [
+	{
+	  "id": "gate_identify_culprit",
+	  "label": "Identify the Culprit",
+	  "category": "solution",
+	  "requirements": [
+		{
+		  "any_of": ["tag:presence_at_scene"],
+		  "min_confidence": 0.7
+		},
+		{
+		  "any_of": ["tag:motive_link"],
+		  "min_confidence": 0.6
+		},
+		{
+		  "any_of": ["tag:method_or_sign", "tag:ritual_components"],
+		  "min_confidence": 0.6
+		}
+	  ],
+	  "on_open": [
+		"unlock:confrontation_scene",
+        "reveal:suspect_identity"
+	  ]
+	},
+	{
+	  "id": "gate_find_ritual_site",
+	  "label": "Locate the Ritual Site",
+	  "category": "discovery",
+	  "requirements": [
+		{
+		  "any_of": ["tag:occult_sign", "tag:ritual_components"],
+		  "min_confidence": 0.65
+		}
+	  ],
+	  "on_open": [
+		"unlock:secret_basement",
+        "spawn:clue_ritual_altar"
+	  ]
+	},
+	{
+	  "id": "gate_secure_escape",
+	  "label": "Find Escape Route",
+	  "category": "survival",
+	  "requirements": [
+		{
+		  "any_of": ["tag:egress_map", "tag:escape_route"],
+		  "min_confidence": 0.55
+		}
+	  ],
+	  "on_open": [
+        "unlock:escape_ending"
+	  ]
+	}
+  ],
+  
+  "_comment_testing": "Use this story to test all Phase 3 features: gates, decay, and proof gates"
+}

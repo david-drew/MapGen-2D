@@ -1,0 +1,320 @@
+{
+  "story_metadata": {
+	"title": "The General Store Mystery - Phase 2",
+	"version": "2.0.0",
+	"description": "Enhanced with claims, confidence tracking, and leads"
+  },
+  "world_config": {
+	"total_size_km2": 2.0,
+	"seed": 12345
+  },
+  "locations": {
+	"regions": [
+	  {
+		"id": "town",
+		"type": "small_town",
+		"size_km2": 2.0,
+		"must_have": [
+		  {"type": "hotel", "count": 1},
+		  {"type": "general_store", "count": 1},
+		  {"type": "tavern", "count": 1}
+		]
+	  }
+	]
+  },
+  
+  "spawn_points": [
+	{
+	  "id": "bartender_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_bartender_01",
+	  "location": {"region": "town", "placement": "interior", "building_type": "tavern"},
+	  "required": true,
+	  "tags": ["story_npc", "witness"]
+	},
+	{
+	  "id": "merchant_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_merchant_01",
+	  "location": {"region": "town", "placement": "interior", "building_type": "general_store"},
+	  "required": true,
+	  "tags": ["story_npc", "suspect"]
+	},
+	{
+	  "id": "guard_captain_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_guard_01",
+	  "location": {"region": "town", "placement": "path"},
+	  "required": true,
+	  "tags": ["story_npc", "authority"]
+	}
+  ],
+  
+  "_comment_phase2": "PHASE 2: Enhanced clues with claims, supports/refutes, and leads",
+  
+  "clues": [
+	{
+	  "id": "clue_ledger_night_sales",
+	  "title": "After-Hours Sales Ledger",
+	  "flavor_text": "A worn ledger with columns of hurried handwriting. The entries are dated only after dusk, recording sales of unusual items: candles, salt, iron nails. No customer names, just tallies.",
+	  "modality": "document",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "_comment_claims": "PHASE 2: Subject-predicate-object relationships",
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "was_present_at",
+		  "object": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.55
+		},
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "predicate": "shows_activity_at",
+		  "object": {"type": "object_tag", "tag": "register"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "_comment_support": "PHASE 2: Which proof gate tags this supports",
+	  "supports": ["tag:presence_at_scene", "tag:motive_link"],
+	  
+	  "_comment_refutes": "PHASE 2: Which other claims this contradicts",
+	  "refutes": ["claim:alibi_shopkeeper_dusk"],
+	  
+	  "_comment_leads": "PHASE 2: Hints spawned after discovery",
+	  "leads": [
+		{
+		  "text": "Compare these receipts to the delivery slips in the storeroom.",
+		  "target": {"type": "building_type", "building_type": "general_store"},
+		  "specificity": "specific"
+		}
+	  ],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["evidence", "accounting", "presence_at_scene", "story_critical"],
+	  
+	  "world_sprite": "res://assets/clues/ledger_book.png",
+	  "interaction_prompt": "Examine Ledger",
+	  
+	  "journal": {"group": "documents", "mask_title_until_observed": false}
+	},
+	
+	{
+	  "id": "clue_bartender_testimony",
+	  "title": "Bartender's Account",
+	  "flavor_text": "The bartender nervously admits to seeing the shopkeeper entering the tavern late at night through the back door. 'Thought nothing of it at the time,' he says, avoiding eye contact.",
+	  "modality": "testimonial",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "was_present_at",
+		  "object": {"type": "place", "region": "town", "building_type": "tavern"},
+		  "time": {"window": "night"},
+		  "confidence_base": 0.65
+		},
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "used_entrance",
+		  "object": {"type": "object_tag", "tag": "back_door"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:presence_at_scene", "tag:suspicious_behavior"],
+	  
+	  "leads": [
+		{
+		  "text": "Check the tavern's back entrance for signs of recent use.",
+		  "target": {"type": "building_type", "building_type": "tavern"},
+		  "specificity": "medium"
+		}
+	  ],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern",
+		"npc_holder": {"entity_id": "npc_bartender_01"}
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["testimony", "witness_account", "story_critical"],
+	  "interaction_prompt": "Question About Strange Behavior",
+	  "journal": {"group": "testimony", "mask_title_until_observed": false}
+	},
+	
+	{
+	  "id": "clue_tunnel_airflow",
+	  "title": "Cold Draft from Below",
+	  "flavor_text": "A steady pull of cold air emanates from beneath the tavern floorboards, where no basement should exist. The draft carries a faint smell of earth and something... else.",
+	  "modality": "environmental",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "tavern"},
+		  "predicate": "suggests_egress_to",
+		  "object": {"type": "place", "region": "town", "building_type": "service_tunnel"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "supports": ["tag:egress_map", "tag:escape_route"],
+	  
+	  "leads": [
+		{
+		  "text": "Investigate the tavern's foundation for hidden passages.",
+		  "target": {"type": "building_type", "building_type": "tavern"},
+		  "specificity": "specific"
+		}
+	  ],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern"
+	  },
+	  
+	  "tags": ["environmental", "egress", "suspicious_location"],
+	  "interaction_prompt": "Investigate Draft",
+	  "journal": {"group": "locations", "mask_title_until_observed": false}
+	},
+	
+	{
+	  "id": "clue_ritual_components",
+	  "title": "Hidden Ritual Components",
+	  "flavor_text": "Behind a loose board in the storeroom: fresh candles, iron filings, rock salt in small cloth bags, and a hand-drawn diagram of overlapping circles. The supplies match the ledger's night sales.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "possesses",
+		  "object": {"type": "object_tag", "tag": "ritual_components"},
+		  "confidence_base": 0.7
+		},
+		{
+		  "subject": {"type": "object_tag", "tag": "ritual_components"},
+		  "predicate": "matches_pattern_of",
+		  "object": {"type": "object_tag", "tag": "night_sales"},
+		  "confidence_base": 0.75
+		}
+	  ],
+	  
+	  "_comment": "This CORROBORATES the ledger clue's claims about night activity",
+	  "supports": ["tag:presence_at_scene", "tag:ritual_components", "tag:occult_sign"],
+	  
+	  "leads": [
+		{
+		  "text": "Research the meaning of these ritual symbols in occult texts.",
+		  "target": {"type": "action", "action": "research", "item": "occult_book"},
+		  "specificity": "medium"
+		},
+		{
+		  "text": "Compare the diagram to any similar patterns found elsewhere in town.",
+		  "target": {"type": "region", "region": "town"},
+		  "specificity": "vague"
+		}
+	  ],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["physical_evidence", "ritual_components", "occult_sign", "story_critical"],
+	  "world_sprite": "res://assets/clues/ritual_supplies.png",
+	  "interaction_prompt": "Search Storeroom",
+	  "journal": {"group": "evidence", "mask_title_until_observed": true}
+	},
+	
+	{
+	  "id": "clue_scorch_marks",
+	  "title": "Scorch Marks on Floor",
+	  "flavor_text": "Circular burn marks scorched into the wooden floor, forming a pattern that doesn't match any normal fire damage. The wood is charred but not consumed, as if the heat came from beneath.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "place", "region": "town", "building_type": "general_store"},
+		  "predicate": "shows_evidence_of",
+		  "object": {"type": "object_tag", "tag": "ritual_performed"},
+		  "confidence_base": 0.65
+		},
+		{
+		  "subject": {"type": "object_tag", "tag": "ritual_performed"},
+		  "predicate": "matches_pattern_of",
+		  "object": {"type": "object_tag", "tag": "ritual_components"},
+		  "confidence_base": 0.6
+		}
+	  ],
+	  
+	  "_comment": "CORROBORATES ritual_components clue",
+	  "supports": ["tag:ritual_components", "tag:method_or_sign", "tag:occult_sign"],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "tags": ["physical_evidence", "occult_sign", "ritual_evidence"],
+	  "world_sprite": "res://assets/clues/scorch_pattern.png",
+	  "interaction_prompt": "Examine Burns",
+	  "journal": {"group": "evidence", "mask_title_until_observed": false}
+	},
+	
+	{
+	  "id": "clue_merchant_anxiety",
+	  "title": "Shopkeeper's Nervous Demeanor",
+	  "flavor_text": "The merchant seems unusually anxious, constantly glancing at the back room. When asked about recent business, he changes the subject quickly. His hands shake slightly when handling coins.",
+	  "modality": "testimonial",
+	  "reliability": "ambiguous",
+	  "supernatural_flag": "mundane",
+	  
+	  "claims": [
+		{
+		  "subject": {"type": "npc_pool", "pool": "core_people", "archetype": "shopkeeper"},
+		  "predicate": "exhibits_behavior",
+		  "object": {"type": "object_tag", "tag": "anxiety"},
+		  "confidence_base": 0.5
+		}
+	  ],
+	  
+	  "supports": ["tag:suspicious_behavior"],
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store",
+		"npc_holder": {"entity_id": "npc_merchant_01"}
+	  },
+	  
+	  "tags": ["behavioral_observation", "suspicious_behavior"],
+	  "interaction_prompt": "Observe Behavior",
+	  "journal": {"group": "observations", "mask_title_until_observed": false}
+	}
+  ],
+  
+  "_comment_future": "Phase 3 will add: gates (skill/item requirements), decay rules, proof_gates for win conditions"
+}

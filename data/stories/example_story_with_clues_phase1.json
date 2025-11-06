@@ -1,0 +1,300 @@
+{
+  "story_metadata": {
+	"title": "The General Store Mystery",
+	"version": "1.0.0",
+	"description": "Phase 1 test story with clue system integration"
+  },
+  "world_config": {
+	"total_size_km2": 2.0,
+	"seed": 12345
+  },
+  "locations": {
+	"regions": [
+	  {
+		"id": "town",
+		"type": "small_town",
+		"size_km2": 2.0,
+		"must_have": [
+		  {"type": "hotel", "count": 1},
+		  {"type": "general_store", "count": 1},
+		  {"type": "tavern", "count": 1}
+		]
+	  }
+	]
+  },
+  
+  "_comment_spawn_points": "NPC spawn points - existing system",
+  "spawn_points": [
+	{
+	  "id": "bartender_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_bartender_01",
+	  "location": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern"
+	  },
+	  "required": true,
+	  "facing": 180.0,
+	  "tags": ["story_npc", "important"]
+	},
+	{
+	  "id": "merchant_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_merchant_01",
+	  "location": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  "required": true,
+	  "tags": ["story_npc", "quest_related", "suspicious"]
+	},
+	{
+	  "id": "guard_captain_spawn",
+	  "type": "npc",
+	  "entity_id": "npc_guard_01",
+	  "location": {
+		"region": "town",
+		"placement": "path"
+	  },
+	  "required": true,
+	  "tags": ["story_npc", "authority"]
+	},
+	{
+	  "id": "random_townsfolk",
+	  "type": "npc",
+	  "entity_pool": "core_people",
+	  "location": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  "count": 5,
+	  "required": false,
+	  "tags": ["ambient", "filler"]
+	}
+  ],
+  
+  "_comment_clues": "Phase 1: Simple clue definitions - discovery & journal only",
+  "clues": [
+	{
+	  "id": "clue_ledger_night_sales",
+	  "title": "After-Hours Sales Ledger",
+	  "flavor_text": "A worn ledger with columns of hurried handwriting. The entries are dated only after dusk, recording sales of unusual items: candles, salt, iron nails. No customer names, just tallies.",
+	  "modality": "document",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["evidence", "accounting", "suspicious_activity", "story_critical"],
+	  
+	  "world_sprite": "res://assets/clues/ledger_book.png",
+	  "interaction_prompt": "Examine Ledger",
+	  
+	  "journal": {
+		"group": "documents",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_tunnel_airflow",
+	  "title": "Cold Draft from Below",
+	  "flavor_text": "A steady pull of cold air emanates from beneath the tavern floorboards, where no basement should exist. The draft carries a faint smell of earth and something... else.",
+	  "modality": "environmental",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern"
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["environmental", "egress", "suspicious_location"],
+	  
+	  "interaction_prompt": "Investigate Draft",
+	  "highlight_color": [0.5, 0.8, 1.0, 0.6],
+	  
+	  "journal": {
+		"group": "locations",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_bartender_testimony",
+	  "title": "Bartender's Account",
+	  "flavor_text": "The bartender nervously admits to seeing the shopkeeper entering the tavern late at night through the back door. 'Thought nothing of it at the time,' he says, avoiding eye contact.",
+	  "modality": "testimonial",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "tavern",
+		"npc_holder": {
+		  "entity_id": "npc_bartender_01"
+		}
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["testimony", "witness_account", "story_critical"],
+	  
+	  "interaction_prompt": "Question About Strange Behavior",
+	  
+	  "journal": {
+		"group": "testimony",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_scorch_marks",
+	  "title": "Scorch Marks on Floor",
+	  "flavor_text": "Circular burn marks scorched into the wooden floor, forming a pattern that doesn't match any normal fire damage. The wood is charred but not consumed, as if the heat came from beneath.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["physical_evidence", "occult_sign", "ritual_evidence"],
+	  
+	  "world_sprite": "res://assets/clues/scorch_pattern.png",
+	  "interaction_prompt": "Examine Burns",
+	  "highlight_color": [1.0, 0.5, 0.0, 0.8],
+	  
+	  "journal": {
+		"group": "evidence",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_guard_report",
+	  "title": "Guard's Patrol Log",
+	  "flavor_text": "The guard captain's patrol log shows repeated notes about 'unusual lights' near the general store around midnight. The entries stop three nights ago with no explanation.",
+	  "modality": "document",
+	  "reliability": "reliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "path",
+		"npc_holder": {
+		  "entity_id": "npc_guard_01"
+		}
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["official_document", "witness_account", "timeline"],
+	  
+	  "interaction_prompt": "Ask About Patrol Notes",
+	  
+	  "journal": {
+		"group": "documents",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_merchant_anxiety",
+	  "title": "Shopkeeper's Nervous Demeanor",
+	  "flavor_text": "The merchant seems unusually anxious, constantly glancing at the back room. When asked about recent business, he changes the subject quickly. His hands shake slightly when handling coins.",
+	  "modality": "testimonial",
+	  "reliability": "ambiguous",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store",
+		"npc_holder": {
+		  "entity_id": "npc_merchant_01"
+		}
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["behavioral_observation", "suspicious_behavior"],
+	  
+	  "interaction_prompt": "Observe Behavior",
+	  
+	  "journal": {
+		"group": "observations",
+		"mask_title_until_observed": false
+	  }
+	},
+	
+	{
+	  "id": "clue_ritual_components",
+	  "title": "Hidden Ritual Components",
+	  "flavor_text": "Behind a loose board in the storeroom: fresh candles, iron filings, rock salt in small cloth bags, and a hand-drawn diagram of overlapping circles. The supplies match the ledger's night sales.",
+	  "modality": "physical",
+	  "reliability": "reliable",
+	  "supernatural_flag": "occult_sign",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "interior",
+		"building_type": "general_store"
+	  },
+	  
+	  "is_essential": true,
+	  "tags": ["physical_evidence", "ritual_components", "occult_sign", "story_critical"],
+	  
+	  "world_sprite": "res://assets/clues/ritual_supplies.png",
+	  "interaction_prompt": "Search Storeroom",
+	  "highlight_color": [0.8, 0.2, 0.8, 0.7],
+	  
+	  "journal": {
+		"group": "evidence",
+		"mask_title_until_observed": true
+	  },
+	  
+	  "metadata": {
+		"requires_search": true,
+		"discovery_difficulty": "medium"
+	  }
+	},
+	
+	{
+	  "id": "clue_townsfolk_rumors",
+	  "title": "Village Gossip",
+	  "flavor_text": "Ambient NPCs mention seeing strange shadows moving near the store at night. One claims to have heard chanting. Most dismiss it as imagination, but there's an undercurrent of unease.",
+	  "modality": "testimonial",
+	  "reliability": "unreliable",
+	  "supernatural_flag": "mundane",
+	  
+	  "spawns_in": {
+		"region": "town",
+		"placement": "exterior"
+	  },
+	  
+	  "is_essential": false,
+	  "tags": ["rumor", "ambient_flavor", "social_evidence"],
+	  
+	  "interaction_prompt": "Listen to Gossip",
+	  
+	  "journal": {
+		"group": "rumors",
+		"mask_title_until_observed": false
+	  }
+	}
+  ],
+  
+  "_comment_future": "Phase 2 will add: claims, supports/refutes, leads. Phase 3 will add: gates, decay, proof_gates"
+}

@@ -1,0 +1,133 @@
+[
+  {
+	"id": "gate_identify_culprit",
+	"label": "Identify the Culprit",
+	"category": "solution",
+	"description": "Gather enough evidence to identify who is responsible",
+	"requirements": [
+	  {
+		"any_of": ["tag:presence_at_scene"],
+		"min_confidence": 0.7
+	  },
+	  {
+		"any_of": ["tag:motive_link"],
+		"min_confidence": 0.6
+	  },
+	  {
+		"any_of": ["tag:method_or_sign", "tag:ritual_components"],
+		"min_confidence": 0.6
+	  }
+	],
+	"on_open": [
+	  "unlock:confrontation_scene",
+	  "reveal:suspect_identity",
+      "trigger:final_dialogue"
+	]
+  },
+  
+  {
+	"id": "gate_find_ritual_locus",
+	"label": "Find the Ritual Site",
+	"category": "discovery",
+	"description": "Locate where the supernatural activity is centered",
+	"requirements": [
+	  {
+		"any_of": ["tag:occult_sign", "tag:repeated_phenomenon"],
+		"min_confidence": 0.65
+	  }
+	],
+	"on_open": [
+	  "unlock:ritual_circle",
+	  "spawn:clue_hidden_basement",
+      "reveal:map_marker"
+	]
+  },
+  
+  {
+	"id": "gate_secure_escape",
+	"label": "Secure an Escape Route",
+	"category": "survival",
+	"description": "Find a way out before it's too late",
+	"requirements": [
+	  {
+		"any_of": ["tag:egress_map", "tag:escape_route"],
+		"min_confidence": 0.55
+	  }
+	],
+	"on_open": [
+	  "unlock:escape_ending",
+	  "reveal:secret_passage",
+      "award:survival_bonus"
+	]
+  },
+  
+  {
+	"id": "gate_disprove_red_herring",
+	"label": "Disprove the False Lead",
+	"category": "elimination",
+	"description": "Eliminate an incorrect suspect from your investigation",
+	"requirements": [
+	  {
+		"any_of": ["tag:contradiction_alibi", "tag:toolmark_mismatch"],
+		"min_confidence": 0.6
+	  }
+	],
+	"on_open": [
+	  "award:insight_point",
+      "reveal:real_suspect_hint"
+	]
+  },
+  
+  {
+	"id": "gate_understand_motive",
+	"label": "Understand the Motive",
+	"category": "insight",
+	"description": "Discover why this is happening",
+	"requirements": [
+	  {
+		"any_of": ["tag:motive_link", "tag:backstory"],
+		"min_confidence": 0.7
+	  },
+	  {
+		"any_of": ["tag:emotional_evidence", "tag:testimony"],
+		"min_confidence": 0.5
+	  }
+	],
+	"on_open": [
+	  "unlock:empathy_dialogue",
+	  "reveal:character_backstory",
+      "award:understanding"
+	]
+  },
+  
+  {
+	"id": "gate_complete_investigation",
+	"label": "Complete Investigation",
+	"category": "ending",
+	"description": "Gather comprehensive evidence for the full truth",
+	"requirements": [
+	  {
+		"any_of": ["tag:presence_at_scene"],
+		"min_confidence": 0.8
+	  },
+	  {
+		"any_of": ["tag:motive_link"],
+		"min_confidence": 0.75
+	  },
+	  {
+		"any_of": ["tag:method_or_sign"],
+		"min_confidence": 0.75
+	  },
+	  {
+		"any_of": ["tag:timeline_evidence"],
+		"min_confidence": 0.6
+	  }
+	],
+	"on_open": [
+	  "unlock:true_ending",
+	  "reveal:full_truth",
+	  "award:master_detective",
+      "trigger:epilogue"
+	]
+  }
+]

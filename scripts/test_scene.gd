@@ -33,6 +33,9 @@ func _ready():
 	# Setup UI
 	_setup_ui()
 	_setup_location_ui()  # NEW
+	
+	test_phase3()			# TODO: DEBUG : DELETE
+	
 
 func _load_test_story():
 	"""Load story JSON from file"""
@@ -43,7 +46,8 @@ func _load_test_story():
 		"res://data/stories/test_swamp.json", "res://data/stories/test_multi_biome.json" 
 	]
 	#"res://data/stories/test_multi_biome_2.json"
-	var file_path = "res://data/stories/example_story_with_spawns.json"
+	#var file_path = "res://data/stories/example_story_with_spawns.json", "res://data/stories/example_story_with_clues_phase1.json"
+	var file_path = "res://data/stories/example_story_phase3.json"
 	
 	if FileAccess.file_exists(file_path):
 		var file = FileAccess.open(file_path, FileAccess.READ)
@@ -488,3 +492,45 @@ func _on_toggle_npcs(button_pressed: bool):
 	"""Handle NPC visibility toggle"""
 	visualizer.set_show_npcs(button_pressed)
 	print("NPC visibility: ", "ON" if button_pressed else "OFF")
+
+# Test Phase 3 of Clue System
+func test_phase3():
+	# Initialize systems
+	#ClueManager.clear_all_data()
+	EvidenceGraph.clear_all_data()
+	ProofGateManager.clear_all_data()
+	ClueDecaySystem.clear_all_data()
+	
+	# Load proof gates
+	ProofGateManager.load_proof_gates_from_file("res://data/clues/proof_gates.json")
+	
+	# Load story with Phase 3 clues
+	#var story = load_story("res://data/example_story_phase3.json")
+	
+	# ... spawn clues via world generator ...
+	
+	# Test discovery gates - this should be moved in real code
+	var player_state = {
+		"skills": {"observation": 3},
+		"inventory": ["uv_lamp"],
+		"time_window": "night"
+	}
+	ClueManager.update_player_state(player_state)			# This will need a rewrite - just a stub
+	
+	# Try to discover gated clue
+	ClueManager.discover_clue_phase2("clue_requires_tools")
+	
+	# Test proof gates
+	ProofGateManager.print_gate_summary()
+	
+	# Test decay
+	ClueDecaySystem.print_decay_summary()
+
+func initialize_mystery_system(story_data: Dictionary):
+	# Load proof gates
+	var gates_data = story_data.get("proof_gates", [])
+	if not gates_data.is_empty():
+		ProofGateManager.load_proof_gates(gates_data)
+	
+	# Or load from separate file:
+	ProofGateManager.load_proof_gates_from_file("res://data/clues/proof_gates.json")

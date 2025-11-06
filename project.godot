@@ -15,6 +15,13 @@ run/main_scene="uid://p6dqvyjb6uwn"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://assets/images/icon.svg"
 
+[autoload]
+
+ClueManager="*res://scripts/autoloads/clue_manager.gd"
+EvidenceGraph="*res://scripts/autoloads/evidence_graph.gd"
+ProofGateManager="*res://scripts/autoloads/proof_gate_manager.gd"
+ClueDecaySystem="*res://scripts/autoloads/clue_decay_system.gd"
+
 [display]
 
 window/size/viewport_width=3440

@@ -65,6 +65,7 @@ func generate() -> Dictionary:
 	_pass_5b_template_building_placement()
 	_pass_6_connector_generation()  
 	_pass_7_entity_spawning() 
+	_pass_8_clue_placement() 
 
 	# Calculate generation time
 	var duration = Time.get_ticks_msec() - generation_start_time
@@ -591,6 +592,116 @@ func _pass_7_entity_spawning() -> void:
 	
 	var elapsed = Time.get_ticks_msec() - start_time
 	print("\n  Pass 7 completed in %d ms" % elapsed)
+
+func _pass_8_clue_placement() -> void:
+	"""
+	Pass 8: Place clues in the world from story JSON
+	Processes the 'clues' array and spawns them using ClueManager
+	"""
+	print("\n[Pass 8] Clue Placement")
+	var start_time = Time.get_ticks_msec()
+	
+	# Clear any existing clue data
+	ClueManager.clear_all_data()
+	
+	# Get clues from story JSON
+	var clues_data = story_json.get("clues", [])
+	if clues_data.is_empty():
+		print("  No clues defined in story JSON")
+		return
+	
+	print("  Found %d clue specifications" % clues_data.size())
+	
+	# Step 1: Load clue templates
+	print("\n  Step 1: Loading clue templates...")
+	var loaded_count = ClueManager.load_clue_templates(clues_data)
+	
+	if loaded_count == 0:
+		print("  No valid clue templates loaded")
+		return
+	
+	# Step 2: Spawn clues into the world
+	print("\n  Step 2: Spawning clues into regions...")
+	var spawned_count = 0
+	var failed_count = 0
+	var essential_failed = 0
+	
+	for clue_dict in clues_data:
+		var clue_id = clue_dict.get("id", "")
+		if clue_id == "":
+			push_warning("  ⊘ Skipping clue with empty ID")
+			continue
+		
+		# Validate spawn location references existing region
+		var spawns_in = clue_dict.get("spawns_in", {})
+		var region_id = spawns_in.get("region", "")
+		
+		if region_id != "" and not regions.has(region_id):
+			push_warning("  ⊘ Clue '%s' references non-existent region '%s'" % [clue_id, region_id])
+			if clue_dict.get("is_essential", false):
+				essential_failed += 1
+			failed_count += 1
+			continue
+		
+		# Spawn clue from template
+		var clue = ClueManager.spawn_clue_from_template(clue_id)
+		
+		if clue:
+			# Make discoverable (Phase 1 - no gates to check)
+			ClueManager.make_clue_discoverable(clue_id)
+			spawned_count += 1
+			
+			var location_str = "%s/%s" % [
+				clue.spawn_region if clue.spawn_region else "global",
+				clue.spawn_building_type if clue.spawn_building_type else clue.spawn_placement
+			]
+			
+			var holder_str = ""
+			if clue.is_held_by_npc():
+				holder_str = " (held by %s)" % clue.npc_holder_id
+			
+			print("  ✓ Spawned [%s] %s at %s%s" % [
+				clue.modality,
+				clue.title,
+				location_str,
+				holder_str
+			])
+		else:
+			push_error("  ✗ Failed to spawn clue: %s" % clue_id)
+			if clue_dict.get("is_essential", false):
+				essential_failed += 1
+			failed_count += 1
+	
+	# Step 3: Store clue references in generation_stats
+	if not generation_stats.has("clues"):
+		generation_stats["clues"] = {}
+	
+	generation_stats.clues["spawned"] = spawned_count
+	generation_stats.clues["failed"] = failed_count
+	generation_stats.clues["essential_failed"] = essential_failed
+	
+	# Get stats from ClueManager
+	var clue_stats = ClueManager.get_stats()
+	
+	# Print summary
+	print("\n  Placement Summary:")
+	print("    Total clue specs: %d" % clues_data.size())
+	print("    Successfully spawned: %d" % spawned_count)
+	print("    Failed: %d" % failed_count)
+	if essential_failed > 0:
+		push_error("    Essential clues failed: %d" % essential_failed)
+	
+	print("\n  Distribution:")
+	print("    Regions with clues: %d" % clue_stats.regions_with_clues)
+	print("    Buildings with clues: %d" % clue_stats.buildings_with_clues)
+	print("    NPC-held clues: %d" % clue_stats.npcs_holding_clues)
+	
+	# Check for critical failures
+	if essential_failed > 0:
+		push_error("\n  Pass 8 FAILED: %d essential clues could not be placed" % essential_failed)
+	
+	var elapsed = Time.get_ticks_msec() - start_time
+	print("\n  Pass 8 completed in %d ms" % elapsed)
 
 # Also add this helper function to the world_generator.gd file
 func _debug_spawn_positions(context: Dictionary, grid) -> void:
